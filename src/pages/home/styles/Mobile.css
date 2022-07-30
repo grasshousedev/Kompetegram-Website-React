@@ -1,0 +1,17 @@
+@media screen and (max-width: 576px){
+
+    .Home .header #logo {
+
+        width: 30px;
+        
+        padding-top: 30px
+        
+    }
+
+    .Home .header #logo-text {
+
+        display: none;
+
+    }
+
+}

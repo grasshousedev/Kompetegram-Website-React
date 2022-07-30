@@ -11,7 +11,7 @@ class App extends Component {
     
     this.state = {
 
-    }
+    };
 
     return;
   }
@@ -23,8 +23,8 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Routes>
-            <Route exact path='/' element={<Navigate to='/home' />} />
-            <Route exact path='/home' element={<Home />} />
+            <Route exact path='/' element={ <Navigate to='/home' /> } />
+            <Route exact path='/home' element={ <Home /> } />
           </Routes>
         </div>
       </BrowserRouter>

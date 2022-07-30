@@ -1,5 +1,10 @@
 import { Component } from 'react';
-import './styles/Global.css'
+
+import './styles/Global.css';
+import './styles/Mobile.css';
+
+import ktgLogo from '../../assets/img/logo.svg';
+import ktgLogoTxt from '../../assets/img/Kompetegram.svg'
 
 class Home extends Component {
 
@@ -9,16 +14,22 @@ class Home extends Component {
 
         this.state = {
 
-        }
+        };
 
         return;
     }
 
     render() { 
+
         return (
+
             <div className="Home">
-                <h1>Hello World</h1>
+                <div className="header">
+                    <img src={ ktgLogo } alt="" id='logo'/>
+                    <img src={ ktgLogoTxt } alt="" id='logo-text'/>
+                </div>
             </div>
+
         );
     }
 }
