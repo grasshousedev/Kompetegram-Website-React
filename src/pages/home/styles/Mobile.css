@@ -1,17 +1,133 @@
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
 
-    .Home .header #logo {
+    .Home .Header #logo {
 
-        width: 30px;
-        
-        padding-top: 30px
-        
+        width: 36px;
+
+        padding-top: 30px;
+        padding-left: 15px;
+
     }
 
-    .Home .header #logo-text {
+    .Home .Header #logo-text {
 
         display: none;
 
     }
+
+    .Home .Section-1 {
+        width: fit-content;
+
+        margin-top: 83px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Home .Section-1 .Header {
+        width: fit-content;
+
+        margin-bottom: 25px;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+
+    .Home .Section-1 .Header #header-txt {
+        color: white;
+
+        font-size: 36px;
+        font-weight: 700;
+
+        line-height: 47.12px;
+
+        text-align: center;
+
+        margin: 0;
+
+    }
+
+    .Home .Section-1 .Description {
+
+        width: fit-content;
+        height: fit-content;
+
+        margin-left: 26px;
+        margin-right: 26px;
+
+    }
+
+    .Home .Section-1 .Description #description-txt {
+
+        color: white;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+
+        line-height: 29.1px;
+
+        text-align: center;
+
+        margin: 0;
+
+    }
+
+    .Home .Section-1 .Register-Button {
+
+        width: fit-content;
+
+        margin-top: 58px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative;
+
+        display: block;
+        z-index: 5;
+    }
+
+    .Home .Section-1 .Register-Button #regis-btn {
+
+        color: white;
+
+        font-weight: 600;
+        font-size: 20px;
+
+        text-decoration: none;
+
+        padding: 16px 36px;
+        
+        border-radius: 30px;
+
+        background: linear-gradient(125.57deg, #066AFF -9.14%, #062EFF 118.98%);
+        box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
+    }
+
+    .Home .Section-1 .Register-Button #regis-btn #arrow-logo{
+        margin-right: 7px;
+    }
+
+    .Home .Section-1 .Illustration {
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .Home .Section-1 .Illustration #illustration-img {
+        width: 85vw;
+        
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative;
+
+        display: block;
+        z-index: 3;
+
+        top: -60px;
+    }
+
+    
 
 }
