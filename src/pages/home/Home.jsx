@@ -20,7 +20,7 @@ class Home extends Component {
         super(props);
 
         this.state = {
-
+            isImageLoaded: false
         };
 
         return;
@@ -35,14 +35,14 @@ class Home extends Component {
 
         imageData.forEach((image) => {
             new Image().src = image
-        })
+        });
+        this.setState({isImageLoaded: true});
     }
 
-    render() {
+    Content() {
 
         return (
-
-            <div className="Home">
+            <div className="Content">
                 <div className="Header">
                     <img src={ktgLogo} alt="" id="logo" />
                     <img src={ktgLogoTxt} alt="" id="logo-text" />
@@ -160,6 +160,16 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
+        );
+    }
+
+    render() {
+
+        return (
+
+            <div className="Home">
+                {this.state.isImageLoaded && <this.Content />}
             </div>
 
         );
