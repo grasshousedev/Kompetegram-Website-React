@@ -20,7 +20,7 @@ class Home extends Component {
         super(props);
 
         this.state = {
-            isImageLoaded: false
+            isImageLoaded: undefined
         };
 
         return;
@@ -34,7 +34,9 @@ class Home extends Component {
         ];
 
         imageData.forEach((image) => {
-            new Image().src = image
+            const newImage = new Image();
+            newImage.src = image;
+            window[image] = newImage;
         });
         this.setState({isImageLoaded: true});
     }
