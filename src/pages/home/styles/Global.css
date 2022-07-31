@@ -2,6 +2,9 @@
 
 body {
     background-color: #110F20;
+    
+    margin: 0;
+    padding: 0;
 }
 
 .Home {

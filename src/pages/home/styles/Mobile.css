@@ -1,5 +1,11 @@
 @media screen and (max-width: 576px) {
 
+    /* 
+        //////////////////////////////////////////
+        Header Section
+
+    */
+
     .Home .Header #logo {
 
         width: 36px;
@@ -15,12 +21,14 @@
 
     }
 
-    .Home .Section-1 {
-        width: fit-content;
+    /* 
+        //////////////////////////////////////////
+        Section - 1
 
+    */
+
+    .Home .Section-1 {
         margin-top: 83px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .Home .Section-1 .Header {
@@ -55,7 +63,7 @@
 
     }
 
-    .Home .Section-1 .Description #description-txt {
+    .Home .Section-1 .Description #desc-txt {
 
         color: white;
 
@@ -96,14 +104,14 @@
         text-decoration: none;
 
         padding: 16px 36px;
-        
+
         border-radius: 30px;
 
         background: linear-gradient(125.57deg, #066AFF -9.14%, #062EFF 118.98%);
         box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
     }
 
-    .Home .Section-1 .Register-Button #regis-btn #arrow-logo{
+    .Home .Section-1 .Register-Button #regis-btn #arrow-logo {
         margin-right: 7px;
     }
 
@@ -114,12 +122,10 @@
 
     }
 
-    .Home .Section-1 .Illustration #illustration-img {
+    .Home .Section-1 .Illustration #illus-img {
         width: 85vw;
-        
         margin-left: auto;
         margin-right: auto;
-
         position: relative;
 
         display: block;
@@ -128,6 +134,158 @@
         top: -60px;
     }
 
-    
+    /* 
+        //////////////////////////////////////////
+        Section - 2
+
+    */
+
+    .Home .Section-2 {
+        margin-top: 135px;
+    }
+
+    .Home .Section-2 .Illustration {
+
+        width: fit-content;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Home .Section-2 .Illustration #illus-img {
+        width: 75vw;
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .Home .Section-2 .Header {
+
+        width: fit-content;
+
+        margin-top: 48px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Home .Section-2 .Header #header-txt {
+        color: white;
+
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 37px;
+        text-align: center;
+
+
+        margin: 0;
+    }
+
+    .Home .Section-2 .Description {
+        width: fit-content;
+
+        margin-top: 24px;
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+
+    .Home .Section-2 .Description #desc-txt {
+        color: white;
+
+        text-align: center;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+        text-align: justify;
+
+
+        margin: 0;
+    }
+
+    .Home .Section-2 .Cards {
+        color: #110F20;
+
+        width: fit-content;
+
+        display: flex;
+
+        text-align: center;
+
+        margin-top: 24px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Home .Section-2 .Cards .Card-1 {
+        background-color: #FFFFEF;
+
+        padding: 16px 8px;
+
+        margin-right: 58px;
+
+        border: 1px solid #FFFFEF;
+        box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.48);
+        border-radius: 8px;
+    }
+
+    .Home .Section-2 .Cards .Card-1 #number {
+
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 37px;
+
+        text-align: center;
+
+        margin: 0;
+
+    }
+
+    .Home .Section-2 .Cards .Card-1 #text {
+
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+
+        text-align: center;
+
+        margin: 0;
+
+    }
+
+    .Home .Section-2 .Cards .Card-2 {
+        background-color: #FFFFEF;
+
+        padding: 16px 8px;
+
+        border: 1px solid #FFFFEF;
+        box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.48);
+        border-radius: 8px;
+    }
+
+    .Home .Section-2 .Cards .Card-2 #number {
+
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 37px;
+
+        text-align: center;
+
+        margin: 0;
+
+    }
+
+    .Home .Section-2 .Cards .Card-2 #text {
+
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+
+        text-align: center;
+
+        margin: 0;
+
+    }
 
 }
