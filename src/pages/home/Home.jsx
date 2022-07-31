@@ -11,6 +11,7 @@ import illustration2 from '../../assets/img/Illustration-Orbit-Community.svg';
 import codeSym from '../../assets/img/Code-Symbol.svg';
 import connectionSym from '../../assets/img/Connection-Symbol.svg';
 import trophySym from '../../assets/img/Trophy-Symbol.svg';
+import illustration3 from '../../assets/img/Illustration-TeamWork.png';
 
 class Home extends Component {
 
@@ -23,6 +24,18 @@ class Home extends Component {
         };
 
         return;
+    }
+
+    componentDidMount() {
+        const imageData = [
+            ktgLogo, ktgLogo, arrowRedirect, illustration1, 
+            illustration2, codeSym, connectionSym, trophySym,
+            illustration3
+        ];
+
+        imageData.forEach((image) => {
+            new Image().src = image
+        })
     }
 
     render() {
@@ -123,6 +136,27 @@ class Home extends Component {
                                 <h3 id='header-txt'>Achievements</h3>
                                 <p id='desc-txt'>Mendapat penghargaan berupa sertifikat ketika mengikuti sebuah event.</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="Section-4">
+                    <div className="Illustration">
+                        <img src={illustration3} alt="" />
+                    </div>
+
+                    <div className="Header">
+                        <h1 id="header-txt">Lebih Dari yang Kamu Bayangkan</h1>
+                    </div>
+
+                    <div className="Description">
+                        <p id="desc-txt">Kompetegram bukan hanya tempat berkumpul saja. Menyebarkan informasi dan bekerja sama 
+                        membangun kreativitas</p>
+                    </div>
+
+                    <div className="Buttons">
+                        <div className="Instagram">
+
                         </div>
                     </div>
                 </div>
