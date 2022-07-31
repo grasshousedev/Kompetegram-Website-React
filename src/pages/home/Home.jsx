@@ -14,31 +14,31 @@ import trophySym from '../../assets/img/Trophy-Symbol.svg';
 import illustration3 from '../../assets/img/Illustration-TeamWork.png';
 
 class Home extends Component {
-
+    
     constructor(props) {
 
         super(props);
 
         this.state = {
-            isImageLoaded: undefined
+            isImageLoaded: false
         };
+
+        this.imageCounter = 0;
+
+        this.Content = this.Content.bind(this);
+        this.onImageLoaded = this.onImageLoaded.bind(this);
 
         return;
     }
 
-    componentDidMount() {
-        const imageData = [
-            ktgLogo, ktgLogo, arrowRedirect, illustration1, 
-            illustration2, codeSym, connectionSym, trophySym,
-            illustration3
-        ];
+    onImageLoaded() {
+        this.imageCounter += 1;
 
-        imageData.forEach((image) => {
-            const newImage = new Image();
-            newImage.src = image;
-            window[image] = newImage;
-        });
-        this.setState({isImageLoaded: true});
+        if(this.imageCounter === 0) {
+            this.setState({ isImageLoaded: true });
+        }
+
+        return
     }
 
     Content() {
@@ -46,8 +46,8 @@ class Home extends Component {
         return (
             <div className="Content">
                 <div className="Header">
-                    <img src={ktgLogo} alt="" id="logo" />
-                    <img src={ktgLogoTxt} alt="" id="logo-text" />
+                    <img src={ktgLogo} alt="" onLoad={this.onImageLoaded} id="logo" />
+                    <img src={ktgLogoTxt} alt="" onLoad={this.onImageLoaded} id="logo-text" />
                 </div>
 
                 <div className="Section-1">
@@ -63,19 +63,19 @@ class Home extends Component {
 
                     <div className="Register-Button">
                         <a href="/" id="regis-btn">
-                            <img src={arrowRedirect} alt="" id="arrow-logo" />
+                            <img src={arrowRedirect} alt="" onLoad={this.onImageLoaded} id="arrow-logo" />
                             Daftar
                         </a>
                     </div>
 
                     <div className="Illustration">
-                        <img src={illustration1} alt="" id='illus-img' />
+                        <img src={illustration1} alt="" onLoad={this.onImageLoaded} id='illus-img' />
                     </div>
                 </div>
 
                 <div className="Section-2">
                     <div className="Illustration">
-                        <img src={illustration2} alt="" id='illus-img' />
+                        <img src={illustration2} alt="" onLoad={this.onImageLoaded} id='illus-img' />
                     </div>
 
                     <div className="Header">
@@ -109,7 +109,7 @@ class Home extends Component {
                     <div className="Description">
                         <div className="Point-1">
                             <div className="Point-Symbol">
-                                <img src={codeSym} alt="" id='point-img' />
+                                <img src={codeSym} alt="" onLoad={this.onImageLoaded} id='point-img' />
                             </div>
 
                             <div className="Content">
@@ -120,7 +120,7 @@ class Home extends Component {
 
                         <div className="Point-2">
                             <div className="Point-Symbol">
-                                <img src={connectionSym} alt="" id='point-img' />
+                                <img src={connectionSym} alt="" onLoad={this.onImageLoaded} id='point-img' />
                             </div>
 
                             <div className="Content">
@@ -131,7 +131,7 @@ class Home extends Component {
 
                         <div className="Point-3">
                             <div className="Point-Symbol">
-                                <img src={trophySym} alt="" id='point-img' />
+                                <img src={trophySym} alt="" onLoad={this.onImageLoaded} id='point-img' />
                             </div>
 
                             <div className="Content">
@@ -144,7 +144,7 @@ class Home extends Component {
 
                 <div className="Section-4">
                     <div className="Illustration">
-                        <img src={illustration3} alt="" />
+                        <img src={illustration3} alt="" onLoad={this.onImageLoaded} />
                     </div>
 
                     <div className="Header">
@@ -171,7 +171,7 @@ class Home extends Component {
         return (
 
             <div className="Home">
-                {this.state.isImageLoaded && <this.Content />}
+                {!this.state.isImageLoaded && <this.Content />}
             </div>
 
         );
