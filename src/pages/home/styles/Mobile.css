@@ -1,7 +1,6 @@
 @media screen and (max-width: 576px) {
 
-    /* 
-        //////////////////////////////////////////
+    /* //////////////////////////////////////////
         Header Section
 
     */
@@ -21,8 +20,7 @@
 
     }
 
-    /* 
-        //////////////////////////////////////////
+    /* //////////////////////////////////////////
         Section - 1
 
     */
@@ -134,8 +132,7 @@
         top: -60px;
     }
 
-    /* 
-        //////////////////////////////////////////
+    /* //////////////////////////////////////////
         Section - 2
 
     */
@@ -285,6 +282,242 @@
         text-align: center;
 
         margin: 0;
+
+    }
+
+    /* //////////////////////////////////////////
+        Section - 3
+
+    */
+
+    .Home .Section-3 {
+
+        margin-top: 126px;
+        
+    }
+
+    .Home .Section-3>.Header {
+
+        width: fit-content;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .Home .Section-3>.Header #header-txt {
+        color: white;
+
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 37px;
+
+        text-align: center;
+
+        margin: 0;
+
+        padding-left: 10vw;
+        padding-right: 10vw;
+
+    }
+
+    .Home .Section-3 .Description .Point-1 {
+
+        width: fit-content;
+
+        display: flex;
+
+        margin-top: 64px;
+        margin-inline: 3vw;
+
+    }
+
+    .Home .Section-3 .Description .Point-1 .Point-Symbol {
+
+        width: 36px;
+
+        padding: 24px 24px;
+
+        margin-top: auto;
+        margin-bottom: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border: 0.307419px solid #FFFFEF;
+        box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13), inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
+        border-radius: 9.83742px;
+    }
+
+    .Home .Section-3 .Description .Point-1 .Point-Symbol #point-img {
+
+        width: 36px;
+
+    }
+
+    .Home .Section-3 .Description .Point-1 .Content {
+        width: fit-content;
+
+        margin-left: 36px;
+    }
+
+    .Home .Section-3 .Description .Point-1 .Content #header-txt {
+
+        color: white;
+
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+
+        margin: 0;
+
+    }
+
+    .Home .Section-3 .Description .Point-1 .Content #desc-txt {
+
+        color: white;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21px;
+        
+        text-align: justified;
+
+
+    }
+
+    .Home .Section-3 .Description .Point-2 {
+
+        width: fit-content;
+
+        display: flex;
+
+        margin-top: 64px;
+        margin-inline: 14px;
+        
+    }
+
+    .Home .Section-3 .Description .Point-2 .Point-Symbol {
+        width: 49px;
+
+        padding: 24px 24px;
+        
+        margin-top: auto;
+        margin-bottom: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border: 0.307419px solid #FFFFEF;
+        box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13), inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
+        border-radius: 9.83742px;
+    }
+
+    .Home .Section-3 .Description .Point-2 .Point-Symbol #point-img {
+
+        width: 23px;
+
+    }
+
+    .Home .Section-3 .Description .Point-2 .Content {
+        width: fit-content;
+
+        margin-left: 36px;
+    }
+
+    .Home .Section-3 .Description .Point-2 .Content #header-txt {
+
+        color: white;
+
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+
+        margin: 0;
+
+    }
+
+    .Home .Section-3 .Description .Point-2 .Content #desc-txt {
+
+        color: white;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21px;
+        
+        text-align: justified;
+
+
+    }
+
+    .Home .Section-3 .Description .Point-3 {
+
+        width: fit-content;
+
+        display: flex;
+
+        margin-top: 64px;
+        margin-inline: 14px;
+
+    }
+
+    .Home .Section-3 .Description .Point-3 .Point-Symbol {
+
+        width: 53px;
+
+        padding: 24px 24px;
+
+        margin-top: auto;
+        margin-bottom: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        border: 0.307419px solid #FFFFEF;
+        box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13), inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
+        border-radius: 9.83742px;
+    }
+
+    .Home .Section-3 .Description .Point-3 .Point-Symbol #point-img {
+
+        width: 19px;
+
+    }
+
+    .Home .Section-3 .Description .Point-3 .Content {
+        width: fit-content;
+
+        margin-left: 36px;
+    }
+
+    .Home .Section-3 .Description .Point-3 .Content #header-txt {
+
+        color: white;
+
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+
+        margin: 0;
+
+    }
+
+    .Home .Section-3 .Description .Point-3 .Content #desc-txt {
+
+        color: white;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21px;
+        
+        text-align: justified;
+
 
     }
 

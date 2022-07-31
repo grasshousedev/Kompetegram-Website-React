@@ -4,10 +4,13 @@ import './styles/Global.css';
 import './styles/Mobile.css';
 
 import ktgLogo from '../../assets/img/logo.svg';
-import ktgLogoTxt from '../../assets/img/Kompetegram.svg'
-import arrowRedirect from '../../assets/img/Arrow-Redirect.svg'
-import illustration1 from '../../assets/img/Illustration-Orbit.svg'
-import illustration2 from '../../assets/img/Illustration-Orbit-Community.svg'
+import ktgLogoTxt from '../../assets/img/Kompetegram.svg';
+import arrowRedirect from '../../assets/img/Arrow-Redirect.svg';
+import illustration1 from '../../assets/img/Illustration-Orbit.svg';
+import illustration2 from '../../assets/img/Illustration-Orbit-Community.svg';
+import codeSym from '../../assets/img/Code-Symbol.svg';
+import connectionSym from '../../assets/img/Connection-Symbol.svg';
+import trophySym from '../../assets/img/Trophy-Symbol.svg';
 
 class Home extends Component {
 
@@ -38,8 +41,8 @@ class Home extends Component {
                     </div>
 
                     <div className="Description">
-                        <p id="desc-txt">Untuk menjadi programmer yang baik salah satunya membutuhkan komunitas. 
-                        Kami menyediakan kerjasama, skill upgrading, dan ide-ide untuk solusi.
+                        <p id="desc-txt">Untuk menjadi programmer yang baik salah satunya membutuhkan komunitas.
+                            Kami menyediakan kerjasama, skill upgrading, dan ide-ide untuk solusi.
                         </p>
                     </div>
 
@@ -65,8 +68,8 @@ class Home extends Component {
                     </div>
 
                     <div className="Description">
-                        <p id='desc-txt'>Kompetegram  merupakan komunitas untuk belajar dan berbagi pengetahuan mengenai teknologi. 
-                            Tidak hanya itu, di Kompetegram juga terdapat event atau kegiatan seperti webinar, projek, 
+                        <p id='desc-txt'>Kompetegram  merupakan komunitas untuk belajar dan berbagi pengetahuan mengenai teknologi.
+                            Tidak hanya itu, di Kompetegram juga terdapat event atau kegiatan seperti webinar, projek,
                             dan kuis.
                         </p>
                     </div>
@@ -80,6 +83,46 @@ class Home extends Component {
                         <div className="Card-2">
                             <p id='number'>21</p>
                             <p id='text'>Kegiatan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="Section-3">
+                    <div className="Header">
+                        <h1 id='header-txt'>Kenapa Harus Bergabung?</h1>
+                    </div>
+                    <div className="Description">
+                        <div className="Point-1">
+                            <div className="Point-Symbol">
+                                <img src={codeSym} alt="" id='point-img' />
+                            </div>
+
+                            <div className="Content">
+                                <h3 id='header-txt'>Skills</h3>
+                                <p id='desc-txt'>Menambah soft skill, hard skill dan wawasan mengenai Teknologi Informasi</p>
+                            </div>
+                        </div>
+
+                        <div className="Point-2">
+                            <div className="Point-Symbol">
+                                <img src={connectionSym} alt="" id='point-img' />
+                            </div>
+
+                            <div className="Content">
+                                <h3 id='header-txt'>Connections</h3>
+                                <p id='desc-txt'>Membangun relasi untuk bekerja sama mewujudkan kreativitas.</p>
+                            </div>
+                        </div>
+
+                        <div className="Point-3">
+                            <div className="Point-Symbol">
+                                <img src={trophySym} alt="" id='point-img' />
+                            </div>
+
+                            <div className="Content">
+                                <h3 id='header-txt'>Achievements</h3>
+                                <p id='desc-txt'>Mendapat penghargaan berupa sertifikat ketika mengikuti sebuah event.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
