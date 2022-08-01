@@ -62,7 +62,8 @@ class Home extends Component {
 
                 <div className="Section-2">
                     <div className="Illustration">
-                        <img src={illustration2} alt="" id='illus-img' />
+                        <illustration2 id='illus-img'/>
+                        {/* <img src={illustration2} alt="" id='illus-img' /> */}
                     </div>
 
                     <div className="Header">
