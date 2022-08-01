@@ -8,11 +8,10 @@ import ktgLogoTxt from '../../assets/img/Kompetegram.svg';
 import arrowRedirect from '../../assets/img/Arrow-Redirect.svg';
 import illustration1 from '../../assets/img/Illustration-Orbit.svg';
 import illustration2 from '../../assets/img/Illustration-Orbit-Community.svg';
-import illustration2preload from '../../assets/img/Illustration-Orbit-Community.webp';
 import codeSym from '../../assets/img/Code-Symbol.svg';
 import connectionSym from '../../assets/img/Connection-Symbol.svg';
 import trophySym from '../../assets/img/Trophy-Symbol.svg';
-import illustration3 from '../../assets/img/Illustration-TeamWork.png';
+import illustration3 from '../../assets/img/Illustration-TeamWork.svg';
 
 class Home extends Component {
 
@@ -21,7 +20,7 @@ class Home extends Component {
         super(props);
 
         this.state = {
-            isIllus2Loaded: false
+            
         };
 
         this.Content = this.Content.bind(this);
@@ -64,11 +63,7 @@ class Home extends Component {
                 <div className="Section-2">
                     <div className="Illustration">
 
-                        {!this.state.isIllus2Loaded && <img src={illustration2preload} alt="" id='illus-img' />}
-
-                        <img src={illustration2} alt="" onLoad={() => {
-                            this.setState({isIllus2Loaded: true})
-                        }} id='illus-img' />
+                        <img src={illustration2} alt="" id='illus-img' />
                         
                     </div>
 
