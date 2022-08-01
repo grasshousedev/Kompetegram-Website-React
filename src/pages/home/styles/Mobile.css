@@ -294,7 +294,7 @@
     .Home .Section-3 {
 
         margin-top: 126px;
-        
+
     }
 
     .Home .Section-3>.Header {
@@ -383,7 +383,7 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 21px;
-        
+
         text-align: justified;
 
 
@@ -397,14 +397,14 @@
 
         margin-top: 64px;
         margin-inline: 14px;
-        
+
     }
 
     .Home .Section-3 .Description .Point-2 .Point-Symbol {
         width: 49px;
 
         padding: 24px 24px;
-        
+
         margin-top: auto;
         margin-bottom: auto;
 
@@ -449,7 +449,7 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 21px;
-        
+
         text-align: justified;
 
 
@@ -479,7 +479,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
         border: 0.307419px solid #FFFFEF;
         box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13), inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
         border-radius: 9.83742px;
@@ -516,10 +516,102 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 21px;
-        
+
         text-align: justified;
 
 
+    }
+
+    /* //////////////////////////////////////////
+        Section - 4
+
+    */
+
+    .Home .Section-4 {
+        border: white solid;
+
+        margin-top: 173px;
+    }
+
+    .Home .Section-4 .Illustration {
+
+        width: fit-content;
+
+        margin-inline: auto;
+    }
+
+    .Home .Section-4 .Illustration #illus-img {
+
+        width: 83vw;
+
+    }
+
+    .Home .Section-4 .Header {
+
+        width: fit-content;
+
+        margin-top: 21.5px;
+        margin-inline: 5vw;
+
+    }
+
+    .Home .Section-4 .Header #header-txt {
+
+        color: white;
+
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 37px;
+
+        text-align: center;
+
+        margin: 0;
+
+    }
+
+    .Home .Section-4 .Description {
+
+        width: fit-content;
+
+        margin-top: 24px;
+        margin-inline: 5vw;
+
+    }
+
+    .Home .Section-4 .Description #desc-txt {
+
+        color: white;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+        text-align: justify;
+
+        margin: 0;
+    }
+
+    .Home .Section-4 .Buttons {
+
+        border: #062EFF solid;
+
+        display: flex;
+
+        margin-top: 60px;
+        margin-inline: auto;
+    }
+
+    .Home .Section-4 .Buttons .ig-btn {
+
+        color: white;
+
+        width: fit-content;
+
+        padding: 16px 36px;
+
+        background: url('../../../assets/img/Instagram-Button-Background.png');
+        filter: drop-shadow(0px 0px 16px rgba(251, 0, 110, 0.3));
+        border-radius: 30px;
     }
 
 }
