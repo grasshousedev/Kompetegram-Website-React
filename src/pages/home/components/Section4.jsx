@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import illustration from '../../../assets/img/Illustration-TeamWork.svg';
-import igIcon from '../../../assets/img/Instagram-Icon.svg';
 import githubIcon from '../../../assets/img/Github-Icon.svg';
+import igIcon from '../../../assets/img/Instagram-Icon.svg';
 
 class Section4 extends Component {
     constructor(props) {
@@ -14,7 +14,6 @@ class Section4 extends Component {
 
         return;
     }
-
     render() {
 
         return (
@@ -34,12 +33,13 @@ class Section4 extends Component {
                 </div>
 
                 <div className="Buttons">
-                    <a href="https://www.instagram.com/kompetegram/" className='ig-btn'>
-                        Instagram
+                    <a href='/' className='ig-btn'>
+                        <img src={igIcon} alt="" id='ig-icon'/>
+                        <p id='ig-txt'>Instagram</p>
                     </a>
                     <a href="https://github.com/PROYEK-KOMPETEGRAM" className='github-btn'>
                         <img src={githubIcon} alt="" id='github-icon' />
-                        Github
+                        <p id='github-txt'>Github</p>
                     </a>
                 </div>
             </div>

@@ -107,6 +107,9 @@
 
         background: linear-gradient(125.57deg, #066AFF -9.14%, #062EFF 118.98%);
         box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
+
+        cursor: none;
+
     }
 
     .Home .Section-1 .Register-Button #regis-btn #arrow-logo {
@@ -528,9 +531,9 @@
     */
 
     .Home .Section-4 {
-        border: white solid;
 
         margin-top: 173px;
+        
     }
 
     .Home .Section-4 .Illustration {
@@ -593,7 +596,7 @@
 
     .Home .Section-4 .Buttons {
 
-        border: #062EFF solid;
+        width: fit-content;
 
         display: flex;
 
@@ -605,13 +608,87 @@
 
         color: white;
 
-        width: fit-content;
+        width: 25vw;
+        height: 5vw;
+
+        text-decoration: none; 
+
+        display: flex;
 
         padding: 16px 36px;
 
+        margin-right: 16px;
+        margin-block: auto;
+
         background: url('../../../assets/img/Instagram-Button-Background.png');
+        background-size: cover;
+
         filter: drop-shadow(0px 0px 16px rgba(251, 0, 110, 0.3));
         border-radius: 30px;
+
+    }
+
+    .Home .Section-4 .Buttons .ig-btn #ig-icon {
+
+        width: 24px;
+
+        margin-right: 8px;
+        margin-left: auto;
+
+    }
+
+    .Home .Section-4 .Buttons .ig-btn #ig-txt {
+        
+        font-weight: 600;
+        font-size: 16px;
+
+        margin: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+    }
+
+    .Home .Section-4 .Buttons .github-btn {
+
+        color: black;
+
+        width: 25vw;
+        height: 5vw;
+
+        text-decoration: none;
+
+        display: flex;
+
+        padding: 16px 36px;
+
+        margin-block: auto;
+
+        background-color: white;
+
+        border: 2px solid #FFFFFF;
+        border-radius: 30px;
+
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.48);
+    }
+
+    .Home .Section-4 .Buttons .github-btn #github-icon {
+
+        width: 24px;
+
+        margin-right: 8px;
+        margin-left: auto;
+    }
+
+    .Home .Section-4 .Buttons .github-btn #github-txt {
+
+        font-weight: 600;
+        font-size: 16px;
+
+        margin: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+
     }
 
 }
