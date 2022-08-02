@@ -533,7 +533,7 @@
     .Home .Section-4 {
 
         margin-top: 173px;
-        
+
     }
 
     .Home .Section-4 .Illustration {
@@ -600,6 +600,8 @@
 
         display: flex;
 
+        gap: 10vw;
+
         margin-top: 60px;
         margin-inline: auto;
     }
@@ -608,17 +610,18 @@
 
         color: white;
 
-        width: 25vw;
-        height: 5vw;
+        width: fit-content;
+        height: fit-content;
 
-        text-decoration: none; 
+        text-decoration: none;
 
         display: flex;
 
-        padding: 16px 36px;
+        padding: 13px 25px;
 
-        margin-right: 16px;
         margin-block: auto;
+
+        gap: 6px;
 
         background: url('../../../assets/img/Instagram-Button-Background.png');
         background-size: cover;
@@ -632,34 +635,30 @@
 
         width: 24px;
 
-        margin-right: 8px;
-        margin-left: auto;
-
     }
 
     .Home .Section-4 .Buttons .ig-btn #ig-txt {
-        
+
         font-weight: 600;
         font-size: 16px;
 
         margin: 0;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-right: auto;
+        margin-block: auto;
+
     }
 
     .Home .Section-4 .Buttons .github-btn {
 
         color: black;
 
-        width: 25vw;
-        height: 5vw;
+        width: fit-content;
+        height: fit-content;
 
         text-decoration: none;
 
         display: flex;
 
-        padding: 16px 36px;
+        padding: 13px 36px;
 
         margin-block: auto;
 
@@ -676,7 +675,7 @@
         width: 24px;
 
         margin-right: 8px;
-        margin-left: auto;
+
     }
 
     .Home .Section-4 .Buttons .github-btn #github-txt {
@@ -685,9 +684,102 @@
         font-size: 16px;
 
         margin: 0;
-        margin-top: auto;
-        margin-bottom: auto;
+        margin-block: auto;
+
+
+    }
+
+    .Home .Section-5 {
+
+        margin-top: 136px;
+
+    }
+
+    .Home .Section-5 .Header {
+
+        width: fit-content;
+
+        margin-inline: 10vw;
+
+    }
+
+    .Home .Section-5 .Header #header-txt {
+
+        color: white;
+
+        font-weight: 700;
+        font-size: 28px;
+
+        text-align: center;
+
+        margin: 0;
+
+    }
+
+    .Home .Section-5 .Description {
+
+        width: fit-content;
+
+        margin-inline: 14px;
+    }
+
+    .Home .Section-5 .Description #desc-txt {
+
+        color: white;
+
+        font-weight: 400;
+        font-size: 16px;
+
+        text-align: justify;
+    }
+
+    .Home .Section-5 .Register-Button {
+
+        width: fit-content;
+
+        margin-top: 37px;
+
+        margin-left: auto;
         margin-right: auto;
+
+        position: relative;
+
+        display: block;
+        z-index: 5;
+    }
+
+    .Home .Section-5 .Register-Button #regis-btn {
+
+        color: white;
+
+        font-weight: 600;
+        font-size: 20px;
+
+        text-decoration: none;
+
+        padding: 16px 36px;
+
+        border-radius: 30px;
+
+        background: linear-gradient(125.57deg, #066AFF -9.14%, #062EFF 118.98%);
+        box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
+
+        cursor: none;
+
+    }
+
+    .Home .Section-5 .Register-Button #regis-btn #arrow-logo {
+
+        margin-right: 7px;
+    
+    }
+
+    .Home .Section-5 .Activity-Documentation {
+
+        width: fit-content;
+
+        margin-top: 49px;
+        margin-inline: auto;
 
     }
 
