@@ -1,786 +1,687 @@
 @media screen and (max-width: 576px) {
-
-    /* //////////////////////////////////////////
+  /* //////////////////////////////////////////
         Header Section
 
     */
 
-    .Home .Header #logo {
+  .Home .Header #logo {
+    width: 36px;
 
-        width: 36px;
+    padding-top: 30px;
+    padding-left: 15px;
+  }
 
-        padding-top: 30px;
-        padding-left: 15px;
+  .Home .Header #logo-text {
+    display: none;
+  }
 
-    }
-
-    .Home .Header #logo-text {
-
-        display: none;
-
-    }
-
-    /* //////////////////////////////////////////
+  /* //////////////////////////////////////////
         Section - 1
 
     */
 
-    .Home .Section-1 {
-        margin-top: 83px;
-    }
+  .Home .Section-1 {
+    margin-top: 83px;
+  }
 
-    .Home .Section-1 .Header {
-        width: fit-content;
+  .Home .Section-1 .Header {
+    width: fit-content;
 
-        margin-bottom: 25px;
-        margin-left: 26px;
-        margin-right: 26px;
-    }
+    margin-bottom: 25px;
+    margin-left: 26px;
+    margin-right: 26px;
+  }
 
-    .Home .Section-1 .Header #header-txt {
-        color: white;
+  .Home .Section-1 .Header #header-txt {
+    color: white;
 
-        font-size: 36px;
-        font-weight: 700;
+    font-size: 36px;
+    font-weight: 700;
 
-        line-height: 47.12px;
+    line-height: 47.12px;
 
-        text-align: center;
+    text-align: center;
 
-        margin: 0;
+    margin: 0;
+  }
 
-    }
+  .Home .Section-1 .Description {
+    width: fit-content;
+    height: fit-content;
 
-    .Home .Section-1 .Description {
+    margin-left: 26px;
+    margin-right: 26px;
+  }
 
-        width: fit-content;
-        height: fit-content;
+  .Home .Section-1 .Description #desc-txt {
+    color: white;
 
-        margin-left: 26px;
-        margin-right: 26px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
 
-    }
+    line-height: 29.1px;
 
-    .Home .Section-1 .Description #desc-txt {
+    text-align: center;
 
-        color: white;
+    margin: 0;
+  }
 
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
+  .Home .Section-1 .Register-Button {
+    width: fit-content;
 
-        line-height: 29.1px;
+    margin-top: 58px;
 
-        text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
-        margin: 0;
+    position: relative;
 
-    }
+    display: block;
+    z-index: 5;
+  }
 
-    .Home .Section-1 .Register-Button {
+  .Home .Section-1 .Register-Button #regis-btn {
+    color: white;
 
-        width: fit-content;
+    font-weight: 600;
+    font-size: 20px;
 
-        margin-top: 58px;
+    text-decoration: none;
 
-        margin-left: auto;
-        margin-right: auto;
+    padding: 16px 36px;
 
-        position: relative;
+    border-radius: 30px;
 
-        display: block;
-        z-index: 5;
-    }
+    background: linear-gradient(125.57deg, #066aff -9.14%, #062eff 118.98%);
+    box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
 
-    .Home .Section-1 .Register-Button #regis-btn {
+    cursor: none;
+  }
 
-        color: white;
+  .Home .Section-1 .Register-Button #regis-btn #arrow-logo {
+    margin-right: 7px;
+  }
 
-        font-weight: 600;
-        font-size: 20px;
+  .Home .Section-1 .Illustration {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-        text-decoration: none;
+  .Home .Section-1 .Illustration #illus-img {
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 
-        padding: 16px 36px;
+    display: block;
+    z-index: 3;
 
-        border-radius: 30px;
+    top: -60px;
+  }
 
-        background: linear-gradient(125.57deg, #066AFF -9.14%, #062EFF 118.98%);
-        box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
-
-        cursor: none;
-
-    }
-
-    .Home .Section-1 .Register-Button #regis-btn #arrow-logo {
-        margin-right: 7px;
-    }
-
-    .Home .Section-1 .Illustration {
-
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    .Home .Section-1 .Illustration #illus-img {
-        width: 85vw;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-
-        display: block;
-        z-index: 3;
-
-        top: -60px;
-    }
-
-    /* //////////////////////////////////////////
+  /* //////////////////////////////////////////
         Section - 2
 
     */
 
-    .Home .Section-2 {
-        margin-top: 135px;
-    }
+  .Home .Section-2 {
+    margin-top: 135px;
+  }
 
-    .Home .Section-2 .Illustration {
+  .Home .Section-2 .Illustration {
+    width: fit-content;
+    height: 75vw;
 
-        width: fit-content;
-        height: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .Home .Section-2 .Illustration #illus-img {
+    width: 75vw;
 
-    .Home .Section-2 .Illustration #illus-img {
-        width: 75vw;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+  .Home .Section-2 .Header {
+    width: fit-content;
 
-    .Home .Section-2 .Header {
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-        width: fit-content;
+  .Home .Section-2 .Header #header-txt {
+    color: white;
 
-        margin-top: 48px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
+    text-align: center;
 
-    .Home .Section-2 .Header #header-txt {
-        color: white;
+    margin: 0;
+  }
 
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 37px;
-        text-align: center;
+  .Home .Section-2 .Description {
+    width: fit-content;
 
+    margin-top: 24px;
+    margin-left: 7vw;
+    margin-right: 7vw;
+  }
 
-        margin: 0;
-    }
+  .Home .Section-2 .Description #desc-txt {
+    color: white;
 
-    .Home .Section-2 .Description {
-        width: fit-content;
+    text-align: center;
 
-        margin-top: 24px;
-        margin-left: 7vw;
-        margin-right: 7vw;
-    }
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 
-    .Home .Section-2 .Description #desc-txt {
-        color: white;
+    text-align: justify;
 
-        text-align: center;
+    margin: 0;
+  }
 
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
+  .Home .Section-2 .Cards {
+    color: #110f20;
 
-        text-align: justify;
+    width: fit-content;
 
+    display: flex;
 
-        margin: 0;
-    }
+    text-align: center;
 
-    .Home .Section-2 .Cards {
-        color: #110F20;
+    margin-top: 24px;
 
-        width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-        display: flex;
+  .Home .Section-2 .Cards .Card-1 {
+    background-color: #ffffef;
 
-        text-align: center;
+    padding: 16px 8px;
 
-        margin-top: 24px;
+    margin-right: 58px;
 
-        margin-left: auto;
-        margin-right: auto;
-    }
+    border: 1px solid #ffffef;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.48);
+    border-radius: 8px;
+  }
 
-    .Home .Section-2 .Cards .Card-1 {
-        background-color: #FFFFEF;
+  .Home .Section-2 .Cards .Card-1 #number {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 37px;
 
-        padding: 16px 8px;
+    text-align: center;
 
-        margin-right: 58px;
+    margin: 0;
+  }
 
-        border: 1px solid #FFFFEF;
-        box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.48);
-        border-radius: 8px;
-    }
+  .Home .Section-2 .Cards .Card-1 #text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
 
-    .Home .Section-2 .Cards .Card-1 #number {
+    text-align: center;
 
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 37px;
+    margin: 0;
+  }
 
-        text-align: center;
+  .Home .Section-2 .Cards .Card-2 {
+    background-color: #ffffef;
 
-        margin: 0;
+    padding: 16px 8px;
 
-    }
+    border: 1px solid #ffffef;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.48);
+    border-radius: 8px;
+  }
 
-    .Home .Section-2 .Cards .Card-1 #text {
+  .Home .Section-2 .Cards .Card-2 #number {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 37px;
 
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 24px;
+    text-align: center;
 
-        text-align: center;
+    margin: 0;
+  }
 
-        margin: 0;
+  .Home .Section-2 .Cards .Card-2 #text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
 
-    }
+    text-align: center;
 
-    .Home .Section-2 .Cards .Card-2 {
-        background-color: #FFFFEF;
+    margin: 0;
+  }
 
-        padding: 16px 8px;
-
-        border: 1px solid #FFFFEF;
-        box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.48);
-        border-radius: 8px;
-    }
-
-    .Home .Section-2 .Cards .Card-2 #number {
-
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 37px;
-
-        text-align: center;
-
-        margin: 0;
-
-    }
-
-    .Home .Section-2 .Cards .Card-2 #text {
-
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 24px;
-
-        text-align: center;
-
-        margin: 0;
-
-    }
-
-    /* //////////////////////////////////////////
+  /* //////////////////////////////////////////
         Section - 3
 
     */
 
-    .Home .Section-3 {
+  .Home .Section-3 {
+    margin-top: 126px;
+  }
 
-        margin-top: 126px;
+  .Home .Section-3 > .Header {
+    width: fit-content;
 
-    }
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .Home .Section-3>.Header {
+  .Home .Section-3 > .Header #header-txt {
+    color: white;
 
-        width: fit-content;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
 
-        margin-left: auto;
-        margin-right: auto;
+    text-align: center;
 
-    }
+    margin: 0;
 
-    .Home .Section-3>.Header #header-txt {
-        color: white;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
 
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 37px;
+  .Home .Section-3 .Description .Point-1 {
+    width: fit-content;
 
-        text-align: center;
+    display: flex;
 
-        margin: 0;
+    margin-top: 64px;
+    margin-inline: 3vw;
+  }
 
-        padding-left: 10vw;
-        padding-right: 10vw;
+  .Home .Section-3 .Description .Point-1 .Point-Symbol {
+    width: 36px;
 
-    }
+    padding: 24px 24px;
 
-    .Home .Section-3 .Description .Point-1 {
+    margin-top: auto;
+    margin-bottom: auto;
 
-        width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        display: flex;
+    border: 0.307419px solid #ffffef;
+    box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13),
+      inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
+    border-radius: 9.83742px;
+  }
 
-        margin-top: 64px;
-        margin-inline: 3vw;
+  .Home .Section-3 .Description .Point-1 .Point-Symbol #point-img {
+    width: 36px;
+  }
 
-    }
+  .Home .Section-3 .Description .Point-1 .Content {
+    width: fit-content;
 
-    .Home .Section-3 .Description .Point-1 .Point-Symbol {
+    margin-left: 36px;
+  }
 
-        width: 36px;
+  .Home .Section-3 .Description .Point-1 .Content #header-txt {
+    color: white;
 
-        padding: 24px 24px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
 
-        margin-top: auto;
-        margin-bottom: auto;
+    margin: 0;
+  }
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  .Home .Section-3 .Description .Point-1 .Content #desc-txt {
+    color: white;
 
-        border: 0.307419px solid #FFFFEF;
-        box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13), inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
-        border-radius: 9.83742px;
-    }
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
 
-    .Home .Section-3 .Description .Point-1 .Point-Symbol #point-img {
+    text-align: justified;
+  }
 
-        width: 36px;
+  .Home .Section-3 .Description .Point-2 {
+    width: fit-content;
 
-    }
+    display: flex;
 
-    .Home .Section-3 .Description .Point-1 .Content {
-        width: fit-content;
+    margin-top: 64px;
+    margin-inline: 14px;
+  }
 
-        margin-left: 36px;
-    }
+  .Home .Section-3 .Description .Point-2 .Point-Symbol {
+    width: 49px;
 
-    .Home .Section-3 .Description .Point-1 .Content #header-txt {
+    padding: 24px 24px;
 
-        color: white;
+    margin-top: auto;
+    margin-bottom: auto;
 
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        margin: 0;
+    border: 0.307419px solid #ffffef;
+    box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13),
+      inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
+    border-radius: 9.83742px;
+  }
 
-    }
+  .Home .Section-3 .Description .Point-2 .Point-Symbol #point-img {
+    width: 23px;
+  }
 
-    .Home .Section-3 .Description .Point-1 .Content #desc-txt {
+  .Home .Section-3 .Description .Point-2 .Content {
+    width: fit-content;
 
-        color: white;
+    margin-left: 36px;
+  }
 
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 21px;
+  .Home .Section-3 .Description .Point-2 .Content #header-txt {
+    color: white;
 
-        text-align: justified;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
 
+    margin: 0;
+  }
 
-    }
+  .Home .Section-3 .Description .Point-2 .Content #desc-txt {
+    color: white;
 
-    .Home .Section-3 .Description .Point-2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
 
-        width: fit-content;
+    text-align: justified;
+  }
 
-        display: flex;
+  .Home .Section-3 .Description .Point-3 {
+    width: fit-content;
 
-        margin-top: 64px;
-        margin-inline: 14px;
+    display: flex;
 
-    }
+    margin-top: 64px;
+    margin-inline: 14px;
+  }
 
-    .Home .Section-3 .Description .Point-2 .Point-Symbol {
-        width: 49px;
+  .Home .Section-3 .Description .Point-3 .Point-Symbol {
+    width: 53px;
 
-        padding: 24px 24px;
+    padding: 24px 24px;
 
-        margin-top: auto;
-        margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        border: 0.307419px solid #FFFFEF;
-        box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13), inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
-        border-radius: 9.83742px;
-    }
+    border: 0.307419px solid #ffffef;
+    box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13),
+      inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
+    border-radius: 9.83742px;
+  }
 
-    .Home .Section-3 .Description .Point-2 .Point-Symbol #point-img {
+  .Home .Section-3 .Description .Point-3 .Point-Symbol #point-img {
+    width: 19px;
+  }
 
-        width: 23px;
+  .Home .Section-3 .Description .Point-3 .Content {
+    width: fit-content;
 
-    }
+    margin-left: 36px;
+  }
 
-    .Home .Section-3 .Description .Point-2 .Content {
-        width: fit-content;
+  .Home .Section-3 .Description .Point-3 .Content #header-txt {
+    color: white;
 
-        margin-left: 36px;
-    }
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
 
-    .Home .Section-3 .Description .Point-2 .Content #header-txt {
+    margin: 0;
+  }
 
-        color: white;
+  .Home .Section-3 .Description .Point-3 .Content #desc-txt {
+    color: white;
 
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
 
-        margin: 0;
+    text-align: justified;
+  }
 
-    }
-
-    .Home .Section-3 .Description .Point-2 .Content #desc-txt {
-
-        color: white;
-
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 21px;
-
-        text-align: justified;
-
-
-    }
-
-    .Home .Section-3 .Description .Point-3 {
-
-        width: fit-content;
-
-        display: flex;
-
-        margin-top: 64px;
-        margin-inline: 14px;
-
-    }
-
-    .Home .Section-3 .Description .Point-3 .Point-Symbol {
-
-        width: 53px;
-
-        padding: 24px 24px;
-
-        margin-top: auto;
-        margin-bottom: auto;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        border: 0.307419px solid #FFFFEF;
-        box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13), inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
-        border-radius: 9.83742px;
-    }
-
-    .Home .Section-3 .Description .Point-3 .Point-Symbol #point-img {
-
-        width: 19px;
-
-    }
-
-    .Home .Section-3 .Description .Point-3 .Content {
-        width: fit-content;
-
-        margin-left: 36px;
-    }
-
-    .Home .Section-3 .Description .Point-3 .Content #header-txt {
-
-        color: white;
-
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 26px;
-
-        margin: 0;
-
-    }
-
-    .Home .Section-3 .Description .Point-3 .Content #desc-txt {
-
-        color: white;
-
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 21px;
-
-        text-align: justified;
-
-
-    }
-
-    /* //////////////////////////////////////////
+  /* //////////////////////////////////////////
         Section - 4
 
     */
 
-    .Home .Section-4 {
+  .Home .Section-4 {
+    margin-top: 173px;
+  }
 
-        margin-top: 173px;
+  .Home .Section-4 .Illustration {
+    width: fit-content;
 
-    }
+    margin-inline: auto;
+  }
 
-    .Home .Section-4 .Illustration {
+  .Home .Section-4 .Illustration #illus-img {
+    width: 83vw;
+  }
 
-        width: fit-content;
+  .Home .Section-4 .Header {
+    width: fit-content;
 
-        margin-inline: auto;
-    }
+    margin-top: 21.5px;
+    margin-inline: 5vw;
+  }
 
-    .Home .Section-4 .Illustration #illus-img {
+  .Home .Section-4 .Header #header-txt {
+    color: white;
 
-        width: 83vw;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
 
-    }
+    text-align: center;
 
-    .Home .Section-4 .Header {
+    margin: 0;
+  }
 
-        width: fit-content;
+  .Home .Section-4 .Description {
+    width: fit-content;
 
-        margin-top: 21.5px;
-        margin-inline: 5vw;
+    margin-top: 24px;
+    margin-inline: 5vw;
+  }
 
-    }
+  .Home .Section-4 .Description #desc-txt {
+    color: white;
 
-    .Home .Section-4 .Header #header-txt {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 
-        color: white;
+    text-align: justify;
 
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 37px;
+    margin: 0;
+  }
 
-        text-align: center;
+  .Home .Section-4 .Buttons {
+    width: fit-content;
 
-        margin: 0;
+    display: flex;
 
-    }
+    gap: 10vw;
 
-    .Home .Section-4 .Description {
+    margin-top: 60px;
+    margin-inline: auto;
+  }
 
-        width: fit-content;
+  .Home .Section-4 .Buttons .ig-btn {
+    color: white;
 
-        margin-top: 24px;
-        margin-inline: 5vw;
+    width: fit-content;
+    height: fit-content;
 
-    }
+    text-decoration: none;
 
-    .Home .Section-4 .Description #desc-txt {
+    display: flex;
 
-        color: white;
+    padding: 13px 25px;
 
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
+    margin-block: auto;
 
-        text-align: justify;
+    gap: 6px;
 
-        margin: 0;
-    }
+    background: url('../../../assets/img/Instagram-Button-Background.png');
+    background-size: cover;
 
-    .Home .Section-4 .Buttons {
+    filter: drop-shadow(0px 0px 16px rgba(251, 0, 110, 0.3));
+    border-radius: 30px;
+  }
 
-        width: fit-content;
+  .Home .Section-4 .Buttons .ig-btn #ig-icon {
+    width: 24px;
+  }
 
-        display: flex;
+  .Home .Section-4 .Buttons .ig-btn #ig-txt {
+    font-weight: 600;
+    font-size: 16px;
 
-        gap: 10vw;
+    margin: 0;
+    margin-block: auto;
+  }
 
-        margin-top: 60px;
-        margin-inline: auto;
-    }
+  .Home .Section-4 .Buttons .github-btn {
+    color: black;
 
-    .Home .Section-4 .Buttons .ig-btn {
+    width: fit-content;
+    height: fit-content;
 
-        color: white;
+    text-decoration: none;
 
-        width: fit-content;
-        height: fit-content;
+    display: flex;
 
-        text-decoration: none;
+    padding: 13px 36px;
 
-        display: flex;
+    margin-block: auto;
 
-        padding: 13px 25px;
+    background-color: white;
 
-        margin-block: auto;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
 
-        gap: 6px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.48);
+  }
 
-        background: url('../../../assets/img/Instagram-Button-Background.png');
-        background-size: cover;
+  .Home .Section-4 .Buttons .github-btn #github-icon {
+    width: 24px;
 
-        filter: drop-shadow(0px 0px 16px rgba(251, 0, 110, 0.3));
-        border-radius: 30px;
+    margin-right: 8px;
+  }
 
-    }
+  .Home .Section-4 .Buttons .github-btn #github-txt {
+    font-weight: 600;
+    font-size: 16px;
 
-    .Home .Section-4 .Buttons .ig-btn #ig-icon {
+    margin: 0;
+    margin-block: auto;
+  }
 
-        width: 24px;
+  .Home .Section-5 {
+    margin-top: 136px;
+  }
 
-    }
+  .Home .Section-5 .Header {
+    width: fit-content;
 
-    .Home .Section-4 .Buttons .ig-btn #ig-txt {
+    margin-inline: 10vw;
+  }
 
-        font-weight: 600;
-        font-size: 16px;
+  .Home .Section-5 .Header #header-txt {
+    color: white;
 
-        margin: 0;
-        margin-block: auto;
+    font-weight: 700;
+    font-size: 28px;
 
-    }
+    text-align: center;
 
-    .Home .Section-4 .Buttons .github-btn {
+    margin: 0;
+  }
 
-        color: black;
+  .Home .Section-5 .Description {
+    width: fit-content;
 
-        width: fit-content;
-        height: fit-content;
+    margin-inline: 14px;
+  }
 
-        text-decoration: none;
+  .Home .Section-5 .Description #desc-txt {
+    color: white;
 
-        display: flex;
+    font-weight: 400;
+    font-size: 16px;
 
-        padding: 13px 36px;
+    text-align: justify;
+  }
 
-        margin-block: auto;
+  .Home .Section-5 .Register-Button {
+    width: fit-content;
 
-        background-color: white;
+    margin-top: 37px;
 
-        border: 2px solid #FFFFFF;
-        border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
-        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.48);
-    }
+    position: relative;
 
-    .Home .Section-4 .Buttons .github-btn #github-icon {
+    display: block;
+    z-index: 5;
+  }
 
-        width: 24px;
+  .Home .Section-5 .Register-Button #regis-btn {
+    color: white;
 
-        margin-right: 8px;
+    font-weight: 600;
+    font-size: 20px;
 
-    }
+    text-decoration: none;
 
-    .Home .Section-4 .Buttons .github-btn #github-txt {
+    padding: 16px 36px;
 
-        font-weight: 600;
-        font-size: 16px;
+    border-radius: 30px;
 
-        margin: 0;
-        margin-block: auto;
+    background: linear-gradient(125.57deg, #066aff -9.14%, #062eff 118.98%);
+    box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
 
+    cursor: none;
+  }
 
-    }
+  .Home .Section-5 .Register-Button #regis-btn #arrow-logo {
+    margin-right: 7px;
+  }
 
-    .Home .Section-5 {
+  .Home .Section-5 .Activity-Documentation {
+    width: fit-content;
 
-        margin-top: 136px;
-
-    }
-
-    .Home .Section-5 .Header {
-
-        width: fit-content;
-
-        margin-inline: 10vw;
-
-    }
-
-    .Home .Section-5 .Header #header-txt {
-
-        color: white;
-
-        font-weight: 700;
-        font-size: 28px;
-
-        text-align: center;
-
-        margin: 0;
-
-    }
-
-    .Home .Section-5 .Description {
-
-        width: fit-content;
-
-        margin-inline: 14px;
-    }
-
-    .Home .Section-5 .Description #desc-txt {
-
-        color: white;
-
-        font-weight: 400;
-        font-size: 16px;
-
-        text-align: justify;
-    }
-
-    .Home .Section-5 .Register-Button {
-
-        width: fit-content;
-
-        margin-top: 37px;
-
-        margin-left: auto;
-        margin-right: auto;
-
-        position: relative;
-
-        display: block;
-        z-index: 5;
-    }
-
-    .Home .Section-5 .Register-Button #regis-btn {
-
-        color: white;
-
-        font-weight: 600;
-        font-size: 20px;
-
-        text-decoration: none;
-
-        padding: 16px 36px;
-
-        border-radius: 30px;
-
-        background: linear-gradient(125.57deg, #066AFF -9.14%, #062EFF 118.98%);
-        box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
-
-        cursor: none;
-
-    }
-
-    .Home .Section-5 .Register-Button #regis-btn #arrow-logo {
-
-        margin-right: 7px;
-    
-    }
-
-    .Home .Section-5 .Activity-Documentation {
-
-        width: fit-content;
-
-        margin-top: 49px;
-        margin-inline: auto;
-
-    }
-
+    margin-top: 49px;
+    margin-inline: auto;
+  }
 }
