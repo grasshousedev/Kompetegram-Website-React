@@ -3,6 +3,7 @@ import { Component } from 'react';
 // Styles
 import './styles/Global.css';
 import './styles/Mobile.css';
+import './styles/Desktop.css';
 
 // Components
 import Section1 from './components/Section1';
@@ -16,55 +17,40 @@ import ktgLogo from '../../assets/img/logo.svg';
 import ktgLogoTxt from '../../assets/img/Kompetegram.svg';
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
 
-    constructor(props) {
+    this.state = {};
 
-        super(props);
+    this.Content = this.Content.bind(this);
 
-        this.state = {
+    return;
+  }
 
-        };
+  Content() {
+    return (
+      <div className="Content">
+        <a href="/" className="Header">
+          <img src={ktgLogo} alt="" id="logo" />
+          <img src={ktgLogoTxt} alt="" id="logo-text" />
+        </a>
 
-        this.Content = this.Content.bind(this);
+        <Section1 />
 
-        return;
-    }
+        <Section2 />
 
-    Content() {
+        <Section3 />
 
-        return (
+        <Section4 />
 
-            <div className="Content">
-                <div className="Header">
-                    <img src={ktgLogo} alt="" id="logo" />
-                    <img src={ktgLogoTxt} alt="" id="logo-text" />
-                </div>
+        <Section5 />
+      </div>
+    );
+  }
 
-                <Section1 />
-
-                <Section2 />
-
-                <Section3 />
-
-                <Section4 />
-
-                <Section5 />
-
-            </div>
-
-        );
-    }
-
-    render() {
-
-        return (
-
-            <div className="Home">
-                {<this.Content />}
-            </div>
-
-        );
-    }
+  render() {
+    return <div className="Home">{<this.Content />}</div>;
+  }
 }
 
 export default Home;

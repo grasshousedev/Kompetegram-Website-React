@@ -1,0 +1,406 @@
+@media screen and (min-width: 992px) {
+  /*
+    Header Section
+  */
+  .Home > .Content > .Header {
+    width: fit-content;
+
+    padding: 30px 45px;
+    padding-bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .Home > .Content > .Header #logo {
+    width: 29px;
+
+    padding: 0;
+  }
+
+  .Home > .Content > .Header #logo-text {
+    display: block;
+  }
+
+  /*
+    Section 1
+  */
+  .Home .Section-1 {
+    width: 100%;
+
+    margin-top: 46px;
+    padding: 0 40px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 80px;
+  }
+
+  .Home .Section-1 .Content .Header {
+    width: 100%;
+    max-width: 655px;
+
+    margin: 0;
+  }
+
+  .Home .Section-1 .Content .Header #header-txt {
+    margin: 0;
+
+    font-size: 60px;
+    line-height: 130.9%;
+    text-align: left;
+  }
+
+  .Home .Section-1 .Content .Description {
+    margin-top: 24px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .Home .Section-1 .Content .Description #desc-txt {
+    margin: 0;
+
+    font-size: 24px;
+    line-height: 152.4%; /* or 37px */
+    text-align: justify;
+  }
+
+  .Home .Section-1 .Content .Register-Button {
+    width: 100%;
+
+    margin-top: 24px;
+    margin-left: 0;
+    margin-right: 0;
+
+    position: initial;
+    z-index: initial;
+  }
+
+  .Home .Section-1 .Content .Register-Button #regis-btn {
+    display: block;
+    width: fit-content;
+  }
+
+  .Home .Section-1 .Illustration {
+    width: 100%;
+
+    margin: 0;
+  }
+
+  .Home .Section-1 .Illustration #illus-img {
+    display: none;
+  }
+
+  .Home .Section-1 .Illustration #illus-img-desktop {
+    display: block;
+    width: 100%;
+  }
+
+  /*
+    Section 2
+  */
+
+  .Home .Section-2 {
+    width: 100%;
+
+    margin-top: 243px;
+    padding: 0 40px;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+  }
+
+  .Home .Section-2 .Illustration {
+    width: 100%;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Home .Section-2 .Illustration #illus-img {
+    width: 100%;
+
+    margin: 0;
+  }
+
+  .Home .Section-2 .Content .Header {
+    width: 100%;
+
+    margin: 0;
+  }
+
+  .Home .Section-2 .Content .Header #header-txt {
+    font-size: 48px;
+    line-height: 130.9%; /* identical to box height, or 63px */
+    text-align: left;
+  }
+
+  .Home .Section-2 .Content .Description {
+    width: 100%;
+
+    margin-top: 36px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .Home .Section-2 .Content .Description #desc-txt {
+    font-size: 24px;
+    line-height: 152.4%; /* or 37px */
+    text-align: justify;
+  }
+
+  .Home .Section-2 .Content .Cards {
+    margin-top: 32px;
+  }
+
+  .Home .Section-2 .Content .Cards .Card {
+    width: 100%;
+    min-width: 140px;
+  }
+
+  .Home .Section-2 .Content .Cards .Card.Card-3,
+  .Home .Section-2 .Content .Cards .Card.Card-4 {
+    display: block;
+  }
+
+  .Home .Section-2 .Content .Cards .Card .number {
+    font-size: 48px;
+    line-height: 152.4%; /* or 73px */
+  }
+
+  .Home .Section-2 .Content .Cards .Card .text {
+    font-size: 24px;
+    line-height: 152.4%; /* identical to box height, or 37px */
+  }
+
+  /*
+    Section 3
+  */
+  .Home .Section-3 {
+    margin-top: 241px;
+  }
+
+  /* .Home .Section-3 > .Header {
+    width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  .Home .Section-3 > .Header #header-txt {
+    width: 100%;
+    max-width: 492px;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 48px;
+    line-height: 130.9%; /* or 63px */
+  }
+
+  .Home .Section-3 .Description {
+    width: 100%;
+
+    padding: 0 109px;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 43px;
+  }
+
+  .Home .Section-3 .Description .Point {
+    flex-direction: column;
+    row-gap: 36px;
+
+    margin: 0;
+  }
+
+  .Home .Section-3 .Description .Point .Point-Symbol {
+    max-width: 117.56px;
+  }
+
+  .Home .Section-3 .Description .Point.Point-1 .Point-Symbol #point-img {
+    width: 59.56px;
+  }
+
+  .Home .Section-3 .Description .Point.Point-2 .Point-Symbol #point-img {
+    width: 38.88px;
+  }
+
+  .Home .Section-3 .Description .Point.Point-3 .Point-Symbol #point-img {
+    width: 31.1px;
+  }
+
+  .Home .Section-3 .Description .Point .Content {
+    margin: 0;
+  }
+
+  .Home .Section-3 .Description .Point .Content #header-txt {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130.9%; /* or 47px */
+    text-align: center;
+  }
+
+  .Home .Section-3 .Description .Point .Content #desc-txt {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130.9%; /* or 31px */
+  }
+
+  /*
+    Section 4
+  */
+  .Home .Section-4 {
+    margin-top: 318px;
+    padding: 0 40px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    column-gap: 127px;
+  }
+
+  .Home .Section-4 .Illustration {
+    width: 100%;
+    max-width: 484px;
+
+    margin: 0;
+  }
+
+  .Home .Section-4 .Illustration #illus-img {
+    width: 100%;
+  }
+
+  .Home .Section-4 .Content {
+    width: 100%;
+  }
+
+  .Home .Section-4 .Content .Header {
+    width: 100%;
+    max-width: 457px;
+
+    margin: 0;
+  }
+
+  .Home .Section-4 .Content .Header #header-txt {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130.9%; /* or 63px */
+    text-align: left;
+  }
+
+  .Home .Section-4 .Content .Description {
+    width: 100%;
+
+    margin: 24px 0 40px;
+  }
+
+  .Home .Section-4 .Content .Description #desc-txt {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 152.4%; /* or 37px */
+  }
+
+  .Home .Section-4 .Content .Buttons {
+    width: 100%;
+
+    gap: 68px;
+
+    margin: 0;
+  }
+
+  .Home .Section-4 .Content .Buttons .ig-btn {
+    padding: 13px 36px;
+
+    gap: 8px;
+
+    background-position: center;
+  }
+
+  .Home .Section-4 .Content .Buttons .ig-btn #ig-icon {
+    width: 100%;
+    min-width: 28px;
+    aspect-ratio: 1/1;
+  }
+
+  .Home .Section-4 .Content .Buttons .ig-btn #ig-txt,
+  .Home .Section-4 .Content .Buttons .github-btn #github-txt {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .Home .Section-4 .Content .Buttons .github-btn {
+    padding: 13px 53.5px;
+
+    margin-block: auto;
+
+    background-color: white;
+
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.48);
+  }
+
+  .Home .Section-4 .Content .Buttons .github-btn #github-icon {
+    width: 100%;
+    max-width: 28px;
+  }
+
+  /*
+    Section 5
+  */
+  .Home .Section-5 .Header {
+    width: 100%;
+
+    margin: 0;
+    margin-bottom: 36px;
+  }
+
+  .Home .Section-5 .Header #header-txt {
+    width: 100%;
+    max-width: 489px;
+
+    font-size: 48px;
+    line-height: 130.9%; /* or 63px */
+
+    margin: 0 auto;
+  }
+
+  .Home .Section-5 .Description {
+    width: 100%;
+
+    margin: 0;
+  }
+
+  .Home .Section-5 .Description #desc-txt {
+    width: 100%;
+    max-width: 711px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 152.4%; /* or 37px */
+
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+
+  .Home .Section-5 .Register-Button {
+    margin-top: 24px;
+  }
+
+  .Home .Section-5 .Activity-Documentation #docu-img {
+    display: none;
+  }
+
+  .Home .Section-5 .Activity-Documentation #docu-img-desktop {
+    display: block;
+  }
+}

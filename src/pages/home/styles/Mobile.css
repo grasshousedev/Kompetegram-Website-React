@@ -1,687 +1,604 @@
-@media screen and (max-width: 576px) {
-  /* //////////////////////////////////////////
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 576px */
+
+/* //////////////////////////////////////////
         Header Section
 
     */
 
-  .Home .Header #logo {
-    width: 36px;
+.Home > .Content > .Header {
+  display: block;
+}
 
-    padding-top: 30px;
-    padding-left: 15px;
-  }
+.Home > .Content > .Header #logo {
+  width: 36px;
 
-  .Home .Header #logo-text {
-    display: none;
-  }
+  padding-top: 30px;
+  padding-left: 15px;
+}
 
-  /* //////////////////////////////////////////
+.Home > .Content > .Header #logo-text {
+  display: none;
+}
+
+/* //////////////////////////////////////////
         Section - 1
 
     */
 
-  .Home .Section-1 {
-    margin-top: 83px;
-  }
+.Home .Section-1 {
+  margin-top: 83px;
+}
 
-  .Home .Section-1 .Header {
-    width: fit-content;
+.Home .Section-1 .Content .Header {
+  width: fit-content;
 
-    margin-bottom: 25px;
-    margin-left: 26px;
-    margin-right: 26px;
-  }
+  margin-bottom: 25px;
+  margin-left: 26px;
+  margin-right: 26px;
+}
 
-  .Home .Section-1 .Header #header-txt {
-    color: white;
+.Home .Section-1 .Content .Header #header-txt {
+  color: white;
 
-    font-size: 36px;
-    font-weight: 700;
+  font-size: 36px;
+  font-weight: 700;
 
-    line-height: 47.12px;
+  line-height: 47.12px;
 
-    text-align: center;
+  text-align: center;
 
-    margin: 0;
-  }
+  margin: 0;
+}
 
-  .Home .Section-1 .Description {
-    width: fit-content;
-    height: fit-content;
+.Home .Section-1 .Content .Description {
+  width: fit-content;
+  height: fit-content;
 
-    margin-left: 26px;
-    margin-right: 26px;
-  }
+  margin-left: 26px;
+  margin-right: 26px;
+}
 
-  .Home .Section-1 .Description #desc-txt {
-    color: white;
+.Home .Section-1 .Content .Description #desc-txt {
+  color: white;
 
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
 
-    line-height: 29.1px;
+  line-height: 29.1px;
 
-    text-align: center;
+  text-align: center;
 
-    margin: 0;
-  }
+  margin: 0;
+}
 
-  .Home .Section-1 .Register-Button {
-    width: fit-content;
+.Home .Section-1 .Content .Register-Button {
+  width: fit-content;
 
-    margin-top: 58px;
+  margin-top: 58px;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-    position: relative;
+  position: relative;
 
-    display: block;
-    z-index: 5;
-  }
+  display: block;
+  z-index: 5;
+}
 
-  .Home .Section-1 .Register-Button #regis-btn {
-    color: white;
+.Home .Section-1 .Content .Register-Button #regis-btn {
+  color: white;
 
-    font-weight: 600;
-    font-size: 20px;
+  font-weight: 600;
+  font-size: 20px;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    padding: 16px 36px;
+  padding: 16px 36px;
 
-    border-radius: 30px;
+  border-radius: 30px;
 
-    background: linear-gradient(125.57deg, #066aff -9.14%, #062eff 118.98%);
-    box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
+  background: linear-gradient(125.57deg, #066aff -9.14%, #062eff 118.98%);
+  box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
 
-    cursor: none;
-  }
+  cursor: pointer;
 
-  .Home .Section-1 .Register-Button #regis-btn #arrow-logo {
-    margin-right: 7px;
-  }
+  transition: all 0.3s ease;
+}
 
-  .Home .Section-1 .Illustration {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.Home .Section-1 .Content .Register-Button #regis-btn:hover {
+  transform: scale(1.1);
+}
 
-  .Home .Section-1 .Illustration #illus-img {
-    width: 85vw;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+.Home .Section-1 .Content .Register-Button #regis-btn #arrow-logo {
+  margin-right: 8px;
+}
 
-    display: block;
-    z-index: 3;
+.Home .Section-1 .Illustration {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    top: -60px;
-  }
+.Home .Section-1 .Illustration #illus-img {
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 
-  /* //////////////////////////////////////////
+  display: block;
+  z-index: 3;
+
+  top: -60px;
+}
+
+.Home .Section-1 .Illustration #illus-img-desktop {
+  display: none;
+}
+
+/* //////////////////////////////////////////
         Section - 2
 
     */
 
-  .Home .Section-2 {
-    margin-top: 135px;
-  }
+.Home .Section-2 {
+  margin-top: 135px;
+}
 
-  .Home .Section-2 .Illustration {
-    width: fit-content;
-    height: 75vw;
+.Home .Section-2 .Illustration {
+  width: fit-content;
+  height: 75vw;
 
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .Home .Section-2 .Illustration #illus-img {
-    width: 75vw;
+.Home .Section-2 .Illustration #illus-img {
+  width: 75vw;
 
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-  .Home .Section-2 .Header {
-    width: fit-content;
+.Home .Section-2 .Content .Header {
+  width: fit-content;
 
-    margin-top: 48px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .Home .Section-2 .Header #header-txt {
-    color: white;
+.Home .Section-2 .Content .Header #header-txt {
+  color: white;
 
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 37px;
-    text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: center;
 
-    margin: 0;
-  }
+  margin: 0;
+}
 
-  .Home .Section-2 .Description {
-    width: fit-content;
+.Home .Section-2 .Content .Description {
+  width: fit-content;
 
-    margin-top: 24px;
-    margin-left: 7vw;
-    margin-right: 7vw;
-  }
+  margin-top: 24px;
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
 
-  .Home .Section-2 .Description #desc-txt {
-    color: white;
+.Home .Section-2 .Content .Description #desc-txt {
+  color: white;
 
-    text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+  text-align: justify;
 
-    text-align: justify;
+  margin: 0;
+}
 
-    margin: 0;
-  }
+.Home .Section-2 .Content .Cards {
+  color: #110f20;
 
-  .Home .Section-2 .Cards {
-    color: #110f20;
+  width: fit-content;
 
-    width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 58px;
 
-    display: flex;
+  text-align: center;
 
-    text-align: center;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    margin-top: 24px;
+.Home .Section-2 .Content .Cards .Card {
+  background-color: #ffffef;
 
-    margin-left: auto;
-    margin-right: auto;
-  }
+  padding: 16px 8px;
 
-  .Home .Section-2 .Cards .Card-1 {
-    background-color: #ffffef;
+  border: 1px solid #ffffef;
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.48);
+  border-radius: 8px;
+}
 
-    padding: 16px 8px;
+.Home .Section-2 .Content .Cards .Card.Card-3,
+.Home .Section-2 .Content .Cards .Card.Card-4 {
+  display: none;
+}
 
-    margin-right: 58px;
+.Home .Section-2 .Content .Cards .Card .number {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 37px;
 
-    border: 1px solid #ffffef;
-    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.48);
-    border-radius: 8px;
-  }
+  text-align: center;
 
-  .Home .Section-2 .Cards .Card-1 #number {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 37px;
+  margin: 0;
+}
 
-    text-align: center;
+.Home .Section-2 .Content .Cards .Card .text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
 
-    margin: 0;
-  }
+  text-align: center;
 
-  .Home .Section-2 .Cards .Card-1 #text {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
+  margin: 0;
+}
 
-    text-align: center;
-
-    margin: 0;
-  }
-
-  .Home .Section-2 .Cards .Card-2 {
-    background-color: #ffffef;
-
-    padding: 16px 8px;
-
-    border: 1px solid #ffffef;
-    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.48);
-    border-radius: 8px;
-  }
-
-  .Home .Section-2 .Cards .Card-2 #number {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 37px;
-
-    text-align: center;
-
-    margin: 0;
-  }
-
-  .Home .Section-2 .Cards .Card-2 #text {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-
-    text-align: center;
-
-    margin: 0;
-  }
-
-  /* //////////////////////////////////////////
+/* //////////////////////////////////////////
         Section - 3
 
     */
 
-  .Home .Section-3 {
-    margin-top: 126px;
-  }
+.Home .Section-3 {
+  margin-top: 126px;
+}
 
-  .Home .Section-3 > .Header {
-    width: fit-content;
+.Home .Section-3 > .Header {
+  width: fit-content;
 
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .Home .Section-3 > .Header #header-txt {
-    color: white;
+.Home .Section-3 > .Header #header-txt {
+  color: white;
 
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 37px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 37px;
 
-    text-align: center;
+  text-align: center;
 
-    margin: 0;
+  margin: 0;
 
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
 
-  .Home .Section-3 .Description .Point-1 {
-    width: fit-content;
+.Home .Section-3 .Description .Point {
+  width: fit-content;
 
-    display: flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    margin-top: 64px;
-    margin-inline: 3vw;
-  }
+  margin-top: 64px;
+  margin-inline: 14px;
+}
 
-  .Home .Section-3 .Description .Point-1 .Point-Symbol {
-    width: 36px;
+.Home .Section-3 .Description .Point .Point-Symbol {
+  width: 100%;
+  max-width: 72px;
+  aspect-ratio: 1/1;
 
-    padding: 24px 24px;
+  padding: 24px 24px;
 
-    margin-top: auto;
-    margin-bottom: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    border: 0.307419px solid #ffffef;
-    box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13),
-      inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
-    border-radius: 9.83742px;
-  }
+  border: 0.307419px solid #ffffef;
+  box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13),
+    inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+}
 
-  .Home .Section-3 .Description .Point-1 .Point-Symbol #point-img {
-    width: 36px;
-  }
+.Home .Section-3 .Description .Point.Point-1 .Point-Symbol #point-img {
+  width: 36px;
+}
 
-  .Home .Section-3 .Description .Point-1 .Content {
-    width: fit-content;
+.Home .Section-3 .Description .Point.Point-2 .Point-Symbol #point-img {
+  width: 23px;
+}
 
-    margin-left: 36px;
-  }
+.Home .Section-3 .Description .Point.Point-3 .Point-Symbol #point-img {
+  width: 19px;
+}
 
-  .Home .Section-3 .Description .Point-1 .Content #header-txt {
-    color: white;
+.Home .Section-3 .Description .Point .Content {
+  width: fit-content;
 
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 26px;
+  margin-left: 36px;
+}
 
-    margin: 0;
-  }
+.Home .Section-3 .Description .Point .Content #header-txt {
+  color: white;
 
-  .Home .Section-3 .Description .Point-1 .Content #desc-txt {
-    color: white;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
 
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 21px;
+  margin-bottom: 16px;
+}
 
-    text-align: justified;
-  }
+.Home .Section-3 .Description .Point .Content #desc-txt {
+  color: white;
 
-  .Home .Section-3 .Description .Point-2 {
-    width: fit-content;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
 
-    display: flex;
+  text-align: justify;
+}
 
-    margin-top: 64px;
-    margin-inline: 14px;
-  }
-
-  .Home .Section-3 .Description .Point-2 .Point-Symbol {
-    width: 49px;
-
-    padding: 24px 24px;
-
-    margin-top: auto;
-    margin-bottom: auto;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    border: 0.307419px solid #ffffef;
-    box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13),
-      inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
-    border-radius: 9.83742px;
-  }
-
-  .Home .Section-3 .Description .Point-2 .Point-Symbol #point-img {
-    width: 23px;
-  }
-
-  .Home .Section-3 .Description .Point-2 .Content {
-    width: fit-content;
-
-    margin-left: 36px;
-  }
-
-  .Home .Section-3 .Description .Point-2 .Content #header-txt {
-    color: white;
-
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 26px;
-
-    margin: 0;
-  }
-
-  .Home .Section-3 .Description .Point-2 .Content #desc-txt {
-    color: white;
-
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 21px;
-
-    text-align: justified;
-  }
-
-  .Home .Section-3 .Description .Point-3 {
-    width: fit-content;
-
-    display: flex;
-
-    margin-top: 64px;
-    margin-inline: 14px;
-  }
-
-  .Home .Section-3 .Description .Point-3 .Point-Symbol {
-    width: 53px;
-
-    padding: 24px 24px;
-
-    margin-top: auto;
-    margin-bottom: auto;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    border: 0.307419px solid #ffffef;
-    box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13),
-      inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
-    border-radius: 9.83742px;
-  }
-
-  .Home .Section-3 .Description .Point-3 .Point-Symbol #point-img {
-    width: 19px;
-  }
-
-  .Home .Section-3 .Description .Point-3 .Content {
-    width: fit-content;
-
-    margin-left: 36px;
-  }
-
-  .Home .Section-3 .Description .Point-3 .Content #header-txt {
-    color: white;
-
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 26px;
-
-    margin: 0;
-  }
-
-  .Home .Section-3 .Description .Point-3 .Content #desc-txt {
-    color: white;
-
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 21px;
-
-    text-align: justified;
-  }
-
-  /* //////////////////////////////////////////
+/* //////////////////////////////////////////
         Section - 4
 
     */
 
-  .Home .Section-4 {
-    margin-top: 173px;
-  }
+.Home .Section-4 {
+  margin-top: 173px;
+}
 
-  .Home .Section-4 .Illustration {
-    width: fit-content;
+.Home .Section-4 .Illustration {
+  width: fit-content;
 
-    margin-inline: auto;
-  }
+  margin-inline: auto;
+}
 
-  .Home .Section-4 .Illustration #illus-img {
-    width: 83vw;
-  }
+.Home .Section-4 .Illustration #illus-img {
+  width: 83vw;
+}
 
-  .Home .Section-4 .Header {
-    width: fit-content;
+.Home .Section-4 .Content .Header {
+  width: fit-content;
 
-    margin-top: 21.5px;
-    margin-inline: 5vw;
-  }
+  margin-top: 21.5px;
+  margin-inline: 5vw;
+}
 
-  .Home .Section-4 .Header #header-txt {
-    color: white;
+.Home .Section-4 .Content .Header #header-txt {
+  color: white;
 
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 37px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 37px;
 
-    text-align: center;
+  text-align: center;
 
-    margin: 0;
-  }
+  margin: 0;
+}
 
-  .Home .Section-4 .Description {
-    width: fit-content;
+.Home .Section-4 .Content .Description {
+  width: fit-content;
 
-    margin-top: 24px;
-    margin-inline: 5vw;
-  }
+  margin-top: 24px;
+  margin-inline: 5vw;
+}
 
-  .Home .Section-4 .Description #desc-txt {
-    color: white;
+.Home .Section-4 .Content .Description #desc-txt {
+  color: white;
 
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 
-    text-align: justify;
+  text-align: justify;
 
-    margin: 0;
-  }
+  margin: 0;
+}
 
-  .Home .Section-4 .Buttons {
-    width: fit-content;
+.Home .Section-4 .Content .Buttons {
+  width: fit-content;
 
-    display: flex;
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
 
-    gap: 10vw;
+  margin-top: 60px;
+  margin-inline: auto;
+}
 
-    margin-top: 60px;
-    margin-inline: auto;
-  }
+.Home .Section-4 .Content .Buttons .ig-btn {
+  color: white;
 
-  .Home .Section-4 .Buttons .ig-btn {
-    color: white;
+  width: fit-content;
+  height: fit-content;
 
-    width: fit-content;
-    height: fit-content;
+  text-decoration: none;
 
-    text-decoration: none;
+  display: flex;
+  flex-direction: row;
 
-    display: flex;
+  padding: 13px 25px;
 
-    padding: 13px 25px;
+  margin-block: auto;
 
-    margin-block: auto;
+  gap: 6px;
 
-    gap: 6px;
+  background: url('../../../assets/img/Instagram-Button-Background.png');
+  background-size: cover;
 
-    background: url('../../../assets/img/Instagram-Button-Background.png');
-    background-size: cover;
+  filter: drop-shadow(0px 0px 16px rgba(251, 0, 110, 0.3));
+  border-radius: 9999px;
 
-    filter: drop-shadow(0px 0px 16px rgba(251, 0, 110, 0.3));
-    border-radius: 30px;
-  }
+  transition: all 0.3s ease;
+}
 
-  .Home .Section-4 .Buttons .ig-btn #ig-icon {
-    width: 24px;
-  }
+.Home .Section-4 .Content .Buttons .ig-btn:hover {
+  transform: scale(1.1);
+}
 
-  .Home .Section-4 .Buttons .ig-btn #ig-txt {
-    font-weight: 600;
-    font-size: 16px;
+.Home .Section-4 .Content .Buttons .ig-btn #ig-icon {
+  width: 24px;
+}
 
-    margin: 0;
-    margin-block: auto;
-  }
+.Home .Section-4 .Content .Buttons .ig-btn #ig-txt {
+  font-weight: 600;
+  font-size: 16px;
 
-  .Home .Section-4 .Buttons .github-btn {
-    color: black;
+  margin: 0;
+  margin-block: auto;
+}
 
-    width: fit-content;
-    height: fit-content;
+.Home .Section-4 .Content .Buttons .github-btn {
+  color: black;
 
-    text-decoration: none;
+  width: fit-content;
+  height: fit-content;
 
-    display: flex;
+  text-decoration: none;
 
-    padding: 13px 36px;
+  display: flex;
 
-    margin-block: auto;
+  padding: 13px 36px;
 
-    background-color: white;
+  margin-block: auto;
 
-    border: 2px solid #ffffff;
-    border-radius: 30px;
+  background-color: white;
 
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.48);
-  }
+  border: 2px solid #ffffff;
+  border-radius: 9999px;
 
-  .Home .Section-4 .Buttons .github-btn #github-icon {
-    width: 24px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.48);
 
-    margin-right: 8px;
-  }
+  transition: all 0.3s ease;
+}
 
-  .Home .Section-4 .Buttons .github-btn #github-txt {
-    font-weight: 600;
-    font-size: 16px;
+.Home .Section-4 .Content .Buttons .github-btn:hover {
+  transform: scale(1.1);
+}
 
-    margin: 0;
-    margin-block: auto;
-  }
+.Home .Section-4 .Content .Buttons .github-btn #github-icon {
+  width: 24px;
 
-  .Home .Section-5 {
-    margin-top: 136px;
-  }
+  margin-right: 8px;
+}
 
-  .Home .Section-5 .Header {
-    width: fit-content;
+.Home .Section-4 .Content .Buttons .github-btn #github-txt {
+  font-weight: 600;
+  font-size: 16px;
 
-    margin-inline: 10vw;
-  }
+  margin: 0;
+  margin-block: auto;
+}
 
-  .Home .Section-5 .Header #header-txt {
-    color: white;
+.Home .Section-5 {
+  margin-top: 136px;
+  margin-bottom: 136px;
+}
 
-    font-weight: 700;
-    font-size: 28px;
+.Home .Section-5 .Header {
+  width: fit-content;
 
-    text-align: center;
+  margin-bottom: 24px;
+  margin-inline: 10vw;
+}
 
-    margin: 0;
-  }
+.Home .Section-5 .Header #header-txt {
+  color: white;
 
-  .Home .Section-5 .Description {
-    width: fit-content;
+  font-weight: 700;
+  font-size: 28px;
 
-    margin-inline: 14px;
-  }
+  text-align: center;
 
-  .Home .Section-5 .Description #desc-txt {
-    color: white;
+  margin: 0;
+}
 
-    font-weight: 400;
-    font-size: 16px;
+.Home .Section-5 .Description {
+  width: fit-content;
 
-    text-align: justify;
-  }
+  margin-inline: 14px;
+}
 
-  .Home .Section-5 .Register-Button {
-    width: fit-content;
+.Home .Section-5 .Description #desc-txt {
+  color: white;
 
-    margin-top: 37px;
+  font-weight: 400;
+  font-size: 16px;
 
-    margin-left: auto;
-    margin-right: auto;
+  text-align: justify;
+}
 
-    position: relative;
+.Home .Section-5 .Register-Button {
+  width: fit-content;
 
-    display: block;
-    z-index: 5;
-  }
+  margin-top: 37px;
 
-  .Home .Section-5 .Register-Button #regis-btn {
-    color: white;
+  margin-left: auto;
+  margin-right: auto;
 
-    font-weight: 600;
-    font-size: 20px;
+  position: relative;
 
-    text-decoration: none;
+  display: block;
+  z-index: 5;
+}
 
-    padding: 16px 36px;
+.Home .Section-5 .Register-Button #regis-btn {
+  display: block;
 
-    border-radius: 30px;
+  color: white;
 
-    background: linear-gradient(125.57deg, #066aff -9.14%, #062eff 118.98%);
-    box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
+  font-weight: 600;
+  font-size: 20px;
 
-    cursor: none;
-  }
+  text-decoration: none;
 
-  .Home .Section-5 .Register-Button #regis-btn #arrow-logo {
-    margin-right: 7px;
-  }
+  padding: 16px 36px;
 
-  .Home .Section-5 .Activity-Documentation {
-    width: fit-content;
+  border-radius: 30px;
 
-    margin-top: 49px;
-    margin-inline: auto;
-  }
+  background: linear-gradient(125.57deg, #066aff -9.14%, #062eff 118.98%);
+  box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.Home .Section-5 .Register-Button #regis-btn:hover {
+  transform: scale(1.1);
+}
+
+.Home .Section-5 .Register-Button #regis-btn #arrow-logo {
+  margin-right: 7px;
+}
+
+.Home .Section-5 .Activity-Documentation {
+  width: fit-content;
+
+  margin-top: 49px;
+  margin-inline: auto;
+}
+
+.Home .Section-5 .Activity-Documentation #docu-img-desktop {
+  display: none;
+
+  width: 100%;
 }

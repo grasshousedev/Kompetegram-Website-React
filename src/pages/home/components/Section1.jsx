@@ -2,45 +2,48 @@ import React, { Component } from 'react';
 
 import arrowRedirect from '../../../assets/img/Arrow-Redirect.svg';
 import illustration from '../../../assets/img/Illustration-Orbit.svg';
+import illustrationDesktop from '../../../assets/img/Illustration-Orbit-desktop.svg';
 
 class Section1 extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {
+    this.state = {};
 
-        };
+    return;
+  }
 
-        return;
-    }
+  render() {
+    return (
+      <div className="Section-1">
+        <article className="Content">
+          <div className="Header">
+            <h1 id="header-txt">Komunitas, Pemrograman, dan Teknologi</h1>
+          </div>
 
-    render() {
+          <div className="Description">
+            <p id="desc-txt">
+              Untuk menjadi programmer yang baik komunitas merupakan salah satu
+              pendukungnya. Kami menyediakan kerjasama, skill upgrading, dan
+              ide-ide untuk solusi
+            </p>
+          </div>
 
-        return (
-            <div className="Section-1">
-                <div className="Header">
-                    <h1 id="header-txt">Komunitas, Teknologi, dan Pemrograman</h1>
-                </div>
+          <div className="Register-Button">
+            <a href="/" id="regis-btn">
+              <img src={arrowRedirect} alt="" id="arrow-logo" />
+              Daftar
+            </a>
+          </div>
+        </article>
 
-                <div className="Description">
-                    <p id="desc-txt">Untuk menjadi programmer yang baik salah satunya membutuhkan komunitas.
-                        Kami menyediakan kerjasama, skill upgrading, dan ide-ide untuk solusi.
-                    </p>
-                </div>
-
-                <div className="Register-Button">
-                    <a href="/" id="regis-btn">
-                        <img src={arrowRedirect} alt="" id="arrow-logo" />
-                        Daftar
-                    </a>
-                </div>
-
-                <div className="Illustration">
-                    <img src={illustration} alt="" id='illus-img' />
-                </div>
-            </div>
-        );
-    }
+        <div className="Illustration">
+          <img src={illustration} alt="Orbit" id="illus-img" />
+          <img src={illustrationDesktop} alt="Orbit" id="illus-img-desktop" />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Section1;
