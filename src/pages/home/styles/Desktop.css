@@ -1,7 +1,9 @@
 @media screen and (min-width: 992px) {
+
   /*
     Header Section
   */
+
   .Home > .Content > .Header {
     width: fit-content;
 

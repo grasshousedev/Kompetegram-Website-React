@@ -379,7 +379,7 @@
   width: fit-content;
 
   margin-top: 21.5px;
-  margin-inline: 5vw;
+  margin-inline: auto;
 }
 
 .Home .Section-4 .Content .Header #header-txt {
@@ -509,15 +509,18 @@
 }
 
 .Home .Section-5 {
+  width: fit-content;
+
   margin-top: 136px;
   margin-bottom: 136px;
+  margin-inline: 30px;
 }
 
 .Home .Section-5 .Header {
   width: fit-content;
 
   margin-bottom: 24px;
-  margin-inline: 10vw;
+  margin-inline: auto;
 }
 
 .Home .Section-5 .Header #header-txt {
