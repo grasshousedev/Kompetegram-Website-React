@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 
-import codeSym from '../../../assets/img/Code-Symbol.svg';
-import connectionSym from '../../../assets/img/Connection-Symbol.svg';
-import trophySym from '../../../assets/img/Trophy-Symbol.svg';
+// import codeSym from '../../../assets/img/Code-Symbol.svg';
+// import connectionSym from '../../../assets/img/Connection-Symbol.svg';
+// import trophySym from '../../../assets/img/Trophy-Symbol.svg';
+
+import CodeSymbol from './SVG/CodeSymbol';
+import ConnectionSymbol from './SVG/ConnectionSymbol';
+import TrophySymbol from './SVG/TrophySymbol';
 
 class Section3 extends Component {
   constructor(props) {
@@ -21,7 +25,8 @@ class Section3 extends Component {
         <div className="Description">
           <div className="Point Point-1">
             <div className="Point-Symbol">
-              <img src={codeSym} alt="" id="point-img" />
+              {/* <img src={codeSym} alt="" id="point-img" /> */}
+              <CodeSymbol className="Code-Symbol" />
             </div>
 
             <div className="Content">
@@ -35,7 +40,8 @@ class Section3 extends Component {
 
           <div className="Point Point-2">
             <div className="Point-Symbol">
-              <img src={connectionSym} alt="" id="point-img" />
+              {/* <img src={connectionSym} alt="" id="point-img" /> */}
+              <ConnectionSymbol className="Connection-Symbol" />
             </div>
 
             <div className="Content">
@@ -48,7 +54,8 @@ class Section3 extends Component {
 
           <div className="Point Point-3">
             <div className="Point-Symbol">
-              <img src={trophySym} alt="" id="point-img" />
+              {/* <img src={trophySym} alt="" id="point-img" /> */}
+              <TrophySymbol className="Trophy-Symbol" />
             </div>
 
             <div className="Content">
