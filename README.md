@@ -2,11 +2,11 @@
 	<img src="kompetegram.png" width="200" height="200">
 </div>
 
-<br><br>
+<br>
 
 <div align="center">
 	<p>
-		Official Website for Kompetegram. <br>
+		Official Website for Kompetegram <br>
 		(Komunitas Pencinta Teknologi dan Pemrograman)
 	</p>
 	<a href="https://github.com/PROYEK-KOMPETEGRAM">
