@@ -191,7 +191,6 @@
   */
   .Home .Section-3 {
     width: fit-content;
-    border: yellowgreen solid;
     
     margin-top: 241px;
   }
@@ -220,7 +219,6 @@
   }
 
   .Home .Section-3 .Description .Point {
-    border: whitesmoke solid;
     flex-direction: column;
     row-gap: 36px;
     
