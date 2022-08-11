@@ -1,5 +1,4 @@
 @media screen and (min-width: 992px) {
-
   /*
     Header Section
   */
@@ -79,6 +78,8 @@
 
     position: initial;
     z-index: initial;
+
+    justify-content: initial;
   }
 
   .Home .Section-1 .Content .Register-Button #regis-btn {
@@ -187,13 +188,6 @@
     margin-top: 241px;
   }
 
-  /* .Home .Section-3 > .Header {
-    width: fit-content;
-
-    margin-left: auto;
-    margin-right: auto;
-  } */
-
   .Home .Section-3 > .Header #header-txt {
     width: 100%;
     max-width: 492px;
@@ -227,16 +221,24 @@
     max-width: 117.56px;
   }
 
-  .Home .Section-3 .Description .Point.Point-1 .Point-Symbol #point-img {
+  .Home .Section-3 .Description .Point.Point-1 .Point-Symbol .Code-Symbol {
     width: 59.56px;
+    height: 100%;
   }
 
-  .Home .Section-3 .Description .Point.Point-2 .Point-Symbol #point-img {
+  .Home
+    .Section-3
+    .Description
+    .Point.Point-2
+    .Point-Symbol
+    .Connection-Symbol {
     width: 38.88px;
+    height: 100%;
   }
 
-  .Home .Section-3 .Description .Point.Point-3 .Point-Symbol #point-img {
+  .Home .Section-3 .Description .Point.Point-3 .Point-Symbol .Trophy-Symbol {
     width: 31.1px;
+    height: 100%;
   }
 
   .Home .Section-3 .Description .Point .Content {
@@ -326,7 +328,8 @@
     background-position: center;
   }
 
-  .Home .Section-4 .Content .Buttons .ig-btn #ig-icon {
+  .Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon,
+  .Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon-colored {
     width: 100%;
     min-width: 28px;
     aspect-ratio: 1/1;
@@ -340,15 +343,6 @@
 
   .Home .Section-4 .Content .Buttons .github-btn {
     padding: 13px 53.5px;
-
-    margin-block: auto;
-
-    background-color: white;
-
-    border: 2px solid #ffffff;
-    border-radius: 30px;
-
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.48);
   }
 
   .Home .Section-4 .Content .Buttons .github-btn #github-icon {

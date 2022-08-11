@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
 import illustration from '../../../assets/img/Illustration-TeamWork.svg';
-import githubIcon from '../../../assets/img/Github-Icon.svg';
+// import githubIcon from '../../../assets/img/Github-Icon.svg';
 import igIcon from '../../../assets/img/Instagram-Icon.svg';
+import igIconColored from '../../../assets/img/Instagram-Icon-Colored.svg';
+
+import GithubLogo from './SVG/GithubLogo';
 
 class Section4 extends Component {
   constructor(props) {
@@ -33,14 +36,18 @@ class Section4 extends Component {
 
           <div className="Buttons">
             <a href="/" className="ig-btn">
-              <img src={igIcon} alt="" id="ig-icon" />
+              <div className="ig-icon-wrapper">
+                <img src={igIcon} alt="" id="ig-icon" />
+                <img src={igIconColored} alt="" id="ig-icon-colored" />
+              </div>
               <p id="ig-txt">Instagram</p>
             </a>
             <a
               href="https://github.com/PROYEK-KOMPETEGRAM"
               className="github-btn"
             >
-              <img src={githubIcon} alt="" id="github-icon" />
+              {/* <img src={githubIcon} alt="" id="github-icon" /> */}
+              <GithubLogo className="github-logo" />
               <p id="github-txt">Github</p>
             </a>
           </div>

@@ -79,20 +79,25 @@
 }
 
 .Home .Section-1 .Content .Register-Button {
-  width: fit-content;
+  width: 100%;
 
-  margin-top: 58px;
+  margin-top: 48px;
 
   margin-left: auto;
   margin-right: auto;
 
   position: relative;
 
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
   z-index: 5;
 }
 
 .Home .Section-1 .Content .Register-Button #regis-btn {
+  display: block;
+
   color: white;
 
   font-weight: 600;
@@ -103,8 +108,10 @@
   padding: 16px 36px;
 
   border-radius: 30px;
+  border: 2px solid #062eff;
 
   background: linear-gradient(125.57deg, #066aff -9.14%, #062eff 118.98%);
+  background-repeat: no-repeat;
   box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
 
   cursor: pointer;
@@ -113,7 +120,7 @@
 }
 
 .Home .Section-1 .Content .Register-Button #regis-btn:hover {
-  transform: scale(1.1);
+  background-position: 0px 80px;
 }
 
 .Home .Section-1 .Content .Register-Button #regis-btn #arrow-logo {
@@ -134,7 +141,7 @@
   display: block;
   z-index: 3;
 
-  top: -60px;
+  top: -84px;
 }
 
 .Home .Section-1 .Illustration #illus-img-desktop {
@@ -297,6 +304,39 @@
   margin-inline: 14px;
 }
 
+.Home .Section-3 .Description .Point:hover .Point-Symbol {
+  border-color: transparent;
+  box-shadow: 0px 0px 12px rgba(255, 117, 29, 0.1);
+}
+
+.Home .Section-3 .Description .Point.Point-1:hover .Point-Symbol {
+  background-color: #ff751d;
+}
+
+.Home .Section-3 .Description .Point.Point-2:hover .Point-Symbol {
+  background-color: #0756f1;
+}
+
+.Home .Section-3 .Description .Point.Point-3:hover .Point-Symbol {
+  background-color: #01ec51;
+}
+
+.Home .Section-3 .Description .Point.Point-1:hover .Point-Symbol .Code-Symbol,
+.Home
+  .Section-3
+  .Description
+  .Point.Point-2:hover
+  .Point-Symbol
+  .Connection-Symbol,
+.Home
+  .Section-3
+  .Description
+  .Point.Point-3:hover
+  .Point-Symbol
+  .Trophy-Symbol {
+  fill: #ffffef;
+}
+
 .Home .Section-3 .Description .Point .Point-Symbol {
   width: 100%;
   max-width: 72px;
@@ -316,18 +356,29 @@
   box-shadow: 0px 0px 7.37807px rgba(255, 255, 255, 0.13),
     inset 0px 0px 3.68903px rgba(255, 255, 255, 0.15);
   border-radius: 16px;
+
+  transition: all 0.3s ease;
 }
 
-.Home .Section-3 .Description .Point.Point-1 .Point-Symbol #point-img {
+.Home .Section-3 .Description .Point.Point-1 .Point-Symbol .Code-Symbol {
   width: 36px;
+  height: 100%;
+
+  transition: all 0.3s ease;
 }
 
-.Home .Section-3 .Description .Point.Point-2 .Point-Symbol #point-img {
+.Home .Section-3 .Description .Point.Point-2 .Point-Symbol .Connection-Symbol {
   width: 23px;
+  height: 100%;
+
+  transition: all 0.3s ease;
 }
 
-.Home .Section-3 .Description .Point.Point-3 .Point-Symbol #point-img {
+.Home .Section-3 .Description .Point.Point-3 .Point-Symbol .Trophy-Symbol {
   width: 19px;
+  height: 100%;
+
+  transition: all 0.3s ease;
 }
 
 .Home .Section-3 .Description .Point .Content {
@@ -443,19 +494,49 @@
 
   background: url('../../../assets/img/Instagram-Button-Background.png');
   background-size: cover;
+  background-repeat: no-repeat;
 
   filter: drop-shadow(0px 0px 16px rgba(251, 0, 110, 0.3));
   border-radius: 9999px;
+  border: 2px solid #d300c5;
 
   transition: all 0.3s ease;
 }
 
 .Home .Section-4 .Content .Buttons .ig-btn:hover {
-  transform: scale(1.1);
+  background-position: 0px 80px;
 }
 
-.Home .Section-4 .Content .Buttons .ig-btn #ig-icon {
+.Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon,
+.Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon-colored {
   width: 24px;
+}
+
+.Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon-colored {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.Home
+  .Section-4
+  .Content
+  .Buttons
+  .ig-btn:hover
+  .ig-icon-wrapper
+  #ig-icon-colored {
+  opacity: 1;
 }
 
 .Home .Section-4 .Content .Buttons .ig-btn #ig-txt {
@@ -480,7 +561,9 @@
 
   margin-block: auto;
 
-  background-color: white;
+  /* background-color: white; */
+  background-image: linear-gradient(125.57deg, #ffffff -9.14%, #ffffff 118.98%);
+  background-repeat: no-repeat;
 
   border: 2px solid #ffffff;
   border-radius: 9999px;
@@ -491,13 +574,21 @@
 }
 
 .Home .Section-4 .Content .Buttons .github-btn:hover {
-  transform: scale(1.1);
+  color: white;
+  /* background-color: transparent; */
+  background-position: 0px 80px;
 }
 
-.Home .Section-4 .Content .Buttons .github-btn #github-icon {
+.Home .Section-4 .Content .Buttons .github-btn .github-logo {
   width: 24px;
 
   margin-right: 8px;
+
+  transition: all 0.3s ease;
+}
+
+.Home .Section-4 .Content .Buttons .github-btn:hover .github-logo {
+  fill: white;
 }
 
 .Home .Section-4 .Content .Buttons .github-btn #github-txt {
@@ -576,8 +667,10 @@
   padding: 16px 36px;
 
   border-radius: 30px;
+  border: 2px solid #062eff;
 
   background: linear-gradient(125.57deg, #066aff -9.14%, #062eff 118.98%);
+  background-repeat: no-repeat;
   box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
 
   cursor: pointer;
@@ -586,7 +679,7 @@
 }
 
 .Home .Section-5 .Register-Button #regis-btn:hover {
-  transform: scale(1.1);
+  background-position: 0px 80px;
 }
 
 .Home .Section-5 .Register-Button #regis-btn #arrow-logo {
