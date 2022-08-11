@@ -109,14 +109,17 @@
   */
 
   .Home .Section-2 {
-    width: 100%;
+    width: fit-content;
 
     margin-top: 243px;
-    padding: 0 40px;
 
     display: flex;
     flex-direction: row;
     column-gap: 80px;
+    align-items: center;
+    
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .Home .Section-2 .Illustration {
@@ -128,7 +131,7 @@
   }
 
   .Home .Section-2 .Illustration #illus-img {
-    width: 100%;
+    width: 30vw;
 
     margin: 0;
   }
@@ -187,11 +190,13 @@
     Section 3
   */
   .Home .Section-3 {
+    width: fit-content;
+    border: yellowgreen solid;
+    
     margin-top: 241px;
   }
 
   .Home .Section-3 > .Header #header-txt {
-    width: 100%;
     max-width: 492px;
 
     margin: 0;
@@ -199,6 +204,7 @@
 
     font-size: 48px;
     line-height: 130.9%; /* or 63px */
+
   }
 
   .Home .Section-3 .Description {
@@ -209,23 +215,27 @@
 
     display: flex;
     flex-direction: row;
-    column-gap: 43px;
+
+    gap: 40px;
   }
 
   .Home .Section-3 .Description .Point {
+    border: whitesmoke solid;
     flex-direction: column;
     row-gap: 36px;
-
+    
+    padding: 0;
     margin: 0;
   }
 
   .Home .Section-3 .Description .Point .Point-Symbol {
     max-width: 117.56px;
+
+    margin-top: 0;
   }
 
   .Home .Section-3 .Description .Point.Point-1 .Point-Symbol .Code-Symbol {
     width: 59.56px;
-    height: 100%;
   }
 
   .Home
@@ -251,12 +261,17 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 130.9%; /* or 47px */
+
     text-align: center;
   }
 
   .Home .Section-3 .Description .Point .Content #desc-txt {
+
     font-weight: 500;
     font-size: 24px;
+
+    text-align: justify;
+
     line-height: 130.9%; /* or 31px */
   }
 
@@ -264,24 +279,31 @@
     Section 4
   */
   .Home .Section-4 {
+
+    width: fit-content;
+
     margin-top: 318px;
-    padding: 0 40px;
 
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    column-gap: 127px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+
+    gap: 127px
   }
 
   .Home .Section-4 .Illustration {
-    width: 100%;
+    
+    width: fit-content;
     max-width: 484px;
 
     margin: 0;
   }
 
   .Home .Section-4 .Illustration #illus-img {
-    width: 100%;
+    width: 35vw;
   }
 
   .Home .Section-4 .Content {
@@ -353,21 +375,33 @@
 
   .Home .Section-4 .Content .Buttons .github-btn #github-icon {
     width: 100%;
+    
     max-width: 28px;
   }
 
   /*
     Section 5
   */
+
+  .Home .Section-5 {
+    width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
   .Home .Section-5 .Header {
-    width: 100%;
+    width: fit-content;
 
     margin: 0;
+
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 36px;
   }
 
   .Home .Section-5 .Header #header-txt {
-    width: 100%;
     max-width: 489px;
 
     font-size: 48px;
@@ -407,6 +441,10 @@
   }
 
   .Home .Section-5 .Activity-Documentation #docu-img-desktop {
+    width: 85vw;
     display: block;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 }

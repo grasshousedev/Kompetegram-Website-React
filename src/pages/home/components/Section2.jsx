@@ -39,16 +39,6 @@ class Section2 extends Component {
               <p className="number">21</p>
               <p className="text">Kegiatan</p>
             </div>
-
-            <div className="Card Card-3">
-              <p className="number">n</p>
-              <p className="text">proyek</p>
-            </div>
-
-            <div className="Card Card-4">
-              <p className="number">n</p>
-              <p className="text">Lorem</p>
-            </div>
           </div>
         </article>
       </div>
