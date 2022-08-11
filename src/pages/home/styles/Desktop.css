@@ -85,6 +85,8 @@
   .Home .Section-1 .Content .Register-Button #regis-btn {
     display: block;
     width: fit-content;
+
+    cursor: pointer;
   }
 
   .Home .Section-1 .Illustration {
@@ -326,6 +328,8 @@
     gap: 8px;
 
     background-position: center;
+
+    cursor: pointer;
   }
 
   .Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon,
@@ -343,6 +347,8 @@
 
   .Home .Section-4 .Content .Buttons .github-btn {
     padding: 13px 53.5px;
+    
+    cursor: pointer;
   }
 
   .Home .Section-4 .Content .Buttons .github-btn #github-icon {
@@ -390,6 +396,10 @@
 
   .Home .Section-5 .Register-Button {
     margin-top: 24px;
+  }
+
+  .Home .Section-5 .Register-Button #regis-btn {
+    cursor: pointer;
   }
 
   .Home .Section-5 .Activity-Documentation #docu-img {

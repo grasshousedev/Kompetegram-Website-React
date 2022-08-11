@@ -35,7 +35,7 @@ class Section4 extends Component {
           </div>
 
           <div className="Buttons">
-            <a href="/" className="ig-btn">
+            <a href="https://www.instagram.com/kompetegram/" rel="noopener noreferrer" target='_blank' className="ig-btn">
               <div className="ig-icon-wrapper">
                 <img src={igIcon} alt="" id="ig-icon" />
                 <img src={igIconColored} alt="" id="ig-icon-colored" />
@@ -43,8 +43,7 @@ class Section4 extends Component {
               <p id="ig-txt">Instagram</p>
             </a>
             <a
-              href="https://github.com/PROYEK-KOMPETEGRAM"
-              className="github-btn"
+              href="https://github.com/PROYEK-KOMPETEGRAM" rel="noopener noreferrer" target='_blank' className="github-btn"
             >
               {/* <img src={githubIcon} alt="" id="github-icon" /> */}
               <GithubLogo className="github-logo" />

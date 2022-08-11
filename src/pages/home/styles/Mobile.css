@@ -109,18 +109,16 @@
 
   border-radius: 30px;
   border: 2px solid #062eff;
-
+  
   background: linear-gradient(125.57deg, #066aff -9.14%, #062eff 118.98%);
   background-repeat: no-repeat;
   box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
 
-  cursor: pointer;
-
-  transition: all 0.3s ease;
+  cursor: none;
 }
 
 .Home .Section-1 .Content .Register-Button #regis-btn:hover {
-  background-position: 0px 80px;
+  background-image: none;
 }
 
 .Home .Section-1 .Content .Register-Button #regis-btn #arrow-logo {
@@ -500,6 +498,8 @@
   border-radius: 9999px;
   border: 2px solid #d300c5;
 
+  cursor: none;
+
   transition: all 0.3s ease;
 }
 
@@ -518,6 +518,8 @@
 .Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon,
 .Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon-colored {
   width: 24px;
+  
+  transition: all 0.3s ease;
 }
 
 .Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon-colored {
@@ -526,7 +528,6 @@
   left: 0;
 
   opacity: 0;
-  transition: all 0.3s ease;
 }
 
 .Home
@@ -537,6 +538,16 @@
   .ig-icon-wrapper
   #ig-icon-colored {
   opacity: 1;
+}
+
+.Home
+  .Section-4
+  .Content
+  .Buttons
+  .ig-btn:hover
+  .ig-icon-wrapper
+  #ig-icon {
+  opacity: 0;
 }
 
 .Home .Section-4 .Content .Buttons .ig-btn #ig-txt {
@@ -569,6 +580,8 @@
   border-radius: 9999px;
 
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.48);
+
+  cursor: none;
 
   transition: all 0.3s ease;
 }
@@ -673,13 +686,11 @@
   background-repeat: no-repeat;
   box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
 
-  cursor: pointer;
-
-  transition: all 0.3s ease;
+  cursor: none;
 }
 
 .Home .Section-5 .Register-Button #regis-btn:hover {
-  background-position: 0px 80px;
+  background-image: none;
 }
 
 .Home .Section-5 .Register-Button #regis-btn #arrow-logo {
