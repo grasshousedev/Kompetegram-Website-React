@@ -31,7 +31,7 @@
 - Contributor:<br>
   • <a href="https://github.com/Asadaaaaa" target="_blank">
     Mikail Asada
-    </a>
+    </a> <br>
   • <a href="https://github.com/ValdiANS" target="_blank">
     Rivaldi A N S
     </a>
