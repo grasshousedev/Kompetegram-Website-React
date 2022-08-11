@@ -27,7 +27,7 @@
 	<h2>Information</h2>
 </div>
 
-- Preview: https://ktg-web-preview.vercel.appbr>
+- Preview: https://ktg-web-preview.vercel.app <br>
 - Contributor:<br>
   • <a href="https://github.com/Asadaaaaa" target="_blank">
     Mikail Asada
