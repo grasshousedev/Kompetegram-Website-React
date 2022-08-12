@@ -7,7 +7,6 @@
 <div align="center">
 	<p>
 		Official Website for Kompetegram <br>
-		(Komunitas Pencinta Teknologi dan Pemrograman)
 	</p>
 	<a href="https://github.com/PROYEK-KOMPETEGRAM">
         	<img src="https://img.shields.io/badge/-Github-lightgrey" alt="telegram">
