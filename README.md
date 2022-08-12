@@ -28,7 +28,7 @@
 </div>
 
 - Preview: https://ktg-web-preview.vercel.app <br>
-- Contributor:<br>
+- Developer:<br>
   • <a href="https://github.com/Asadaaaaa" target="_blank">
     Mikail Asada
     </a> <br>
