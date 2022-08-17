@@ -509,8 +509,6 @@
 
   border-radius: 9999px;
 
-  cursor: none;
-
   transition: all 0.3s ease;
 }
 
@@ -652,8 +650,6 @@
 
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.48);
 
-  cursor: none;
-
   transition: all 0.3s ease;
 }
 
@@ -755,8 +751,6 @@
   background: linear-gradient(125.57deg, #066aff -9.14%, #062eff 118.98%);
   background-repeat: no-repeat;
   box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
-
-  cursor: none;
 }
 
 .Home .Section-5 .Register-Button #regis-btn:hover {
