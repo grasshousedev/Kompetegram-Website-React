@@ -117,7 +117,7 @@
     flex-direction: row;
     column-gap: 80px;
     align-items: center;
-    
+
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -191,7 +191,7 @@
   */
   .Home .Section-3 {
     width: fit-content;
-    
+
     margin-top: 241px;
   }
 
@@ -203,7 +203,6 @@
 
     font-size: 48px;
     line-height: 130.9%; /* or 63px */
-
   }
 
   .Home .Section-3 .Description {
@@ -221,7 +220,7 @@
   .Home .Section-3 .Description .Point {
     flex-direction: column;
     row-gap: 36px;
-    
+
     padding: 0;
     margin: 0;
   }
@@ -264,7 +263,6 @@
   }
 
   .Home .Section-3 .Description .Point .Content #desc-txt {
-
     font-weight: 500;
     font-size: 24px;
 
@@ -277,7 +275,6 @@
     Section 4
   */
   .Home .Section-4 {
-
     width: fit-content;
 
     margin-top: 318px;
@@ -289,11 +286,10 @@
     margin-left: 40px;
     margin-right: 40px;
 
-    gap: 127px
+    gap: 127px;
   }
 
   .Home .Section-4 .Illustration {
-    
     width: fit-content;
     max-width: 484px;
 
@@ -342,24 +338,20 @@
     margin: 0;
   }
 
-  .Home .Section-4 .Content .Buttons .ig-btn {
-    padding: 13px 36px;
-
-    gap: 8px;
-
-    background-position: center;
-
-    cursor: pointer;
-  }
-
-  .Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon,
-  .Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon-colored {
+  .Home
+    .Section-4
+    .Content
+    .Buttons
+    .ig-btn
+    .ig-btn-content-wrapper
+    .ig-icon-wrapper
+    #ig-icon {
     width: 100%;
     min-width: 28px;
     aspect-ratio: 1/1;
   }
 
-  .Home .Section-4 .Content .Buttons .ig-btn #ig-txt,
+  .Home .Section-4 .Content .Buttons .ig-btn .ig-btn-content-wrapper #ig-txt,
   .Home .Section-4 .Content .Buttons .github-btn #github-txt {
     font-weight: 600;
     font-size: 20px;
@@ -367,13 +359,13 @@
 
   .Home .Section-4 .Content .Buttons .github-btn {
     padding: 13px 53.5px;
-    
+
     cursor: pointer;
   }
 
   .Home .Section-4 .Content .Buttons .github-btn #github-icon {
     width: 100%;
-    
+
     max-width: 28px;
   }
 
@@ -386,7 +378,6 @@
 
     margin-left: auto;
     margin-right: auto;
-
   }
 
   .Home .Section-5 .Header {

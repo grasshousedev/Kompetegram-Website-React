@@ -109,7 +109,7 @@
 
   border-radius: 30px;
   border: 2px solid #062eff;
-  
+
   background: linear-gradient(125.57deg, #066aff -9.14%, #062eff 118.98%);
   background-repeat: no-repeat;
   box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
@@ -474,40 +474,55 @@
 }
 
 .Home .Section-4 .Content .Buttons .ig-btn {
-  color: white;
+  --btn-border-width: 2px;
 
   width: fit-content;
   height: fit-content;
 
+  color: white;
+
   text-decoration: none;
 
+  padding: var(--btn-border-width);
+
+  background-image: linear-gradient(
+    86.71deg,
+    #ff7a00 2.22%,
+    #ff0069 38.36%,
+    #d300c5 105.53%
+  );
+
+  filter: drop-shadow(0px 0px 16px rgba(251, 0, 110, 0.3));
+  border-radius: 9999px;
+}
+
+.Home .Section-4 .Content .Buttons .ig-btn .ig-btn-content-wrapper {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 
   padding: 13px 25px;
 
   margin-block: auto;
 
-  gap: 6px;
-
-  background: url('../../../assets/img/Instagram-Button-Background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  filter: drop-shadow(0px 0px 16px rgba(251, 0, 110, 0.3));
   border-radius: 9999px;
-  border: 2px solid #d300c5;
-
-  cursor: none;
 
   transition: all 0.3s ease;
 }
 
-.Home .Section-4 .Content .Buttons .ig-btn:hover {
-  background-position: 0px 80px;
+.Home .Section-4 .Content .Buttons .ig-btn:hover .ig-btn-content-wrapper {
+  background-color: #110f20;
 }
 
-.Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper {
+.Home
+  .Section-4
+  .Content
+  .Buttons
+  .ig-btn
+  .ig-btn-content-wrapper
+  .ig-icon-wrapper {
   position: relative;
 
   display: flex;
@@ -515,29 +530,65 @@
   align-items: center;
 }
 
-.Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon,
-.Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon-colored {
+.Home
+  .Section-4
+  .Content
+  .Buttons
+  .ig-btn
+  .ig-btn-content-wrapper
+  .ig-icon-wrapper
+  #ig-icon {
   width: 24px;
-  
+
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+}
+
+.Home
+  .Section-4
+  .Content
+  .Buttons
+  .ig-btn
+  .ig-btn-content-wrapper
+  .ig-icon-wrapper
+  #ig-icon-colored-1,
+.Home
+  .Section-4
+  .Content
+  .Buttons
+  .ig-btn
+  .ig-btn-content-wrapper
+  .ig-icon-wrapper
+  #ig-icon-colored-2 {
+  width: 0;
+
+  position: absolute;
+
   transition: all 0.3s ease;
 }
 
-.Home .Section-4 .Content .Buttons .ig-btn .ig-icon-wrapper #ig-icon-colored {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  opacity: 0;
-}
-
 .Home
   .Section-4
   .Content
   .Buttons
-  .ig-btn:hover
+  .ig-btn
+  .ig-btn-content-wrapper
   .ig-icon-wrapper
-  #ig-icon-colored {
-  opacity: 1;
+  #ig-icon-colored-1 {
+  top: 0;
+  right: 0;
+}
+
+.Home
+  .Section-4
+  .Content
+  .Buttons
+  .ig-btn
+  .ig-btn-content-wrapper
+  .ig-icon-wrapper
+  #ig-icon-colored-2 {
+  bottom: 0;
+  left: 0;
 }
 
 .Home
@@ -545,6 +596,26 @@
   .Content
   .Buttons
   .ig-btn:hover
+  .ig-btn-content-wrapper
+  .ig-icon-wrapper
+  #ig-icon-colored-1,
+.Home
+  .Section-4
+  .Content
+  .Buttons
+  .ig-btn:hover
+  .ig-btn-content-wrapper
+  .ig-icon-wrapper
+  #ig-icon-colored-2 {
+  width: 100%;
+}
+
+.Home
+  .Section-4
+  .Content
+  .Buttons
+  .ig-btn:hover
+  .ig-btn-content-wrapper
   .ig-icon-wrapper
   #ig-icon {
   opacity: 0;
@@ -572,24 +643,19 @@
 
   margin-block: auto;
 
-  /* background-color: white; */
-  background-image: linear-gradient(125.57deg, #ffffff -9.14%, #ffffff 118.98%);
-  background-repeat: no-repeat;
+  background-color: #ffffff;
 
   border: 2px solid #ffffff;
   border-radius: 9999px;
 
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.48);
 
-  cursor: none;
-
   transition: all 0.3s ease;
 }
 
 .Home .Section-4 .Content .Buttons .github-btn:hover {
   color: white;
-  /* background-color: transparent; */
-  background-position: 0px 80px;
+  background-color: transparent;
 }
 
 .Home .Section-4 .Content .Buttons .github-btn .github-logo {
@@ -685,8 +751,6 @@
   background: linear-gradient(125.57deg, #066aff -9.14%, #062eff 118.98%);
   background-repeat: no-repeat;
   box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
-
-  cursor: none;
 }
 
 .Home .Section-5 .Register-Button #regis-btn:hover {
