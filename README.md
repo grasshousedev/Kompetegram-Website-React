@@ -23,17 +23,8 @@
 <br><br>
 
 <div align="center">
-	<h2>Information</h2>
+	Preview: https://ktg-web-preview.vercel.app <br>
 </div>
-
-- Preview: https://ktg-web-preview.vercel.app <br>
-- Developer:<br>
-  • <a href="https://github.com/Asadaaaaa" target="_blank">
-    Mikail Asada
-    </a> <br>
-  • <a href="https://github.com/ValdiANS" target="_blank">
-    Rivaldi A N S
-    </a>
 <br>
 <br>
 <p align="center">Kompetegram | 2022</p>
