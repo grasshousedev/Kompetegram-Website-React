@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import arrowRedirect from '../../../assets/img/Arrow-Redirect.svg';
 import illustration from '../../../assets/img/Illustration-Orbit.svg';
 import illustrationDesktop from '../../../assets/img/Illustration-Orbit-desktop.svg';
+import { Link } from 'react-router-dom';
 
 class Section1 extends Component {
   constructor(props) {
@@ -30,10 +31,10 @@ class Section1 extends Component {
           </div>
 
           <div className="Register-Button">
-            <a href="/" id="regis-btn">
+            <Link to="/open-registration" id="regis-btn">
               <img src={arrowRedirect} alt="" id="arrow-logo" />
-              Daftar
-            </a>
+                Daftar
+            </Link>
           </div>
         </article>
 
