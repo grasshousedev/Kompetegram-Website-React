@@ -18,6 +18,7 @@
     <br><br>
     <h3>Features:</h3>
     🔹 Landing Page
+    🔹 Open Registration (Development)
     <br>
     
 <br><br>
