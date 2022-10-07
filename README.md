@@ -17,7 +17,8 @@
 </div>
     <br><br>
     <h3>Features:</h3>
-    🔹 Landing Page
+    🔹 Landing Page <br>
+    🔹 Open Registration (Development)
     <br>
     
 <br><br>
