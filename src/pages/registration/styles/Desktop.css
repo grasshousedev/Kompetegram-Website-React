@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    
+    font-family: "Montserrat";
+    
+}
+
+.Header {
+
+    width: fit-content;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.image {
+
+    width: fit-content;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#headerLogo {
+
+    width: 80vw;
+    height: 83px;
+
+}
+
+#line {
+
+    /* width: 230px; */
+    width: 17vw;
+    height: 3px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+}
+
+.Title {
+
+    width: fit-content;
+
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Title > #header {
+
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+    font-style: normal;
+    font-weight: 900;
+    /* font-size: 60px; */
+    font-size: 5vw;
+}
+
+.Title > #desc {
+
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+    font-weight: 400;
+    font-size: 32px;
+
+    text-align: center;
+}
+
+.Section-1 > .Box-Form {
+
+    width: 70vw;
+    height: fit-content;
+
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Section-1 > .Box-Form > .First {
+
+    display: flex;
+
+    margin-top: 50px;
+
+    gap: 100px;
+}
+
+.Section-1 > .Box-Form > .First > .FullName {
+
+    margin-left: 108px;
+
+}
+
+.Section-1 > .Box-Form > .First > .FullName > .Title {
+
+    display: flex;
+    margin: 0;
+    
+}
+
+.Section-1 > .Box-Form > .First > .FullName > .Title > #text {
+
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.Section-1 > .Box-Form > .First > .FullName > .Title > #requirement {
+
+    color: white;
+    
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.Section-1 > .Box-Form > .First > .FullName > #inpName {
+
+    width: 322px;
+    height: 40px;
+
+    border: solid white;
+    border-width: 2px;
+    border-radius: 10px;
+
+    color: #150E3A;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+    padding: 10px;
+
+    margin: 0;
+    margin-top: 10px;
+
+    font-weight: 400;
+    font-size: 20px;
+
+    outline: none;
+
+}
+
+.Section-1 > .Box-Form > .First > .FullName > #inpName:focus {
+    
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+
+}
+
+.Section-1 > .Box-Form > .First > .FullName > #alert {
+
+    color: #FF1E00;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    margin-top: 10px;
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin {
+
+    width: fit-content;
+    height: fit-content;
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Title {
+
+    display: flex;
+    margin: 0;
+
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Title > #text {
+
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Title > #requirement {
+
+    color: white;
+    
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+
+    margin-left: 10px;
+    margin-top: 7px;
+
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Box {
+
+    width: 322px;
+    height: 40px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+    margin-top: 10px;
+
+    display: flex;
+
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Box > #genderSelected {
+
+    background-color: white;
+
+    border-radius: 7px;
+
+    position: absolute;
+    
+    width: 161px;
+    height: 38px;
+
+    z-index: -1;
+
+    transition: all ease-in-out 300ms;
+
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Box > #man {
+
+    color: #150E3A;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    width: 161px;
+    height: 38px;
+
+    cursor: pointer;
+    
+    text-align: center;
+    line-height: 38px;
+
+    transition: color ease 300ms;
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Box > #woman {
+
+    color: white;
+
+    font-weight: 400;
+    font-size: 20px;
+
+    width: 161px;
+    height: 38px;
+
+    cursor: pointer;
+    
+    text-align: center;
+    line-height: 38px;
+
+    transition: color ease 300ms;
+}
+
+.Section-1 > .Box-Form > .Second {
+
+    display: flex;
+
+    margin-top: 50px;
+
+    gap: 100px;
+
+}
+
+.Section-1 > .Box-Form > .Second > .NIM {
+
+    margin-left: 108px;
+
+}
+
+.Section-1 > .Box-Form > .Second > .NIM > .Title {
+
+    display: flex;
+    margin: 0;
+
+}
+
+.Section-1 > .Box-Form > .Second > .NIM > .Title > #text {
+
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.Section-1 > .Box-Form > .Second > .NIM > .Title > #requirement {
+
+    color: white;
+    
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+
+    margin-left: 10px;
+    margin-top: 7px;
+
+}
+
+.Section-1 > .Box-Form > .Second > .NIM > #inpNim {
+
+    width: 322px;
+    height: 40px;
+
+    border: solid white;
+    border-width: 2px;
+    border-radius: 10px;
+
+    color: #150E3A;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+    padding: 10px;
+    margin-top: 10px;
+
+    font-weight: 400;
+    font-size: 20px;
+
+    outline: none;
+
+}
+
+.Section-1 > .Box-Form > .Second > .NIM > #inpNim:focus {
+    
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+
+
+}
+
+.Section-1 > .Box-Form > .Second > .NIM > #alert {
+
+    color: #FF1E00;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    margin-top: 10px;
+
+}
+
+.Section-1 > .Box-Form > .Second > .Interest > .Title {
+
+    display: flex;
+    margin: 0;
+
+}
+
+.Section-1 > .Box-Form > .Second > .Interest > .Title > #text {
+
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+.Section-1 > .Box-Form > .Second > .Interest > .Title > #requirement {
+
+    color: white;
+    
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+
+    margin-left: 10px;
+    margin-top: 7px;
+
+}
+
+.Section-1 > .Box-Form > .Second > .Interest > #inpInterest {
+
+    width: 322px;
+
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    
+    margin-top: 10px;
+
+}
+
+.Section-1 > .Box-Form > .Second > .Interest > #alert {
+
+    color: #FF1E00;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    margin-top: 10px;
+    
+}
+
+.Section-1 > .Box-Form > .Third {
+
+    margin-top: 50px;
+
+    display: flex;
+
+    gap: 100px;
+
+}
+
+.Section-1 > .Box-Form > .Third > .Email {
+    
+    margin-left: 108px;
+
+}
+
+.Section-1 > .Box-Form > .Third > .Email > .Title {
+
+    display: flex;
+    margin: 0;
+
+}
+
+.Section-1 > .Box-Form > .Third > .Email > .Title > #text {
+
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.Section-1 > .Box-Form > .Third > .Email > .Title > #requirement {
+
+    color: white;
+    
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+
+    margin-left: 10px;
+    margin-top: 7px;
+
+}
+
+.Section-1 > .Box-Form > .Third > .Email > .InputEmail {
+
+    margin-top: 10px;
+
+    display: flex;
+
+}
+
+.Section-1 > .Box-Form > .Third > .Email > .InputEmail > #inpEmail {
+
+    width: 205px;
+    height: 40px;
+
+    border: solid white;
+    border-width: 2px;
+    border-radius: 10px;
+
+    color: #150E3A;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+    padding: 10px;
+
+    font-weight: 400;
+    font-size: 20px;
+
+    outline: none;
+
+}
+
+.Section-1 > .Box-Form > .Third > .Email > .InputEmail > #mailDomain {
+
+    width: 117px;
+    height: 40px;
+
+    color: #150E3A;
+
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+    text-align: center;
+    line-height: 40px;
+
+    border-radius: 10px;
+
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.Section-1 > .Box-Form > .Third > .Email >  #alert {
+
+    color: #FF1E00;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    margin-top: 10px;
+    
+}
+
+.Section-1 > .Box-Form > .Third > .Departments > .Title {
+
+    display: flex;
+    margin: 0;
+
+}
+
+.Section-1 > .Box-Form > .Third > .Departments > .Title > #text {
+    
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.Section-1 > .Box-Form > .Third > .Departments > .Title > #requirement {
+
+    color: white;
+    
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+
+    margin-left: 10px;
+    margin-top: 7px;
+
+}
+
+.Section-1 > .Box-Form > .Third > .Departments > #inpDepartment {
+
+    width: 322px;
+
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    
+    margin-top: 10px;
+
+}
+
+.Section-1 > .Box-Form > .Third > .Departments >  #alert {
+
+    color: #FF1E00;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    margin-top: 10px;
+    
+}
+
+.Section-1 > .Box-Form > .Fourth {
+
+    margin-top: 50px;
+
+    display: flex;
+
+    gap: 100px;
+
+}
+
+.Section-1 > .Box-Form > .Fourth > .WaNum > .Title {
+
+    display: flex;
+    margin: 0;
+
+}
+
+.Section-1 > .Box-Form > .Fourth > .WaNum > .Title > #text {
+
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    
+    font-size: 24px;
+    font-weight: 700;
+
+}
