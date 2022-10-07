@@ -31,7 +31,7 @@ class Section1 extends Component {
           </div>
 
           <div className="Register-Button">
-            <Link to="/open-registration" id="regis-btn">
+            <Link to="/registration" id="regis-btn">
               <img src={arrowRedirect} alt="" id="arrow-logo" />
                 Daftar
             </Link>
