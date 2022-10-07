@@ -1,4 +1,6 @@
-const TrophySymbol = ({ className = '' }) => {
+import React from 'react';
+
+function TrophySymbol({ className = '' }) {
   return (
     <svg
       className={className}
@@ -16,6 +18,6 @@ const TrophySymbol = ({ className = '' }) => {
       />
     </svg>
   );
-};
+}
 
 export default TrophySymbol;
