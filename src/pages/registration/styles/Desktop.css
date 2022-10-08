@@ -578,10 +578,17 @@
 .Section-1 > .Box-Form > .Fourth {
 
     margin-top: 50px;
+    margin-bottom: 50px;
 
     display: flex;
 
     gap: 100px;
+
+}
+
+.Section-1 > .Box-Form > .Fourth > .WaNum {
+    
+    margin-left: 108px;
 
 }
 
@@ -600,4 +607,101 @@
     font-size: 24px;
     font-weight: 700;
 
+}
+
+.Section-1 > .Box-Form > .Fourth > .WaNum > .Title > #requirement {
+
+    color: white;
+    
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+
+    margin-left: 10px;
+    margin-top: 7px;
+
+}
+
+.Section-1 > .Box-Form > .Fourth > .WaNum > #inpWaNum {
+
+    width: 322px;
+    height: 40px;
+
+    border: solid white;
+    border-width: 2px;
+    border-radius: 10px;
+
+    color: #150E3A;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+    padding: 10px;
+    margin-top: 10px;
+
+    font-weight: 400;
+    font-size: 20px;
+
+    outline: none;
+
+}
+
+.Section-1 > .Box-Form > .Fourth > .WaNum > #alert {
+
+    color: #FF1E00;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    margin-top: 10px;
+    
+}
+
+.Section-1 > .Box-Form > .Fourth > .Majors > .Title {
+    
+    display: flex;
+    margin: 0;
+
+}
+
+.Section-1 > .Box-Form > .Fourth > .Majors > .Title #text {
+
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.Section-1 > .Box-Form > .Fourth > .Majors > .Title #requirement {
+
+    color: white;
+    
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+
+    margin-left: 10px;
+    margin-top: 7px;
+
+}
+
+.Section-1 > .Box-Form > .Fourth > .Majors > #inpMajor {
+
+    width: 322px;
+
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    
+    margin-top: 10px;
+
+}
+
+.Section-1 > .Box-Form > .Fourth > .Majors > #alert {
+
+    color: #FF1E00;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    margin-top: 10px;
+    
 }
