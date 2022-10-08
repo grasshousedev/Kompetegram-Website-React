@@ -1,0 +1,757 @@
+* {
+  font-family: "Montserrat";
+}
+
+.Header {
+  width: fit-content;
+  
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  width: fit-content;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#headerLogo {
+  width: 75vw;
+}
+
+#line {
+  width: 20vw;
+  height: 3px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.Title {
+  width: fit-content;
+
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Title > #header {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 5vw;
+}
+
+.Title > #desc {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+  font-weight: 400;
+  font-size: 5vw;
+
+  text-align: center;
+}
+
+.Section-1 {
+  width: fit-content;
+  height: fit-content;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Section-1 > .Box-Form {
+  width: fit-content;
+  height: fit-content;
+
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  
+  margin-top: 50px;
+}
+
+.Section-1 > .Box-Form > .First {
+  width: fit-content;
+  height: fit-content;
+  
+  margin-top: 33px;
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
+.Section-1 > .Box-Form > .First > .FullName {
+  width: fit-content;
+  height: fit-content;
+
+  margin: 0;
+  padding: 0;
+}
+
+.Section-1 > .Box-Form > .First > .FullName > .Title {
+  display: flex;
+  margin: 0;
+}
+
+.Section-1 > .Box-Form > .First > .FullName > .Title > #text {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Section-1 > .Box-Form > .First > .FullName > .Title > #requirement {
+  color: white;
+  
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Section-1 > .Box-Form > .First > .FullName > #inpName {
+  width: 75vw;
+  height: 40px;
+
+  border: solid white;
+  border-width: 2px;
+  border-radius: 10px;
+
+  color: #150E3A;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+  padding: 10px;
+
+  margin: 0;
+  margin-top: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  outline: none;
+
+}
+
+.Section-1 > .Box-Form > .First > .FullName > #inpName:focus {
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.Section-1 > .Box-Form > .First > .FullName > #alert {
+  color: #FF1E00;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  margin-top: 5px;
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin {
+  width: fit-content;
+  height: fit-content;
+
+  margin: 0;
+  margin-top: 33px;
+  padding: 0;
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Title {
+  display: flex;
+  margin: 0;
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Title > #text {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Title > #requirement {
+  color: white;
+  
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Box {
+  width: 75vw;
+  height: 40px;
+
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+  margin-top: 10px;
+
+  display: flex;
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Box > #genderSelected {
+  background-color: white;
+  border-radius: 7px;
+
+  position: absolute;
+  
+  width: 37.5vw;
+  height: 38px;
+
+  z-index: -1;
+
+  transition: all ease-in-out 300ms;
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Box > #man {
+  color: #150E3A;
+
+  font-weight: 700;
+  font-size: 16px;
+
+  width: 37.5vw;
+  height: 38px;
+
+  cursor: none;
+  
+  text-align: center;
+  line-height: 38px;
+
+  transition: color ease 300ms;
+}
+
+.Section-1 > .Box-Form > .First > .JenisKelamin > .Box > #woman {
+  color: white;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  width: 37.5vw;
+  height: 38px;
+
+  cursor: none;
+  
+  text-align: center;
+  line-height: 38px;
+
+  transition: color ease 300ms;
+}
+
+.Section-1 > .Box-Form > .Second {
+  width: fit-content;
+  height: fit-content;
+  
+  margin-top: 33px;
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
+.Section-1 > .Box-Form > .Second > .NIM {
+  width: fit-content;
+  height: fit-content;
+
+  margin: 0;
+  padding: 0;
+}
+
+.Section-1 > .Box-Form > .Second > .NIM > .Title {
+  display: flex;
+  margin: 0;
+}
+
+.Section-1 > .Box-Form > .Second > .NIM > .Title > #text {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Section-1 > .Box-Form > .Second > .NIM > .Title > #requirement {
+  color: white;
+  
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Section-1 > .Box-Form > .Second > .NIM > #inpNim {
+  width: 75vw;
+  height: 40px;
+
+  border: solid white;
+  border-width: 2px;
+  border-radius: 10px;
+
+  color: #150E3A;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+  padding: 10px;
+
+  margin: 0;
+  margin-top: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  outline: none;
+}
+
+.Section-1 > .Box-Form > .Second > .NIM > #inpNim:focus {
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.Section-1 > .Box-Form > .Second > .NIM > #alert {
+
+  color: #FF1E00;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  margin-top: 10px;
+
+}
+
+.Section-1 > .Box-Form > .Second > .Interest {
+  position: absolute;
+
+  width: fit-content;
+  height: fit-content;
+
+  margin: 0;
+  margin-top: 450px;
+  /* margin-top: 33px; */
+  padding: 0;
+}
+
+.Section-1 > .Box-Form > .Second > .Interest > .Title {
+  display: flex;
+  margin: 0;
+}
+
+.Section-1 > .Box-Form > .Second > .Interest > .Title > #text {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Section-1 > .Box-Form > .Second > .Interest > .Title > #requirement {
+  color: white;
+  
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Section-1 > .Box-Form > .Second > .Interest > #inpInterest {
+  width: 75vw;
+  height: 40px;
+
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  
+  margin-top: 10px;
+}
+
+.Section-1 > .Box-Form > .Second > .Interest > #alert {
+  color: #FF1E00;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  margin-top: 10px;
+}
+
+.Section-1 > .Box-Form > .Third {
+  width: fit-content;
+  height: fit-content;
+  
+  margin-top: 33px;
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
+.Section-1 > .Box-Form > .Third > .Email {
+  position: absolute;
+
+  width: fit-content;
+  height: fit-content;
+
+  margin: 0;
+  margin-top: 0px;
+  padding: 0;
+}
+
+.Section-1 > .Box-Form > .Third > .Email > .Title {
+  display: flex;
+  margin: 0;
+}
+
+.Section-1 > .Box-Form > .Third > .Email > .Title > #text {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Section-1 > .Box-Form > .Third > .Email > .Title > #requirement {
+  color: white;
+  
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Section-1 > .Box-Form > .Third > .Email > .InputEmail {
+  margin-top: 10px;
+  display: flex;
+}
+
+.Section-1 > .Box-Form > .Third > .Email > .InputEmail > #inpEmail {
+  width: 50vw;
+  height: 40px;
+
+  border: solid white;
+  border-width: 2px;
+  border-radius: 10px;
+
+  color: #150E3A;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+  padding: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  outline: none;
+}
+
+.Section-1 > .Box-Form > .Third > .Email > .InputEmail > #mailDomain {
+  width: 25vw;
+  height: 40px;
+
+  color: #150E3A;
+
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+  text-align: center;
+  line-height: 40px;
+
+  border-radius: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.Section-1 > .Box-Form > .Third > .Email >  #alert {
+  color: #FF1E00;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  margin-top: 10px;
+}
+
+.Section-1 > .Box-Form > .Third > .Departments {
+  position: absolute;
+
+  width: fit-content;
+  height: fit-content;
+
+  margin: 0;
+  margin-top: 216px;
+  padding: 0;
+}
+
+.Section-1 > .Box-Form > .Third > .Departments > .Title {
+  display: flex;
+  margin: 0;
+}
+
+.Section-1 > .Box-Form > .Third > .Departments > .Title > #text {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Section-1 > .Box-Form > .Third > .Departments > .Title > #requirement {
+  color: white;
+  
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Section-1 > .Box-Form > .Third > .Departments > #inpDepartment {
+  width: 75vw;
+  height: 40px;
+
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  
+  margin-top: 10px;
+}
+
+.Section-1 > .Box-Form > .Third > .Departments >  #alert {
+  color: #FF1E00;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  margin-top: 10px;
+}
+
+.Section-1 > .Box-Form > .Fourth {
+  width: fit-content;
+  height: fit-content;
+  
+  margin-top: 33px;
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
+.Section-1 > .Box-Form > .Fourth > .WaNum {
+  position: absolute;
+
+  width: fit-content;
+  height: fit-content;
+
+  margin: 0;
+  margin-top: 109px;
+  padding: 0;
+}
+
+.Section-1 > .Box-Form > .Fourth > .WaNum > .Title {
+  display: flex;
+  margin: 0;
+}
+
+.Section-1 > .Box-Form > .Fourth > .WaNum > .Title > #text {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Section-1 > .Box-Form > .Fourth > .WaNum > .Title > #requirement {
+  color: white;
+  
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Section-1 > .Box-Form > .Fourth > .WaNum > #inpWaNum {
+  width: 75vw;
+  height: 40px;
+
+  border: solid white;
+  border-width: 2px;
+  border-radius: 10px;
+
+  color: #150E3A;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+  padding: 10px;
+
+  margin: 0;
+  margin-top: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  outline: none;
+}
+
+.Section-1 > .Box-Form > .Fourth > .WaNum > #alert {
+  color: #FF1E00;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  margin-top: 10px;
+}
+
+.Section-1 > .Box-Form > .Fourth > .Majors {
+  position: absolute;
+
+  width: fit-content;
+  height: fit-content;
+
+  margin: 0;
+  margin-top: 321px;
+  /* margin-top: 33px; */
+  padding: 0;
+}
+
+.Section-1 > .Box-Form > .Fourth > .Majors > .Title {
+  display: flex;
+  margin: 0;
+}
+
+.Section-1 > .Box-Form > .Fourth > .Majors > .Title > #text {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Section-1 > .Box-Form > .Fourth > .Majors > .Title #requirement {
+  color: white;
+  
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Section-1 > .Box-Form > .Fourth > .Majors > #inpMajor {
+  width: 75vw;
+  height: 40px;
+
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  
+  margin-top: 10px;
+}
+
+.Section-1 > .Box-Form > .Fourth > .Majors > #alert {
+  color: #FF1E00;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  margin-top: 10px;
+}
+
+.Section-1 > .Box-Form > .Fifth {
+  width: fit-content;
+  height: fit-content;
+  
+  margin-top: 33px;
+  margin-bottom: 33px;
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
+.Section-1 > .Box-Form > .Fifth > .Portfolio {
+  width: fit-content;
+  height: fit-content;
+
+  margin: 0;
+  margin-top: 570px;
+  padding: 0;
+}
+
+.Section-1 > .Box-Form > .Fifth > .Portfolio > .Title {
+  display: flex;
+  margin: 0;
+}
+
+.Section-1 > .Box-Form > .Fifth > .Portfolio > .Title > #text {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Section-1 > .Box-Form > .Fifth > .Portfolio > .Title > #requirement {
+  color: white;
+  
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Section-1 > .Box-Form > .Fifth > .Portfolio > #inpPortfolio {
+  width: 75vw;
+  height: 40px;
+
+  border: solid white;
+  border-width: 2px;
+  border-radius: 10px;
+
+  color: #150E3A;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+  padding: 10px;
+
+  margin: 0;
+  margin-top: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  outline: none;
+}
+
+.Section-1 > .Submit {
+  width: fit-content;
+
+  margin-top: 50px;
+  margin-bottom: 70px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Section-1 > .Submit > #submitBtn {
+  padding: 15px 40px;
+
+  color: #FFFFFF;
+
+  background: linear-gradient(125.57deg, #066AFF -9.14%, #062EFF 118.98%);
+  box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
+  border-radius: 20px;
+
+  font-weight: 700;
+  font-size: 20px;
+}

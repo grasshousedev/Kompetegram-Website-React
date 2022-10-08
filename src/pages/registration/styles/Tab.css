@@ -1,10 +1,10 @@
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   #headerLogo {
-    width: 440px;
+    width: 60vw;
   }
 
   #line {
-    width: 250px;
+    width: 35vw;
     height: 3px;
 
     margin-left: auto;
@@ -27,7 +27,7 @@
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
     
     font-weight: 900;
-    font-size: 64px;
+    font-size: 7vw;
   }
 
   .Title > #desc {
@@ -35,7 +35,7 @@
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 
     font-weight: 400;
-    font-size: 36px;
+    font-size: 4vw;
 
     text-align: center;
   }
@@ -59,9 +59,9 @@
     display: flex;
     margin-top: 50px;
 
-    margin-left: 100px;
-    margin-right: 100px;
-    gap: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    gap: 50px;
   }
 
   .Section-1 > .Box-Form > .First > .FullName {
@@ -230,9 +230,9 @@
     display: flex;
     margin-top: 50px;
 
-    margin-left: 100px;
-    margin-right: 100px;
-    gap: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    gap: 50px;
   }
 
   .Section-1 > .Box-Form > .Second > .NIM {
@@ -364,9 +364,9 @@
     display: flex;
     margin-top: 50px;
 
-    margin-left: 100px;
-    margin-right: 100px;
-    gap: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    gap: 50px;
   }
 
   .Section-1 > .Box-Form > .Third > .Email {
@@ -534,9 +534,9 @@
     display: flex;
     margin-top: 50px;
 
-    margin-left: 100px;
-    margin-right: 100px;
-    gap: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    gap: 50px;
   }
 
   .Section-1 > .Box-Form > .Fourth > .WaNum {
@@ -677,10 +677,10 @@
     display: flex;
     margin-top: 50px;
 
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 50px;
-    gap: 100px;
+    gap: 50px;
   }
 
   .Section-1 > .Box-Form > .Fifth > .Portfolio {
@@ -763,7 +763,7 @@
       background: linear-gradient(125.57deg, #066AFF -9.14%, #062EFF 118.98%);
       box-shadow: 0px 0px 16px rgba(6, 80, 255, 0.35);
       border-radius: 20px;
-      
+
       cursor: pointer;
 
       font-weight: 700;
