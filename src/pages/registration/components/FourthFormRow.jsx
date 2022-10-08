@@ -13,7 +13,7 @@ function FourthFormRow() {
         <p id="alert">alert</p>
       </div>
 
-      <div className="Major">
+      <div className="Majors">
         <div className="Title">
           <p id="text">Program Studi</p>
           <p id="requirement">(required)</p>
