@@ -2,9 +2,19 @@
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
 import React from 'react';
+import axios from 'axios';
 
 function ThirdFormRow({
-  setEmail, departmentsData, isLoadingData, setDepartment, alerts, setAlerts,
+  setEmail,
+  departmentsData,
+  isLoadingData,
+  setLoadingData,
+  department,
+  setDepartment,
+  alerts,
+  setAlerts,
+  setMajorsData,
+  setDisabledInp,
 }) {
   const emailOnChange = (e) => {
     const email = e.currentTarget.value;
@@ -22,11 +32,31 @@ function ThirdFormRow({
     setEmail(email);
   };
 
+  const fetchMajorsData = async (data) => {
+    const url = `https://pemrograman.me/api/v1/departments/${data.value}`;
+
+    axios.get(url).then((res) => {
+      const tempData = [];
+      res.data.data.majors.forEach((val) => {
+        tempData.push({ value: val._id, label: val.name });
+      });
+
+      setLoadingData({ ...isLoadingData, majors: false });
+      setMajorsData(tempData);
+    });
+  };
+
   const departmentsOnChange = (e) => {
     if (e === null || e === undefined) {
       setAlerts({ ...alerts, deparments: '⚠️ Tidak boleh kosong' });
+      setLoadingData({ ...isLoadingData, majors: false });
+      setDisabledInp((data) => ({ ...data, majors: true }));
     } else {
-      setAlerts({ ...alerts, departments: '' });
+      setAlerts({ ...alerts, deparments: '' });
+      setMajorsData([]);
+      fetchMajorsData(e);
+      setLoadingData({ ...isLoadingData, majors: true });
+      setDisabledInp((data) => ({ ...data, majors: false }));
     }
 
     setDepartment(e);
@@ -51,7 +81,16 @@ function ThirdFormRow({
           <p id="text">Fakultas</p>
           <p id="requirement">(required)</p>
         </div>
-        <Select id="inpDepartment" options={departmentsData} placeholder="Pilih fakultas..." onChange={departmentsOnChange} components={makeAnimated()} isClearable isLoading={isLoadingData.deparments} />
+
+        <Select
+          id="inpDepartment"
+          options={departmentsData}
+          placeholder="Pilih fakultas..."
+          onChange={departmentsOnChange}
+          components={makeAnimated()}
+          isClearable
+          isLoading={isLoadingData.deparments}
+        />
         <p id="alert">{alerts.deparments}</p>
       </div>
     </div>
