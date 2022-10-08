@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 
+import { Link } from 'react-router-dom';
 import arrowRedirect from '../../../assets/img/Arrow-Redirect.svg';
 import illustration from '../../../assets/img/Illustration-Orbit.svg';
 import illustrationDesktop from '../../../assets/img/Illustration-Orbit-desktop.svg';
-import { Link } from 'react-router-dom';
 
 class Section1 extends Component {
   constructor(props) {
     super(props);
 
     this.state = {};
-
-    return;
   }
 
   render() {
@@ -33,7 +31,7 @@ class Section1 extends Component {
           <div className="Register-Button">
             <Link to="/registration" id="regis-btn">
               <img src={arrowRedirect} alt="" id="arrow-logo" />
-                Daftar
+              Daftar
             </Link>
           </div>
         </article>

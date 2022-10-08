@@ -1,4 +1,6 @@
-const GithubLogo = ({ className = '' }) => {
+import React from 'react';
+
+function GithubLogo({ className = '' }) {
   return (
     <svg
       className={className}
@@ -44,6 +46,6 @@ const GithubLogo = ({ className = '' }) => {
       />
     </svg>
   );
-};
+}
 
 export default GithubLogo;

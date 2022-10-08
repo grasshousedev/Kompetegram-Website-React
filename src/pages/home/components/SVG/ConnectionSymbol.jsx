@@ -1,4 +1,6 @@
-const ConnectionSymbol = ({ className = '' }) => {
+import React from 'react';
+
+function ConnectionSymbol({ className = '' }) {
   return (
     <svg
       className={className}
@@ -16,6 +18,6 @@ const ConnectionSymbol = ({ className = '' }) => {
       />
     </svg>
   );
-};
+}
 
 export default ConnectionSymbol;

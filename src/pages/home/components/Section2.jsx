@@ -8,6 +8,7 @@ class Section2 extends Component {
 
     this.state = {};
   }
+
   render() {
     return (
       <div className="Section-2">

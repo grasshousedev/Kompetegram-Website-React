@@ -1,4 +1,6 @@
-const CodeSymbol = ({ className = '' }) => {
+import React from 'react';
+
+function CodeSymbol({ className = '' }) {
   return (
     <svg
       className={className}
@@ -61,6 +63,6 @@ const CodeSymbol = ({ className = '' }) => {
       </defs>
     </svg>
   );
-};
+}
 
 export default CodeSymbol;
