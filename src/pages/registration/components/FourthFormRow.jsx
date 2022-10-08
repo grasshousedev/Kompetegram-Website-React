@@ -2,23 +2,21 @@ import React from 'react';
 import Select from 'react-select';
 
 function FourthFormRow({
-  waNum,
   setWaNum,
   isLoadingData,
   isDisabledInp,
   majorsData,
-  setMajorsData,
-  major,
   setMajor,
   alerts,
   setAlerts,
 }) {
+  // Handler
   const waNumOnChanged = (e) => {
     const data = e.currentTarget.value;
 
     if (data === '') {
       setAlerts({ ...alerts, waNum: '⚠️ Tidak boleh kosong' });
-    } else if (!data.match(/[0-9]/g)) {
+    } else if (Number.isNaN(Number(data))) {
       setAlerts({ ...alerts, waNum: '⚠️ Input harus berupa angka' });
     } else if (data.length < 10) {
       setAlerts({ ...alerts, waNum: '⚠️ Panjang nomor tidak valid' });
@@ -39,6 +37,7 @@ function FourthFormRow({
     setMajor(e);
   };
 
+  // Render
   return (
     <div className="Fourth">
       <div className="WaNum">
