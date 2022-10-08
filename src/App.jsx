@@ -6,6 +6,8 @@ import {
 import Home from './pages/home/Home';
 import Opreg from './pages/registration/Main';
 
+import './styles/Global.css'
+
 class App extends Component {
   constructor(props) {
     super(props);
