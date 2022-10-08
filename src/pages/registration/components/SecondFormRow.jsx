@@ -6,12 +6,13 @@ import React from 'react';
 function SecondFormRow({
   setNim, setInterest, alerts, setAlerts, interestData,
 }) {
+  // Handler
   const nimOnChange = (e) => {
     const nim = e.currentTarget.value;
 
     if (nim === '') {
       setAlerts({ ...alerts, nim: '⚠️ Tidak boleh kosong' });
-    } else if (Number.isNaN(nim)) {
+    } else if (Number.isNaN(Number(nim))) {
       setAlerts({ ...alerts, nim: '⚠️ Kamu hanya dapat masukan angka' });
     } else if (nim.length !== 7) {
       setAlerts({ ...alerts, nim: '⚠️ Panjang NIM tidak valid' });
@@ -30,6 +31,7 @@ function SecondFormRow({
     setInterest(e);
   };
 
+  // Render
   return (
     <div className="Second">
       <div className="NIM">
