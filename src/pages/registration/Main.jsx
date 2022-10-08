@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 // Styles
+import './styles/Phone.css';
+import './styles/Tab.css';
 import './styles/Desktop.css';
 
 // Assets
@@ -55,6 +57,7 @@ function Main() {
   const [waNum, setWaNum] = useState('');
   const [majorsData, setMajorsData] = useState([]);
   const [major, setMajor] = useState();
+  const [portfolio, setPortfolio] = useState('')
   const [isLoadingData, setLoadingData] = useState({ deparments: true, majors: false });
   const [isDisabledInp, setDisabledInp] = useState({ majors: true });
 
@@ -70,7 +73,32 @@ function Main() {
       setLoadingData((data) => ({ ...data, deparments: false }));
     });
   }, []);
-
+  
+  // Hanlder
+  const portoOnChanged = (e) => {
+    setPortfolio(e.currentTarget.value)
+  }
+  console.log(
+    "\nName:",
+    fullName,
+    "\nGend:",
+    gender,
+    "\nNIM:",
+    nim,
+    "\nInterest:",
+    interest,
+    "\nEmail:",
+    email,
+    "\nDepart:",
+    department,
+    "\nWA:",
+    waNum,
+    "\nMajor:",
+    major,
+    "\nPorto:",
+    portfolio
+  );
+  
   // Render
   document.title = 'Kompetegram - Registration';
   return (
@@ -115,7 +143,6 @@ function Main() {
             departmentsData={departmentsData}
             isLoadingData={isLoadingData}
             setLoadingData={setLoadingData}
-            department={department}
             setDepartment={setDepartment}
             alerts={alerts}
             setAlerts={setAlerts}
@@ -124,19 +151,16 @@ function Main() {
           />
 
           <FourthFormRow
-            waNum={waNum}
             setWaNum={setWaNum}
             isLoadingData={isLoadingData}
             isDisabledInp={isDisabledInp}
             majorsData={majorsData}
-            setMajorsData={setMajorsData}
-            major={major}
             setMajor={setMajor}
             alerts={alerts}
             setAlerts={setAlerts}
           />
 
-          <div className="Third">
+          <div className="Fifth">
             <div className="Portfolio">
               <div className="Title">
                 <p id="text">Portfolio</p>
@@ -146,14 +170,15 @@ function Main() {
                 type="text"
                 name=""
                 id="inpPortfolio"
-                placeholder="GitHub, LinkedIn, Showwcase, etc."
+                placeholder="GitHub, LinkedIn, dll."
+                onChange={portoOnChanged}
               />
             </div>
           </div>
         </div>
 
-        <div className="button">
-          <div className="Ready-Btn">I&lsquo;M READY</div>
+        <div className="Submit">
+          <div id="submitBtn">I&lsquo;M READY</div>
         </div>
       </div>
     </div>
