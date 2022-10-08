@@ -9,13 +9,13 @@ function ThirdFormRow({
   departmentsData,
   isLoadingData,
   setLoadingData,
-  department,
   setDepartment,
   alerts,
   setAlerts,
   setMajorsData,
   setDisabledInp,
 }) {
+  // Handler
   const emailOnChange = (e) => {
     const email = e.currentTarget.value;
 
@@ -62,6 +62,7 @@ function ThirdFormRow({
     setDepartment(e);
   };
 
+  // Render
   return (
     <div className="Third">
       <div className="Email">
