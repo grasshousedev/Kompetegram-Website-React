@@ -10,14 +10,14 @@ function FirstFormRow({
   const refMan = createRef();
   const refWoman = createRef();
 
-  // Event Handler
+  // Handler
   const manClicked = () => {
     const genderSelected = document.getElementById('genderSelected');
     const manDOM = refMan.current;
     const womanDOM = refWoman.current;
 
     if (!gender.man) {
-      genderSelected.style.marginLeft = '0';
+      genderSelected.style.marginLeft = '0vw';
 
       womanDOM.style.color = '#FFFFFF';
       womanDOM.style.fontWeight = '400';
@@ -36,9 +36,14 @@ function FirstFormRow({
     const genderSelected = document.getElementById('genderSelected');
     const manDOM = refMan.current;
     const womanDOM = refWoman.current;
-
+    const isPhone = window.matchMedia("only screen and (max-width: 767px)");
+    
     if (!gender.woman) {
-      genderSelected.style.marginLeft = '161px';
+      if (isPhone.matches) {
+        genderSelected.style.marginLeft = '37.5vw';
+      } else {
+        genderSelected.style.marginLeft = '161px';
+      }
 
       manDOM.style.color = 'white';
       manDOM.style.fontWeight = '400';
