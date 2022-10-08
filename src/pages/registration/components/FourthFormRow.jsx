@@ -1,7 +1,44 @@
 import React from 'react';
 import Select from 'react-select';
 
-function FourthFormRow() {
+function FourthFormRow({
+  waNum,
+  setWaNum,
+  isLoadingData,
+  isDisabledInp,
+  majorsData,
+  setMajorsData,
+  major,
+  setMajor,
+  alerts,
+  setAlerts,
+}) {
+  const waNumOnChanged = (e) => {
+    const data = e.currentTarget.value;
+
+    if (data === '') {
+      setAlerts({ ...alerts, waNum: '⚠️ Tidak boleh kosong' });
+    } else if (!data.match(/[0-9]/g)) {
+      setAlerts({ ...alerts, waNum: '⚠️ Input harus berupa angka' });
+    } else if (data.length < 10) {
+      setAlerts({ ...alerts, waNum: '⚠️ Panjang nomor tidak valid' });
+    } else {
+      setAlerts({ ...alerts, waNum: '' });
+    }
+
+    setWaNum(data);
+  };
+
+  const majorsOnChanged = (e) => {
+    if (e === undefined || e === null) {
+      setAlerts({ ...alerts, majors: '⚠️ Tidak boleh kosong' });
+    } else {
+      setAlerts({ ...alerts, majors: '' });
+    }
+    console.log(e);
+    setMajor(e);
+  };
+
   return (
     <div className="Fourth">
       <div className="WaNum">
@@ -9,8 +46,8 @@ function FourthFormRow() {
           <p id="text">Nomor WA</p>
           <p id="requirement">(required)</p>
         </div>
-        <input type="text" id="inpWaNum" placeholder="081234567890" />
-        <p id="alert">alert</p>
+        <input type="text" id="inpWaNum" placeholder="081234567890" onChange={waNumOnChanged} />
+        <p id="alert">{alerts.waNum}</p>
       </div>
 
       <div className="Majors">
@@ -18,8 +55,17 @@ function FourthFormRow() {
           <p id="text">Program Studi</p>
           <p id="requirement">(required)</p>
         </div>
-        <Select id="inpMajor" options={[]} placeholder="Pilih prodi..." isClearable isDisabled />
-        <p id="alert">alert</p>
+
+        <Select
+          id="inpMajor"
+          options={majorsData}
+          placeholder="Pilih prodi..."
+          onChange={majorsOnChanged}
+          isClearable
+          isDisabled={isDisabledInp.majors}
+          isLoading={isLoadingData.majors}
+        />
+        <p id="alert">{alerts.majors}</p>
       </div>
     </div>
   );
