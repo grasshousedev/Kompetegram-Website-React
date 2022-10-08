@@ -28,7 +28,7 @@ function Main() {
     { value: '7', label: 'Game Designer' },
     { value: '8', label: 'Game Developer' },
     { value: '9', label: 'IOS Developer' },
-    { value: '10', label: 'Internet of Things' },
+    { value: '10', label: 'IoT Developer' },
     { value: '11', label: 'Machine Learning' },
     { value: '12', label: 'UI/UX' },
     { value: '13', label: 'Web Developer' },
@@ -37,7 +37,13 @@ function Main() {
 
   // Hook State Data
   const [alerts, setAlerts] = useState({
-    fullName: '', nim: '', interest: '', email: '', departments: '',
+    fullName: '',
+    nim: '',
+    interest: '',
+    email: '',
+    departments: '',
+    waNum: '',
+    majors: '',
   });
   const [fullName, setFullName] = useState('');
   const [gender, setGender] = useState({ man: true, woman: false });
@@ -45,8 +51,12 @@ function Main() {
   const [interest, setInterest] = useState([]);
   const [email, setEmail] = useState('');
   const [departmentsData, setDepartmentsData] = useState([]);
-  const [department, setDepartment] = useState(undefined);
-  const [isLoadingData, setLoadingData] = useState({ deparments: true, major: true });
+  const [department, setDepartment] = useState();
+  const [waNum, setWaNum] = useState('');
+  const [majorsData, setMajorsData] = useState([]);
+  const [major, setMajor] = useState();
+  const [isLoadingData, setLoadingData] = useState({ deparments: true, majors: false });
+  const [isDisabledInp, setDisabledInp] = useState({ majors: true });
 
   // On First Mount
   useEffect(() => {
@@ -57,7 +67,7 @@ function Main() {
       });
 
       setDepartmentsData(tempData);
-      setLoadingData({ deparments: false });
+      setLoadingData((data) => ({ ...data, deparments: false }));
     });
   }, []);
 
@@ -104,13 +114,42 @@ function Main() {
             setEmail={setEmail}
             departmentsData={departmentsData}
             isLoadingData={isLoadingData}
+            setLoadingData={setLoadingData}
             department={department}
             setDepartment={setDepartment}
             alerts={alerts}
             setAlerts={setAlerts}
+            setMajorsData={setMajorsData}
+            setDisabledInp={setDisabledInp}
           />
 
-          <FourthFormRow />
+          <FourthFormRow
+            waNum={waNum}
+            setWaNum={setWaNum}
+            isLoadingData={isLoadingData}
+            isDisabledInp={isDisabledInp}
+            majorsData={majorsData}
+            setMajorsData={setMajorsData}
+            major={major}
+            setMajor={setMajor}
+            alerts={alerts}
+            setAlerts={setAlerts}
+          />
+
+          <div className="Third">
+            <div className="Portfolio">
+              <div className="Title">
+                <p id="text">Portfolio</p>
+                <p id="requirement">(optional)</p>
+              </div>
+              <input
+                type="text"
+                name=""
+                id="inpPortfolio"
+                placeholder="GitHub, LinkedIn, Showwcase, etc."
+              />
+            </div>
+          </div>
         </div>
 
         <div className="button">
