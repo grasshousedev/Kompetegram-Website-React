@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, createRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 // Styles
@@ -57,52 +58,214 @@ function Main() {
   const [waNum, setWaNum] = useState('');
   const [majorsData, setMajorsData] = useState([]);
   const [major, setMajor] = useState();
-  const [portfolio, setPortfolio] = useState('')
-  const [isLoadingData, setLoadingData] = useState({ deparments: true, majors: false });
+  const [portfolio, setPortfolio] = useState('');
+  const [isLoadingData, setLoadingData] = useState({ departments: true, majors: false });
   const [isDisabledInp, setDisabledInp] = useState({ majors: true });
+
+  // Hook Ref
+  const popUpBlockRef = createRef();
+  const alertResponseRef = createRef();
+  const section1Ref = createRef();
+  const submitBtnRef = createRef();
+  const loadingRef = createRef();
+
+  // Navigation
+  const navigate = useNavigate();
 
   // On First Mount
   useEffect(() => {
-    axios.get('https://pemrograman.me/api/v1/departments').then((res) => {
-      const tempData = [];
-      res.data.data.forEach((val) => {
-        tempData.push({ value: val._id, label: val.name });
-      });
+    axios.get('https://pemrograman.me/api/v1/departments', { timeout: 10000 }).then((res) => {
+      if (res.status === 200) {
+        const tempData = [];
 
-      setDepartmentsData(tempData);
-      setLoadingData((data) => ({ ...data, deparments: false }));
+        res.data.data.forEach((val) => {
+          tempData.push({ value: val._id, label: val.name });
+        });
+
+        setDepartmentsData(tempData);
+        setLoadingData((data) => ({ ...data, departments: false }));
+      }
+    }).catch((err) => {
+      if (err.code === 'ERR_NETWORK') {
+        alertResponseRef.current.innerHTML = '<p style="color: white">Tidak ada koneksi. Harap periksa jaringan anda lalu refresh halaman ini</p>';
+        alertResponseRef.current.style.display = 'block';
+        popUpBlockRef.current.style.display = 'block';
+        alertResponseRef.current.scrollIntoView();
+      } else if (err.code === 'ECONNABORTED') {
+        alertResponseRef.current.innerHTML = '<p style="color: white">Koneksi timeout. Harap periksa jaringan anda lalu refresh halaman ini</p>';
+        alertResponseRef.current.style.display = 'block';
+        popUpBlockRef.current.style.display = 'block';
+        alertResponseRef.current.scrollIntoView();
+      } else if (err.response.status >= 400 && err.response.status < 500) {
+        alertResponseRef.current.innerHTML = `<p style="color: white">Error ${err.response.status}. Harap periksa jaringan anda lalu refresh halaman ini</p>`;
+        alertResponseRef.current.style.display = 'block';
+        popUpBlockRef.current.style.display = 'block';
+        alertResponseRef.current.scrollIntoView();
+      }
     });
   }, []);
-  
+
   // Hanlder
   const portoOnChanged = (e) => {
-    setPortfolio(e.currentTarget.value)
-  }
-  console.log(
-    "\nName:",
-    fullName,
-    "\nGend:",
-    gender,
-    "\nNIM:",
-    nim,
-    "\nInterest:",
-    interest,
-    "\nEmail:",
-    email,
-    "\nDepart:",
-    department,
-    "\nWA:",
-    waNum,
-    "\nMajor:",
-    major,
-    "\nPorto:",
-    portfolio
-  );
-  
+    setPortfolio(e.currentTarget.value);
+  };
+
+  const submitOnClicked = () => {
+    let isFormValid = true;
+    let genderStr = '';
+    const tempAlerts = {
+      fullName: '',
+      nim: '',
+      interest: '',
+      email: '',
+      departments: '',
+      waNum: '',
+      majors: '',
+    };
+
+    if (!fullName.match(/^[a-zA-Z\s]+$/g)) {
+      isFormValid = false;
+      tempAlerts.fullName = '⚠️ Kamu hanya dapat input alfebet dan spasi';
+    } else if (fullName === '') {
+      isFormValid = false;
+      tempAlerts.fullName = '⚠️ Tidak boleh kosong';
+    }
+
+    if (gender.man === true) {
+      genderStr = 'Man';
+    } else if (gender.woman === true) {
+      genderStr = 'Woman';
+    }
+
+    if (nim === '') {
+      isFormValid = false;
+      tempAlerts.nim = '⚠️ Tidak boleh kosong';
+    } else if (!nim.match(/^[0-9]+$/g)) {
+      isFormValid = false;
+      tempAlerts.nim = '⚠️ Kamu hanya dapat masukan angka';
+    } else if (nim.length !== 7) {
+      isFormValid = false;
+      tempAlerts.nim = '⚠️ Panjang NIM tidak valid';
+    }
+
+    if (interest.length < 1) {
+      isFormValid = false;
+      tempAlerts.interest = '⚠️ Tidak boleh kosong';
+    }
+
+    if (email === '') {
+      isFormValid = false;
+      tempAlerts.email = '⚠️ Tidak boleh kosong';
+    } else if (email[0] === '.' || email[email.length] === '.') {
+      isFormValid = false;
+      tempAlerts.email = '⚠️ Email tidak valid';
+    } else if (!email.match(/^[a-z.0-9]+$/g)) {
+      isFormValid = false;
+      tempAlerts.email = '⚠️ Email tidak valid';
+    }
+
+    if (department === null || department === undefined) {
+      isFormValid = false;
+      tempAlerts.departments = '⚠️ Tidak boleh kosong';
+    }
+
+    if (waNum === '') {
+      isFormValid = false;
+      tempAlerts.waNum = '⚠️ Tidak boleh kosong';
+    } else if (!waNum.match(/^[0-9]+$/g)) {
+      isFormValid = false;
+      tempAlerts.waNum = '⚠️ Input harus berupa angka';
+    } else if (waNum.length < 10) {
+      isFormValid = false;
+      tempAlerts.waNum = '⚠️ Panjang nomor tidak valid';
+    }
+
+    if (major === undefined || major === null) {
+      tempAlerts.majors = '⚠️ Tidak boleh kosong';
+    }
+
+    if (isFormValid === false) {
+      setAlerts(tempAlerts);
+      section1Ref.current.scrollIntoView();
+    } else {
+      submitBtnRef.current.style.display = 'none';
+      loadingRef.current.style.display = 'block';
+      popUpBlockRef.current.style.display = 'block';
+
+      const data = {
+        name: fullName,
+        nim,
+        email: `${email}@upi.edu`,
+        gender: genderStr,
+        major: major.label,
+        department: department.label,
+        phone: waNum,
+        interests: interest.map((val) => val.label),
+        portfolio,
+      };
+
+      axios.post('https://pemrograman.me/api/v1/members', data, { timeout: 10000 }).then((res) => {
+        if (res.status === 200) {
+          navigate({
+            pathname: '/registration/verifySent',
+            search: `?userId=${res.data.data.userId}&resendToken=${res.data.data.resendToken}`,
+          });
+        }
+      }).catch((err) => {
+        if (err.code === 'ERR_NETWORK') {
+          alertResponseRef.current.innerHTML = '<p style="color: white">Tidak ada koneksi. Harap periksa jaringan anda lalu refresh halaman ini</p>';
+          alertResponseRef.current.style.display = 'block';
+          popUpBlockRef.current.style.display = 'block';
+          alertResponseRef.current.scrollIntoView();
+        } else if (err.code === 'ECONNABORTED') {
+          alertResponseRef.current.innerHTML = '<p style="color: white">Koneksi timeout. Harap periksa jaringan anda lalu refresh halaman ini</p>';
+          alertResponseRef.current.style.display = 'block*=';
+          popUpBlockRef.current.style.display = 'block';
+          alertResponseRef.current.scrollIntoView();
+        } else if (err.response.data.success === false) {
+          if (err.response.data.message.length > 0) {
+            const existsDataAlerts = {
+              nim: '',
+              email: '',
+              waNum: '',
+            };
+
+            if (err.response.data.message.includes('NIM already registered')) {
+              existsDataAlerts.nim = '⚠️ NIM sudah pernah terdaftar';
+            }
+            if (err.response.data.message.includes('Email already registered')) {
+              existsDataAlerts.email = '⚠️ Email sudah pernah terdaftar';
+            }
+            if (err.response.data.message.includes('Phone already registered')) {
+              existsDataAlerts.waNum = '⚠️ Nomor sudah pernah terdaftar';
+            }
+
+            setAlerts({ ...alerts, ...existsDataAlerts });
+            alertResponseRef.current.innerHTML = '<p style="color: white">Data diri yang kamu input sudah terdaftar. Jika ini merupakan suatu kesalahan harap hubungi Contact Person: <a style="color: #3120E0" href="https://wa.me/6289661287927">Adrian</a> | <a style="color: #3120E0" href="https://wa.me/6281381168928">Vano</a></p>';
+            alertResponseRef.current.style.display = 'block';
+            alertResponseRef.current.scrollIntoView();
+            loadingRef.current.style.display = 'none';
+            submitBtnRef.current.style.display = 'block';
+            popUpBlockRef.current.style.display = 'none';
+          }
+        } else if (err.response.status === 400) {
+          alertResponseRef.current.innerHTML = '<p style="color: white">Error Bad Request. Harap periksa inputan anda dengan teliti, periksa jaringan anda, atau refresh halaman ini</p>';
+          alertResponseRef.current.style.display = 'block';
+          alertResponseRef.current.scrollIntoView();
+          loadingRef.current.style.display = 'none';
+          submitBtnRef.current.style.display = 'block';
+          popUpBlockRef.current.style.display = 'none';
+        }
+      });
+    }
+  };
+
   // Render
   document.title = 'Kompetegram - Registration';
   return (
     <div className="Main">
+      <div className="popUpBlock" ref={popUpBlockRef} />
+
       <div className="Header">
         <div className="image">
           <img src={headerLogo} alt="" id="headerLogo" />
@@ -114,7 +277,8 @@ function Main() {
         </div>
       </div>
 
-      <div className="Section-1">
+      <div className="Section-1" ref={section1Ref}>
+        <div className="alertResponse" ref={alertResponseRef} />
 
         <div className="Box-Form">
 
@@ -178,7 +342,19 @@ function Main() {
         </div>
 
         <div className="Submit">
-          <div id="submitBtn">I&lsquo;M READY</div>
+          <button type="button" id="submitBtn" ref={submitBtnRef} onClick={submitOnClicked}>I&lsquo;M READY</button>
+          <div className="loading" ref={loadingRef}>
+            <div className="lds-roller">
+              <div />
+              <div />
+              <div />
+              <div />
+              <div />
+              <div />
+              <div />
+              <div />
+            </div>
+          </div>
         </div>
       </div>
     </div>
