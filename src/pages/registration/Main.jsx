@@ -1,5 +1,6 @@
 import React, { useState, useEffect, createRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ReCAPTCHA from 'react-google-recaptcha';
 import axios from 'axios';
 
 // Styles
@@ -62,6 +63,9 @@ function Main() {
   const [isLoadingData, setLoadingData] = useState({ departments: true, majors: false });
   const [isDisabledInp, setDisabledInp] = useState({ majors: true });
 
+  const [buttonDisable, setButtonDisable] = useState(true);
+  const [captchaToken, setCaptchaToken] = useState('');
+
   // Hook Ref
   const popUpBlockRef = createRef();
   const alertResponseRef = createRef();
@@ -71,6 +75,9 @@ function Main() {
 
   // Navigation
   const navigate = useNavigate();
+
+  // CAPCTHA SiteKey
+  const SITE_KEY = "6LcOO2kiAAAAALkcSRRv44yqaS1GVPn6d6m7HwoJ";
 
   // On First Mount
   useEffect(() => {
@@ -109,6 +116,12 @@ function Main() {
   const portoOnChanged = (e) => {
     setPortfolio(e.currentTarget.value);
   };
+
+  const onSuccessCaptcha = (token) => {
+    setButtonDisable(false);
+    setCaptchaToken(token);
+    console.log(token);
+  }
 
   const submitOnClicked = () => {
     let isFormValid = true;
@@ -204,7 +217,9 @@ function Main() {
         portfolio,
       };
 
-      axios.post('https://pemrograman.me/api/v1/members', data, { timeout: 10000 }).then((res) => {
+      axios.post('https://pemrograman.me/api/v1/members', data, 
+        { timeout: 10000, headers: { captcha: captchaToken } }
+      ).then((res) => {
         if (res.status === 200) {
           navigate({
             pathname: '/registration/verifySent',
@@ -256,8 +271,14 @@ function Main() {
           submitBtnRef.current.style.display = 'block';
           popUpBlockRef.current.style.display = 'none';
         }
+
+        window.grecaptcha.reset();
+        setButtonDisable(true);
+        
       });
+      
     }
+
   };
 
   // Render
@@ -341,8 +362,26 @@ function Main() {
           </div>
         </div>
 
+        <div id="captcha-box">
+          <ReCAPTCHA
+            sitekey={SITE_KEY}
+            onChange={onSuccessCaptcha}
+            onExpired={() => setButtonDisable(true)}
+            onErrored={() => setButtonDisable(true)}
+            theme="light"
+          />
+        </div>
+
         <div className="Submit">
-          <button type="button" id="submitBtn" ref={submitBtnRef} onClick={submitOnClicked}>I&lsquo;M READY</button>
+          <button 
+            disabled={buttonDisable}
+            type="button" 
+            id={buttonDisable ? 'submitBtnDisable' : 'submitBtn'}
+            ref={submitBtnRef} 
+            onClick={submitOnClicked}
+          >
+            I&lsquo;M READY
+          </button>
           <div className="loading" ref={loadingRef}>
             <div className="lds-roller">
               <div />
