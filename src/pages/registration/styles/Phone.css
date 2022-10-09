@@ -33,7 +33,7 @@
 }
 
 #headerLogo {
-  width: 75vw;
+  width: 50vw;
 }
 
 #line {
@@ -61,7 +61,7 @@
 
   font-style: normal;
   font-weight: 900;
-  font-size: 5vw;
+  font-size: 7vw;
 }
 
 .Title > #desc {
