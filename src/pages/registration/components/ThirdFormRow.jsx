@@ -18,12 +18,12 @@ function ThirdFormRow({
   // Handler
   const emailOnChange = (e) => {
     const email = e.currentTarget.value;
-
-    if (email.length < 0) {
+    
+    if (email.length === "") {
       setAlerts({ ...alerts, email: '⚠️ Tidak boleh kosong' });
-    } else if (email[0] === '.' || email[email.length] === '.') {
+    } else if (email[0] === '.' || email[email.length - 1] === '.') {
       setAlerts({ ...alerts, email: '⚠️ Email tidak valid' });
-    } else if (!email.match(/[a-z.0-9]/g)) {
+    } else if (!email.match(/^[a-z.0-9]+$/g)) {
       setAlerts({ ...alerts, email: '⚠️ Email tidak valid' });
     } else {
       setAlerts({ ...alerts, email: '' });
@@ -48,11 +48,11 @@ function ThirdFormRow({
 
   const departmentsOnChange = (e) => {
     if (e === null || e === undefined) {
-      setAlerts({ ...alerts, deparments: '⚠️ Tidak boleh kosong' });
+      setAlerts({ ...alerts, departments: '⚠️ Tidak boleh kosong' });
       setLoadingData({ ...isLoadingData, majors: false });
       setDisabledInp((data) => ({ ...data, majors: true }));
     } else {
-      setAlerts({ ...alerts, deparments: '' });
+      setAlerts({ ...alerts, departments: '' });
       setMajorsData([]);
       fetchMajorsData(e);
       setLoadingData({ ...isLoadingData, majors: true });
@@ -90,9 +90,9 @@ function ThirdFormRow({
           onChange={departmentsOnChange}
           components={makeAnimated()}
           isClearable
-          isLoading={isLoadingData.deparments}
+          isLoading={isLoadingData.departments}
         />
-        <p id="alert">{alerts.deparments}</p>
+        <p id="alert">{alerts.departments}</p>
       </div>
     </div>
   );

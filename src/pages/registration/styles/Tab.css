@@ -40,6 +40,35 @@
     text-align: center;
   }
 
+  .Section-1 {
+      
+    margin-top: 50px;
+  
+  }
+
+  .Section-1 > .alertResponse {
+    width: 600px;
+    height: fit-content;
+  
+    background-color: #E26868;
+  
+    border-radius: 5px;
+  
+    font-size: 12px;
+    font-weight: 500;
+  
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+  
+    display: none;
+  }
+
   .Section-1 > .Box-Form {
     width: fit-content;
     height: fit-content;
@@ -49,8 +78,7 @@
 
     border: 1px solid #FFFFFF;
     border-radius: 20px;
-      
-    margin-top: 50px;
+
     margin-right: auto;
     margin-left: auto;
   }
