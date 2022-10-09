@@ -16,7 +16,7 @@ function FourthFormRow({
 
     if (data === '') {
       setAlerts({ ...alerts, waNum: '⚠️ Tidak boleh kosong' });
-    } else if (Number.isNaN(Number(data))) {
+    } else if (!data.match(/^[0-9]+$/g)) {
       setAlerts({ ...alerts, waNum: '⚠️ Input harus berupa angka' });
     } else if (data.length < 10) {
       setAlerts({ ...alerts, waNum: '⚠️ Panjang nomor tidak valid' });
@@ -33,7 +33,6 @@ function FourthFormRow({
     } else {
       setAlerts({ ...alerts, majors: '' });
     }
-    console.log(e);
     setMajor(e);
   };
 
