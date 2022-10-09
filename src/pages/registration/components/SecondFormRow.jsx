@@ -12,7 +12,7 @@ function SecondFormRow({
 
     if (nim === '') {
       setAlerts({ ...alerts, nim: '⚠️ Tidak boleh kosong' });
-    } else if (Number.isNaN(Number(nim))) {
+    } else if (!nim.match(/^[0-9]+$/g)) {
       setAlerts({ ...alerts, nim: '⚠️ Kamu hanya dapat masukan angka' });
     } else if (nim.length !== 7) {
       setAlerts({ ...alerts, nim: '⚠️ Panjang NIM tidak valid' });
@@ -26,6 +26,8 @@ function SecondFormRow({
   const interestOnChange = (e) => {
     if (e.length < 1) {
       setAlerts({ ...alerts, interest: '⚠️ Tidak boleh kosong' });
+    } else {
+      setAlerts({ ...alerts, interest: '' });
     }
 
     setInterest(e);
