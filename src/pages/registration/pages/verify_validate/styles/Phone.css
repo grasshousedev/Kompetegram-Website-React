@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.RegistrationVerifValidate {
+  margin: 0;
+  padding: 0%;
+
+  font-family: "Montserrat";
+}
+
+.RegistrationVerifValidate > .Header {
+  width: fit-content;
+  height: fit-content;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.RegistrationVerifValidate > .Header > .HeaderLogo {
+  width: fit-content;
+  height: fit-content;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.RegistrationVerifValidate > .Header > .HeaderLogo > #image {
+  width: 50vw;
+}
+
+.RegistrationVerifValidate > .Header > #line {
+  width: 100vw;
+}
+
+.RegistrationVerifValidate > .Header > .Title {
+  width: fit-content;
+
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.RegistrationVerifValidate > .Header > .Title > #header {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 7vw;
+}
+
+.RegistrationVerifValidate > .Header > .Title > #desc {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+  font-weight: 400;
+  font-size: 5vw;
+
+  text-align: center;
+}
+
+.RegistrationVerifValidate > .Content {
+  width: fit-content;
+  height: fit-content;
+
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.RegistrationVerifValidate > .Content > .Box {
+  width: fit-content;
+  height: fit-content;
+
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+.RegistrationVerifValidate > .Content > .Box > .CheckLogo {
+  width: fit-content;
+  height: fit-content;
+
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.RegistrationVerifValidate > .Content > .Box > .CheckLogo > #image {
+  width: 75px;
+}
+
+.RegistrationVerifValidate > .Content > .Box > #title {
+  color: #FFFFFF;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+
+  text-align: center;
+  
+  font-weight: 700;
+  font-size: 24px;
+
+  margin-top: 30px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.RegistrationVerifValidate > .Content > .Box > #desc {
+  color: white;
+
+  margin-top: 30px;
+  margin-left: 4vw;
+  margin-right: 4vw;
+
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.RegistrationVerifValidate > .Content > .Box > #whatsappBtn {
+  width: fit-content;
+  height: fit-content;
+
+  background: linear-gradient(94.42deg, #01EC51 0%, #25D366 100%);
+  box-shadow: 0px 0px 23px rgba(1, 236, 81, 0.35);
+  border: none;
+  border-radius: 15px;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-top: 30px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-decoration: none;
+
+  outline: none;
+
+  gap: 10px;
+
+  display: flex;
+}
+
+.RegistrationVerifValidate > .Content > .Box > #whatsappBtn > #image {
+  width: 40px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.RegistrationVerifValidate > .Content > .Box > #whatsappBtn > #text {
+  color: white;
+
+  font-weight: 600;
+  font-size: 20px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}

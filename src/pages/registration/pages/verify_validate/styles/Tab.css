@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .RegistrationVerifValidate > .Header > .HeaderLogo > #image {
+    width: 300px;
+  }
+
+  .RegistrationVerifValidate > .Header > .Title > #header {
+    font-size: 45px;
+  }
+
+  .RegistrationVerifValidate > .Header > .Title > #desc {
+    font-size: 30px;
+  }
+
+  .RegistrationVerifValidate > .Content > .Box {
+    min-width: 600px;
+    max-width: 670px;
+  }
+}
