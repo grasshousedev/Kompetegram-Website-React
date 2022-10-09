@@ -5,6 +5,7 @@ import {
 
 import Home from './pages/home/Home';
 import Opreg from './pages/registration/Main';
+import OpregVerifySent from './pages/registration/pages/verify_sent/Main';
 
 import './styles/Global.css'
 
@@ -22,6 +23,7 @@ class App extends Component {
             <Route exact path="/" element={<Navigate to="/home" />} />
             <Route exact path="/home" element={<Home />} />
             <Route exact path="/registration" element={<Opreg />} />
+            <Route exact path="/registration/verifySent" element={<OpregVerifySent />} />
           </Routes>
         </div>
       </BrowserRouter>
