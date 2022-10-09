@@ -208,7 +208,7 @@ function Main() {
         if (res.status === 200) {
           navigate({
             pathname: '/registration/verifySent',
-            search: `?userId=${res.data.data.userId}&resendToken=${res.data.data.resendToken}`,
+            search: `?userId=${res.data.data.userId}&resendToken=${res.data.data.resendToken}&email=${email}`,
           });
         }
       }).catch((err) => {
