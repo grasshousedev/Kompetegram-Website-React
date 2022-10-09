@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .RegistrationVerifySent > .Header > .HeaderLogo > #image {
+    width: 300px;
+  }
+
+  .RegistrationVerifySent > .Header > #line {
+    width: 500px;
+  }
+
+  .RegistrationVerifySent > .Header > .Title > #header {
+    font-size: 45px;
+  }
+
+  .RegistrationVerifySent > .Header > .Title > #desc {
+    font-size: 30px;
+  }
+
+  .RegistrationVerifySent > .Content > .Box {
+    min-width: 600px;
+    max-width: 670px;
+  }
+}

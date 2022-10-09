@@ -1,0 +1,50 @@
+@media screen and (min-width: 992px) {
+  .RegistrationVerifySent > .Header > .HeaderLogo > #image {
+    width: 400px;
+  }
+
+  .RegistrationVerifySent > .Header > #line {
+    width: 700px;
+  }
+
+  .RegistrationVerifySent > .Header > .Title > #header {
+    font-size: 70px;
+  }
+
+  .RegistrationVerifySent > .Header > .Title > #desc {
+    font-size: 50px;
+  }
+
+  .RegistrationVerifySent > .Content > .Box {
+    min-width: 600px;
+    max-width: 900px;
+  }
+
+  .RegistrationVerifySent > .Content > .Box > .TriDotAnimation  {
+    margin-top: 50px;
+  }
+
+  .RegistrationVerifySent > .Content > .Box > #title {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+
+  .RegistrationVerifySent > .Content > .Box > #desc {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    font-size: 16px;
+  }
+
+  .RegistrationVerifySent > .Content > .Box > .ResendVerification {
+    font-size: 16px;
+  }
+
+  .RegistrationVerifySent > .Content > .Box > .ResendVerification > #resendBtn {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 17px;
+    padding-right: 17px;
+    
+    cursor: pointer;
+  }
+}
