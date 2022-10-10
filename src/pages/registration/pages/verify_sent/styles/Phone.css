@@ -78,8 +78,8 @@
   border: 1px solid #FFFFFF;
   border-radius: 20px;
 
-  margin-right: 10vw;
-  margin-left: 10vw;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
 }
 
 .RegistrationVerifySent > .Content > .Box > #title {
@@ -158,8 +158,28 @@
   cursor: default;
   color: white;
   font-weight: 600;
-  
-  display: none;
+
+  transition: all ease-out 300ms;
+}
+
+.RegistrationVerifySent > .Content > .Box > .ResendVerification > #resendBtnDisable {
+  background-color: transparent;
+
+  border: 2px #066AFF solid;
+  border-radius: 10px;
+  box-shadow: none;
+  outline: none;
+
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 9px;
+  padding-right: 9px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  color: white;
+  font-weight: 600;
 
   transition: all ease-out 300ms;
 }
@@ -311,4 +331,10 @@
     transform: translateX(0px) scale(1);
     z-index: -1;
   }
+}
+
+#captcha-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
