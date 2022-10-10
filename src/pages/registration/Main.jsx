@@ -77,7 +77,7 @@ function Main() {
   const navigate = useNavigate();
 
   // CAPCTHA SiteKey
-  const SITE_KEY = "6LcOO2kiAAAAALkcSRRv44yqaS1GVPn6d6m7HwoJ";
+  const SITE_KEY = '6LcOO2kiAAAAALkcSRRv44yqaS1GVPn6d6m7HwoJ';
 
   // On First Mount
   useEffect(() => {
@@ -121,7 +121,7 @@ function Main() {
     setButtonDisable(false);
     setCaptchaToken(token);
     console.log(token);
-  }
+  };
 
   const submitOnClicked = () => {
     let isFormValid = true;
@@ -172,7 +172,7 @@ function Main() {
     } else if (email[0] === '.' || email[email.length] === '.') {
       isFormValid = false;
       tempAlerts.email = '⚠️ Email tidak valid';
-    } else if (!email.match(/^[a-z.0-9]+$/g)) {
+    } else if (!email.match(/^[a-z_.0-9]+$/g)) {
       isFormValid = false;
       tempAlerts.email = '⚠️ Email tidak valid';
     }
@@ -217,8 +217,15 @@ function Main() {
         portfolio,
       };
 
-      axios.post('https://pemrograman.me/api/v1/members', data, 
-        { timeout: 10000, headers: { captcha: captchaToken } }
+      axios.post(
+        'https://pemrograman.me/api/v1/members',
+        data,
+        {
+          timeout: 10000,
+          headers: {
+            captcha: captchaToken,
+          },
+        },
       ).then((res) => {
         if (res.status === 200) {
           navigate({
@@ -274,11 +281,8 @@ function Main() {
 
         window.grecaptcha.reset();
         setButtonDisable(true);
-        
       });
-      
     }
-
   };
 
   // Render
@@ -373,11 +377,11 @@ function Main() {
         </div>
 
         <div className="Submit">
-          <button 
+          <button
             disabled={buttonDisable}
-            type="button" 
+            type="button"
             id={buttonDisable ? 'submitBtnDisable' : 'submitBtn'}
-            ref={submitBtnRef} 
+            ref={submitBtnRef}
             onClick={submitOnClicked}
           >
             I&lsquo;M READY
