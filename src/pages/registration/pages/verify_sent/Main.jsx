@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { createRef } from 'react';
 import { useLocation } from "react-router-dom";
 import axios from 'axios';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 // Styles
 import './styles/Phone.css';
@@ -19,12 +20,17 @@ const useQuery = () => {
   return React.useMemo(() => new URLSearchParams(search), [search]);
 }
 
+const SITE_KEY = "6LcOO2kiAAAAALkcSRRv44yqaS1GVPn6d6m7HwoJ";
+
 const Main = () => {
   // Hook Query
   const query = useQuery();
 
   // Hook State
   const [countdown, setCountdown] = useState(59);
+  const [resendAction, setResendAction] = useState(false);
+  const [buttonDisable, setButtonDisable] = useState(true);
+  const [captchaToken, setCaptchaToken] = useState('');
 
   // Hook Ref
   const countdownRef = createRef();
@@ -36,8 +42,7 @@ const Main = () => {
       if (countdown > 0) {
         setCountdown(countdown - 1)
       } else {
-        countdownRef.current.style.display = 'none';
-        resendBtnRef.current.style.display = 'block';
+        setResendAction(true);
       }
     }, 1000);
   });
@@ -46,10 +51,19 @@ const Main = () => {
     axios.post('https://pemrograman.me/api/v1/members/resend', {
       userId: query.get('userId'),
       resendToken: query.get('resendToken')
+    }, {
+      headers: { captcha: captchaToken }
     });
     setCountdown(59);
-    countdownRef.current.style.display = 'block';
-    resendBtnRef.current.style.display = 'none';
+    setResendAction(false);
+    setButtonDisable(true);
+    window.grecaptcha.reset();
+  }
+
+  const onSuccessCaptcha = (token) => {
+    setButtonDisable(false);
+    setCaptchaToken(token);
+    console.log(token);
   }
 
   // Render
@@ -85,10 +99,32 @@ const Main = () => {
             Link akan kadaluarsa dalam 15 menit.
           </p>
 
+          {resendAction && (
+            <div id="captcha-box">
+              <ReCAPTCHA
+                sitekey={SITE_KEY}
+                onChange={onSuccessCaptcha}
+                onExpired={() => setButtonDisable(true)}
+                onErrored={() => setButtonDisable(true)}
+                theme="light"
+              />
+            </div>
+          )}
+
           <div className="ResendVerification">
             <p id="text">Kirim ulang verifikasi:</p>
-            <p id="countdown" ref={countdownRef}>{countdown}</p>
-            <button id="resendBtn" ref={resendBtnRef} onClick={resendOnClicked}>Kirim</button>
+            {resendAction ? (
+              <button 
+                disabled={buttonDisable}
+                id={buttonDisable ? 'resendBtnDisable' : 'resendBtn'} 
+                ref={resendBtnRef} 
+                onClick={resendOnClicked}
+              >
+                Kirim
+              </button>
+            ) : (
+              <p id="countdown" ref={countdownRef}>{countdown}</p>
+            )}
           </div>
         </div>
       </div>
