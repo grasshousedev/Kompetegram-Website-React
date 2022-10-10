@@ -59,14 +59,15 @@ function FirstFormRow({
   };
 
   const nameOnChange = (e) => {
-    if (!e.target.value.match(/^[a-zA-Z\s]+$/g)) {
+    let value = e.target.value.toUpperCase();
+    if (!value.match(/^[a-zA-Z\s]+$/g)) {
       setAlerts({ ...alerts, fullName: '⚠️ Kamu hanya dapat input alfebet dan spasi' });
-    } else if (e.target.value === '') {
+    } else if (value === '') {
       setAlerts({ ...alerts, fullName: '⚠️ Tidak boleh kosong' });
     } else {
       setAlerts({ ...alerts, fullName: '' });
     }
-    setFullName(e.target.value);
+    setFullName(value);
   };
 
   // Render
