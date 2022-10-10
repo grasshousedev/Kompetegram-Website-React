@@ -25,7 +25,7 @@ class App extends Component {
             <Route exact path="/home" element={<Home />} />
             <Route exact path="/registration" element={<Opreg />} />
             <Route exact path="/registration/verifySent" element={<OpregVerifySent />} />
-            <Route exact path="/registration/verifyValidate" element={<OpregVerifyValidate />} />
+            <Route exact path="/registration/verifyConfirm" element={<OpregVerifyValidate />} />
           </Routes>
         </div>
       </BrowserRouter>
