@@ -169,12 +169,12 @@ function Main() {
     if (email === '') {
       isFormValid = false;
       tempAlerts.email = '⚠️ Tidak boleh kosong';
-    } else if (email[0] === '.' || email[email.length] === '.') {
+    } else if (email[0] === '.' || email[email.length - 1] === '.' || email[0] === '_' || email[email.length - 1] === '_') {
       isFormValid = false;
-      tempAlerts.email = '⚠️ Email tidak valid';
+      tempAlerts.email = '⚠️ Terdapat karakter tidak valid';
     } else if (!email.match(/^[a-z_.0-9]+$/g)) {
       isFormValid = false;
-      tempAlerts.email = '⚠️ Email tidak valid';
+      tempAlerts.email = '⚠️ Terdapat karakter tidak valid';
     }
 
     if (department === null || department === undefined) {
