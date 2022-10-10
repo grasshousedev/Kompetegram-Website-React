@@ -1,7 +1,6 @@
 // Library
-import React, { useState } from 'react';
-import { createRef } from 'react';
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState, createRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import ReCAPTCHA from 'react-google-recaptcha';
 
@@ -12,13 +11,12 @@ import './styles/Desktop.css';
 
 // Assets
 import ktgLogo from '../../assets/KTG-Header.svg';
-import { useEffect } from 'react';
 
 const useQuery = () => {
   const { search } = useLocation();
 
   return React.useMemo(() => new URLSearchParams(search), [search]);
-}
+};
 
 const SITE_KEY = "6LcOO2kiAAAAALkcSRRv44yqaS1GVPn6d6m7HwoJ";
 
@@ -40,7 +38,7 @@ const Main = () => {
   useEffect(() => {
     setTimeout(() => {
       if (countdown > 0) {
-        setCountdown(countdown - 1)
+        setCountdown(countdown - 1);
       } else {
         setResendAction(true);
       }
@@ -75,7 +73,7 @@ const Main = () => {
         </div>
 
         <div id="line" />
-        
+
         <div className="Title">
           <h1 id="header">OPEN REGISTRATION</h1>
 
@@ -94,8 +92,9 @@ const Main = () => {
           <h3 id="title">VERIFY YOUR EMAIL</h3>
 
           <p id="desc">
-            Kami telah mengirim email ke {query.get('email')} untuk  
-            melakukan verifikasi terhadap email anda.
+            Kami telah mengirim email ke
+            {query.get('email')}
+            untuk melakukan verifikasi terhadap email anda.
             Link akan kadaluarsa dalam 15 menit.
           </p>
 
@@ -129,7 +128,7 @@ const Main = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Main;

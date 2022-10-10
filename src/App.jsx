@@ -6,8 +6,9 @@ import {
 import Home from './pages/home/Home';
 import Opreg from './pages/registration/Main';
 import OpregVerifySent from './pages/registration/pages/verify_sent/Main';
+import OpregVerifyValidate from './pages/registration/pages/verify_validate/Main';
 
-import './styles/Global.css'
+import './styles/Global.css';
 
 class App extends Component {
   constructor(props) {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route exact path="/home" element={<Home />} />
             <Route exact path="/registration" element={<Opreg />} />
             <Route exact path="/registration/verifySent" element={<OpregVerifySent />} />
+            <Route exact path="/registration/verifyValidate" element={<OpregVerifyValidate />} />
           </Routes>
         </div>
       </BrowserRouter>

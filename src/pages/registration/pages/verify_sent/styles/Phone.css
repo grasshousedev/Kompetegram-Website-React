@@ -255,66 +255,81 @@
 @keyframes circleOneAnimate {
   0%{
     z-index: 1;
-    scale: 1;
   }
   35% {
-    transform: translateX(140px);
+    -webkit-transform: translateX(140px) scale(1);
+    -moz-transform: translateX(140px) scale(1);
+    -o-transform: translateX(140px) scale(1);
+    transform: translateX(140px) scale(1);
     z-index: 1;
-    scale: 1;
   }
   70% {
-    transform: translateX(35px);
+    -webkit-transform: translateX(70px) scale(2);
+    -moz-transform: translateX(70px) scale(2);
+    -o-transform: translateX(70px) scale(2);
+    transform: translateX(70px) scale(2);
     z-index: 2;
-    scale: 2;
   }
   95% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px) scale(1);
+    -moz-transform: translateX(0px) scale(1);
+    -o-transform: translateX(0px) scale(1);
+    transform: translateX(0px) scale(1);
     z-index: 1;
-    scale: 1;
   }
 }
 
 @keyframes circleTwoAnimate {
   0%{
     z-index: 2;
-    scale: 1;
   }
   35% {
-    transform: translateX(-140px);
+    -webkit-transform: translateX(-70px) scale(0.5);
+    -moz-transform: translateX(-70px) scale(0.5);
+    -o-transform: translateX(-70px) scale(0.5);
+    transform: translateX(-70px) scale(0.5);
     z-index: 1;
-    scale: 0.5;
   }
   70% {
-    transform: translateX(140px);
+    -webkit-transform: translateX(70px) scale(0.5);
+    -moz-transform: translateX(70px) scale(0.5);
+    -o-transform: translateX(70px) scale(0.5);
+    transform: translateX(70px) scale(0.5);
     z-index: 1;
-    scale: 0.5;
   }
   95% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px) scale(1);
+    -moz-transform: translateX(0px) scale(1);
+    -o-transform: translateX(0px) scale(1);
+    transform: translateX(0px) scale(1);
     z-index: 1;
-    scale: 1;
   }
 }
 
 @keyframes circleThreeAnimate {
   0%{
     z-index: -1;
-    scale: 1;
   }
   35% {
-    transform: translateX(-35px);
+    -webkit-transform: translateX(-70px) scale(2);
+    -moz-transform: translateX(-70px) scale(2);
+    -o-transform: translateX(-70px) scale(2);
+    transform: translateX(-70px) scale(2);
     z-index: 2;
-    scale: 2;
   }
   70% {
-    transform: translateX(-140px);
+    -webkit-transform: translateX(140px) scale(1);
+    -moz-transform: translateX(140px) scale(1);
+    -o-transform: translateX(140px) scale(1);
+    transform: translateX(-140px) scale(1);
     z-index: -1;
-    scale: 1;
   }
   95% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px) scale(1);
+    -moz-transform: translateX(0px) scale(1);
+    -o-transform: translateX(0px) scale(1);
+    transform: translateX(0px) scale(1);
     z-index: -1;
-    scale: 1;
   }
 }
 
