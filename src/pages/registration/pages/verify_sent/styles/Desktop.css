@@ -47,4 +47,19 @@
     
     cursor: pointer;
   }
+
+  .RegistrationVerifySent > .Content > .Box > .ResendVerification > #resendBtnDisable {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 17px;
+    padding-right: 17px;
+
+    cursor: default;
+  }
+
+  #captcha-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
 }
