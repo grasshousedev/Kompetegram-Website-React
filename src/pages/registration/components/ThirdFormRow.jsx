@@ -17,13 +17,13 @@ function ThirdFormRow({
 }) {
   // Handler
   const emailOnChange = (e) => {
-    const email = e.currentTarget.value;
-    
+    const email = e.currentTarget.value.toLowerCase();
+
     if (email.length === "") {
       setAlerts({ ...alerts, email: '⚠️ Tidak boleh kosong' });
     } else if (email[0] === '.' || email[email.length - 1] === '.') {
       setAlerts({ ...alerts, email: '⚠️ Email tidak valid' });
-    } else if (!email.match(/^[a-z.0-9]+$/g)) {
+    } else if (!email.match(/^[a-z_.0-9]+$/g)) {
       setAlerts({ ...alerts, email: '⚠️ Email tidak valid' });
     } else {
       setAlerts({ ...alerts, email: '' });
