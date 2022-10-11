@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { Link } from 'react-router-dom';
 import arrowRedirect from '../../../assets/img/Arrow-Redirect.svg';
 import activDocu from '../../../assets/img/Zoom-Documentation.png';
 import activDocuDesktop from '../../../assets/img/Zoom-Documentation-Desktop.png';
@@ -27,10 +28,10 @@ class Section5 extends Component {
         </div>
 
         <div className="Register-Button">
-          <a href="/" id="regis-btn">
+          <Link to="/registration" id="regis-btn">
             <img src={arrowRedirect} alt="" id="arrow-logo" />
             Daftar
-          </a>
+          </Link>
         </div>
 
         <div className="Activity-Documentation">
