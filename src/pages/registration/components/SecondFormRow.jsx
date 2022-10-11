@@ -4,7 +4,7 @@ import makeAnimated from 'react-select/animated';
 import React from 'react';
 
 function SecondFormRow({
-  setNim, setInterest, alerts, setAlerts, interestData,
+  setNim, interest, setInterest, alerts, setAlerts, interestData,
 }) {
   // Handler
   const nimOnChange = (e) => {
@@ -57,6 +57,7 @@ function SecondFormRow({
           onChange={interestOnChange}
           components={makeAnimated()}
           isMulti
+          isOptionDisabled={() => interest.length >= 3}
           isClearable={false}
           formatCreateLabel={(str) => `➕ Add "${str}"`}
         />
