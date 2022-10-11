@@ -239,11 +239,19 @@ function Main() {
           alertResponseRef.current.style.display = 'block';
           popUpBlockRef.current.style.display = 'block';
           alertResponseRef.current.scrollIntoView();
+          
+          submitBtnRef.current.style.display = 'block';
+          loadingRef.current.style.display = 'none';
+          popUpBlockRef.current.style.display = 'none';
         } else if (err.code === 'ECONNABORTED') {
           alertResponseRef.current.innerHTML = '<p style="color: white">Koneksi timeout. Harap periksa jaringan anda lalu refresh halaman ini</p>';
           alertResponseRef.current.style.display = 'block*=';
           popUpBlockRef.current.style.display = 'block';
           alertResponseRef.current.scrollIntoView();
+          
+          submitBtnRef.current.style.display = 'block';
+          loadingRef.current.style.display = 'none';
+          popUpBlockRef.current.style.display = 'none';
         } else if (err.response.data.success === false) {
           if (err.response.data.message.length > 0) {
             const existsDataAlerts = {
@@ -266,16 +274,18 @@ function Main() {
             alertResponseRef.current.innerHTML = '<p style="color: white">Data diri yang kamu input sudah terdaftar. Jika ini merupakan suatu kesalahan harap hubungi Contact Person: <a style="color: #3120E0" href="https://wa.me/6289661287927">Adrian</a> | <a style="color: #3120E0" href="https://wa.me/6281381168928">Vano</a></p>';
             alertResponseRef.current.style.display = 'block';
             alertResponseRef.current.scrollIntoView();
-            loadingRef.current.style.display = 'none';
+          
             submitBtnRef.current.style.display = 'block';
+            loadingRef.current.style.display = 'none';
             popUpBlockRef.current.style.display = 'none';
           }
         } else if (err.response.status === 400) {
           alertResponseRef.current.innerHTML = '<p style="color: white">Error Bad Request. Harap periksa inputan anda dengan teliti, periksa jaringan anda, atau refresh halaman ini</p>';
           alertResponseRef.current.style.display = 'block';
           alertResponseRef.current.scrollIntoView();
-          loadingRef.current.style.display = 'none';
+          
           submitBtnRef.current.style.display = 'block';
+          loadingRef.current.style.display = 'none';
           popUpBlockRef.current.style.display = 'none';
         }
 
