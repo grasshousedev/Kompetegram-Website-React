@@ -1,5 +1,8 @@
-// Library
+// Assets
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 // Assets
 import ktgLogo from '../../../assets/KTG-Header.svg';
@@ -7,7 +10,7 @@ import checkLogo from '../assets/Check.svg';
 import waLogo from '../assets/WhatsApp.svg';
 import crossLogo from '../assets/Cross.svg';
 
-function onAlreadyVerfied(waLink) {
+function OnAlreadyVerfied(waLink) {
   return(
     <div className="Box">
       <div className="CheckLogo">
@@ -26,35 +29,97 @@ function onAlreadyVerfied(waLink) {
   );
 }
 
-function onInvalid() {
+function OnExpired({ userId, resendToken, email }) {
+  // Static Data
+  const SITE_KEY = "6LcOO2kiAAAAALkcSRRv44yqaS1GVPn6d6m7HwoJ";
+
+  // Hook Route
+  const navigate = useNavigate();
+
+  // Hook State
+  const [captchaToken, setCaptchaToken] = useState('');
+  const [buttonDisable, setButtonDisable] = useState(true);
+  
+  // Handler
+  const onSuccessCaptcha = (token) => {
+    setButtonDisable(false);
+    setCaptchaToken(token);
+  }
+
+  const resendOnClicked = () => {
+    axios.post('https://pemrograman.me/api/v1/members/resend', {
+      userId,
+      resendToken,
+    }, {
+      headers: { captcha: captchaToken }
+    });
+    navigate({
+      pathname: '/registration/verifySent',
+      search: `?userId=${userId}&resendToken=${resendToken}&email=${email}`,
+    });
+  }
+
+
+  // Render
   return(
     <div className="Box">
       <div className="CheckLogo">
         <img src={crossLogo} alt="" id="image"/>
       </div>
 
-      <h3 id="title">INVALID</h3>
+      <h3 id="title">EXPIRED VERIFICATION</h3>
+
+      <p id="desc" style={{marginBottom: '33px'}}>Data verifikasi kamu sudah expired, kamu masih dapat mengirim verifikasi lagi dengan klik tombol kirim di bawah.</p>
+
+      <div id="captcha-box">
+        <ReCAPTCHA
+          id="captcha-box"
+          sitekey={SITE_KEY}
+          onChange={onSuccessCaptcha}
+          onExpired={() => setButtonDisable(true)}
+          onErrored={() => setButtonDisable(true)}
+          theme="light"
+        />
+      </div>
+
+      <div className="ResendVerification">
+        <button
+          type="button"
+          disabled={buttonDisable}
+          id={buttonDisable ? 'resendBtnDisable' : 'resendBtn'}
+          onClick={resendOnClicked}
+        > Kirim </button>
+      </div>
+    </div>
+  );
+}
+
+function OnInvalid() {
+  return(
+    <div className="Box">
+      <div className="CheckLogo">
+        <img src={crossLogo} alt="" id="image"/>
+      </div>
+
+      <h3 id="title">INVALID VERIFICATION</h3>
 
       <p id="desc" style={{marginBottom: '33px'}}>Terdapat keselahan dalam data verifikasi</p>
     </div>
   );
 }
 
-function resCondition(navigate, resMessage, userId, resendToken, email, waLink) {
+function ResCondition({resMessage, userId, resendToken, email, waLink}) {
   if (resMessage === 'Member is already verified') {
-    return onAlreadyVerfied(waLink);
+    return (<OnAlreadyVerfied waLink={waLink} />);
   } else if (resMessage === 'Token is expired') {
-    navigate({
-      pathname: '/registration/verifySent',
-      search: `?userId=${userId}&resendToken=${resendToken}&email=${email}`,
-    });
+    return (<OnExpired userId={userId} resendToken={resendToken} email={email} />);
   } else  {
-    return onInvalid();
+    return (<OnInvalid />);
   }
 }
 
 function Main({resMessage, userId, resendToken, email, waLink}) {
-  const navigate = useNavigate();
+
   return (
     <div className="RegistrationVerifValidate">
       <div className="Header">
@@ -72,7 +137,13 @@ function Main({resMessage, userId, resendToken, email, waLink}) {
       </div>
 
       <div className="Content">
-        {resCondition(navigate, resMessage, userId, resendToken, email, waLink)}
+        <ResCondition 
+          resMessage={resMessage}
+          userId={userId}
+          resendToken={resendToken}
+          email={email}
+          waLink={waLink}
+        />
       </div>
     </div>
   );

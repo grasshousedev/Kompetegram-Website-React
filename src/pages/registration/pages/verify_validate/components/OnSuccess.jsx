@@ -3,8 +3,9 @@ import ktgLogo from '../../../assets/KTG-Header.svg';
 import checkLogo from '../assets/Check.svg';
 import waLogo from '../assets/WhatsApp.svg';
 
-function Main(waLink) {
+function Main({waLink}) {
 
+  
   return (
     <div className="RegistrationVerifValidate">
         <div className="Header">

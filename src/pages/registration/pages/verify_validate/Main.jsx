@@ -20,7 +20,7 @@ const useQuery = () => {
 };
 
 function Main() {
-  // Hook Query
+  // Hook Router
   const query = useQuery();
 
   // Hook State
@@ -50,7 +50,7 @@ function Main() {
           setResVerifData('invalid');
           setResMesage(err.response.data.message);
           if(err.response.data.message === 'Member is already verified') {
-            // setWaLink(err.response.data.data.link);
+            setWaLink(err.response.data.data.link);
           }
         } else if (err.response.status === 400) {
           setResVerifData('bad');
