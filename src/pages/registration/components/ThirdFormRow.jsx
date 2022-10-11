@@ -71,7 +71,7 @@ function ThirdFormRow({
           <p id="requirement">(required)</p>
         </div>
         <div className="InputEmail">
-          <input type="text" name="" id="inpEmail" placeholder="azka.syawal" onChange={emailOnChange} />
+          <input type="text" name="" id="inpEmail" placeholder="john.doe" onChange={emailOnChange} />
           <p id="mailDomain">@upi.edu</p>
         </div>
         <p id="alert">{alerts.email}</p>

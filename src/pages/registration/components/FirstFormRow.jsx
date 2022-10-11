@@ -78,7 +78,7 @@ function FirstFormRow({
           <p id="text">Nama Lengkap</p>
           <p id="requirement">(required)</p>
         </div>
-        <input type="text" name="" id="inpName" placeholder="Azka Syawal Syambara" onChange={nameOnChange} />
+        <input type="text" name="" id="inpName" placeholder="John Doe" onChange={nameOnChange} />
         <p id="alert">{alerts.fullName}</p>
       </div>
 
