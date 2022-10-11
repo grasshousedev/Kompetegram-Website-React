@@ -10,7 +10,7 @@ import checkLogo from '../assets/Check.svg';
 import waLogo from '../assets/WhatsApp.svg';
 import crossLogo from '../assets/Cross.svg';
 
-function OnAlreadyVerfied(waLink) {
+function OnAlreadyVerfied({waLink}) {
   return(
     <div className="Box">
       <div className="CheckLogo">

@@ -120,7 +120,6 @@ function Main() {
   const onSuccessCaptcha = (token) => {
     setButtonDisable(false);
     setCaptchaToken(token);
-    console.log(token);
   };
 
   const submitOnClicked = () => {
