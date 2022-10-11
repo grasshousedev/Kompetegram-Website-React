@@ -90,7 +90,7 @@ const Main = () => {
 
           <h3 id="title">VERIFY YOUR EMAIL</h3>
 
-          <p id="desc">Kami telah mengirim email ke {query.get('email')} untuk melakukan verifikasi terhadap email anda. Link akan kadaluarsa dalam 15 menit.</p>
+          <p id="desc">Kami telah mengirim email ke&nbsp;{query.get('email')}&nbsp;untuk melakukan verifikasi terhadap email anda. Link akan kadaluarsa dalam 15 menit.</p>
 
           {resendAction && (
             <div id="captcha-box">
