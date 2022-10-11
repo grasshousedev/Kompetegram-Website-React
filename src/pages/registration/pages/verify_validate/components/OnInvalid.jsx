@@ -52,11 +52,17 @@ function OnExpired({ userId, resendToken, email }) {
       resendToken,
     }, {
       headers: { captcha: captchaToken }
+    }).then((res) => {
+      if(res.status === 200) {
+        navigate({
+          pathname: '/registration/verifySent',
+          search: `?userId=${userId}&resendToken=${resendToken}&email=${email}`,
+        });
+      }
     });
-    navigate({
-      pathname: '/registration/verifySent',
-      search: `?userId=${userId}&resendToken=${resendToken}&email=${email}`,
-    });
+
+    window.grecaptcha.reset();
+    setButtonDisable(true);
   }
 
 
