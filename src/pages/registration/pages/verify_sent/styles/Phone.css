@@ -109,6 +109,13 @@
   font-size: 14px;
 }
 
+#captcha-box {
+  margin: 0;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .RegistrationVerifySent > .Content > .Box > .ResendVerification {
   width: fit-content;
   height: 40px;
@@ -155,9 +162,12 @@
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 10px;
+
   cursor: default;
   color: white;
+
   font-weight: 600;
+  font-size: 14px;
 
   transition: all ease-out 300ms;
 }
@@ -165,7 +175,7 @@
 .RegistrationVerifySent > .Content > .Box > .ResendVerification > #resendBtnDisable {
   background-color: transparent;
 
-  border: 2px #066AFF solid;
+  border: 2px #777777 solid;
   border-radius: 10px;
   box-shadow: none;
   outline: none;
@@ -178,8 +188,10 @@
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 10px;
-  color: white;
+  color: rgba(255, 255, 255, 0.507);
+
   font-weight: 600;
+  font-size: 14px;
 
   transition: all ease-out 300ms;
 }
@@ -331,10 +343,4 @@
     transform: translateX(0px) scale(1);
     z-index: -1;
   }
-}
-
-#captcha-box {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
 }
