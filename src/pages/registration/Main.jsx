@@ -22,7 +22,7 @@ import {
 
 function Main() {
   // Static Data
-  const isOpen = true;
+  const isOpen = false;
   const interestData = [
     { value: '0', label: 'Android Developer' },
     { value: '1', label: 'Artificial Intelligence' },
