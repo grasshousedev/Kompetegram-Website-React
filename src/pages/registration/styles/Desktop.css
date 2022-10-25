@@ -815,4 +815,15 @@
     font-size: 30px;
     transition: all ease-out 300ms;
   }
+
+  .Main > .SocialMedia > #desc {
+
+    color: white;
+  
+    font-size: 20px;
+  }
+  
+  .Main > .SocialMedia > .ig-btn> #ig-icon {
+    width: 30px;
+  }
 }

@@ -927,3 +927,51 @@
   font-size: 30px;
   transition: all ease-out 300ms;
 }
+
+.Main > .SocialMedia {
+  width: fit-content;
+  height: fit-content;
+
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Main > .SocialMedia > #desc {
+
+  color: white;
+
+  font-size: 3vw;
+}
+
+.Main > .SocialMedia > .ig-btn {
+  width: fit-content;
+  height: fit-content;
+
+  display: flex;
+
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  gap: 20px;
+
+  border: 2px solid white;
+  border-radius: 50px;
+
+  transition: background-color 500ms ease;
+}
+
+.Main > .SocialMedia > .ig-btn:hover {
+  background-color: white;
+}
+
+.Main > .SocialMedia > .ig-btn> #ig-icon {
+  width: 6vw;
+}
+

@@ -10,6 +10,7 @@ import './styles/Desktop.css';
 
 // Assets
 import headerLogo from './assets/KTG-Header.svg';
+import igIconColored from '../../assets/img/Instagram-Icon-Colored.svg';
 
 // Components
 import {
@@ -21,6 +22,7 @@ import {
 
 function Main() {
   // Static Data
+  const isOpen = true;
   const interestData = [
     { value: '0', label: 'Android Developer' },
     { value: '1', label: 'Artificial Intelligence' },
@@ -296,120 +298,150 @@ function Main() {
 
   // Render
   document.title = 'Kompetegram - Registration';
-  return (
-    <div className="Main">
-      <div className="popUpBlock" ref={popUpBlockRef} />
 
-      <div className="Header">
-        <div className="image">
-          <img src={headerLogo} alt="" id="headerLogo" />
+  if(isOpen) {
+    return (
+      <div className="Main">
+        <div className="popUpBlock" ref={popUpBlockRef} />
+  
+        <div className="Header">
+          <div className="image">
+            <img src={headerLogo} alt="" id="headerLogo" />
+          </div>
+          <div id="line" />
+          <div className="Title">
+            <h1 id="header">OPEN REGISTRATION</h1>
+            <h3 id="desc">BATCH 3</h3>
+          </div>
         </div>
-        <div id="line" />
-        <div className="Title">
-          <h1 id="header">OPEN REGISTRATION</h1>
-          <h3 id="desc">BATCH 3</h3>
-        </div>
-      </div>
-
-      <div className="Section-1" ref={section1Ref}>
-        <div className="alertResponse" ref={alertResponseRef} />
-
-        <div className="Box-Form">
-
-          <FirstFormRow
-            fullName={fullName}
-            setFullName={setFullName}
-            alerts={alerts}
-            setAlerts={setAlerts}
-            gender={gender}
-            setGender={setGender}
-          />
-
-          <SecondFormRow
-            setNim={setNim}
-            interest={interest}
-            setInterest={setInterest}
-            alerts={alerts}
-            setAlerts={setAlerts}
-            interestData={interestData}
-          />
-
-          <ThirdFormRow
-            email={email}
-            setEmail={setEmail}
-            departmentsData={departmentsData}
-            isLoadingData={isLoadingData}
-            setLoadingData={setLoadingData}
-            setDepartment={setDepartment}
-            alerts={alerts}
-            setAlerts={setAlerts}
-            setMajorsData={setMajorsData}
-            setDisabledInp={setDisabledInp}
-          />
-
-          <FourthFormRow
-            setWaNum={setWaNum}
-            isLoadingData={isLoadingData}
-            isDisabledInp={isDisabledInp}
-            majorsData={majorsData}
-            setMajor={setMajor}
-            alerts={alerts}
-            setAlerts={setAlerts}
-          />
-
-          <div className="Fifth">
-            <div className="Portfolio">
-              <div className="Title">
-                <p id="text">Portfolio</p>
-                <p id="requirement">(optional)</p>
+  
+        <div className="Section-1" ref={section1Ref}>
+          <div className="alertResponse" ref={alertResponseRef} />
+  
+          <div className="Box-Form">
+  
+            <FirstFormRow
+              fullName={fullName}
+              setFullName={setFullName}
+              alerts={alerts}
+              setAlerts={setAlerts}
+              gender={gender}
+              setGender={setGender}
+            />
+  
+            <SecondFormRow
+              setNim={setNim}
+              interest={interest}
+              setInterest={setInterest}
+              alerts={alerts}
+              setAlerts={setAlerts}
+              interestData={interestData}
+            />
+  
+            <ThirdFormRow
+              email={email}
+              setEmail={setEmail}
+              departmentsData={departmentsData}
+              isLoadingData={isLoadingData}
+              setLoadingData={setLoadingData}
+              setDepartment={setDepartment}
+              alerts={alerts}
+              setAlerts={setAlerts}
+              setMajorsData={setMajorsData}
+              setDisabledInp={setDisabledInp}
+            />
+  
+            <FourthFormRow
+              setWaNum={setWaNum}
+              isLoadingData={isLoadingData}
+              isDisabledInp={isDisabledInp}
+              majorsData={majorsData}
+              setMajor={setMajor}
+              alerts={alerts}
+              setAlerts={setAlerts}
+            />
+  
+            <div className="Fifth">
+              <div className="Portfolio">
+                <div className="Title">
+                  <p id="text">Portfolio</p>
+                  <p id="requirement">(optional)</p>
+                </div>
+                <input
+                  type="text"
+                  name=""
+                  id="inpPortfolio"
+                  placeholder="GitHub, LinkedIn, dll."
+                  onChange={portoOnChanged}
+                />
               </div>
-              <input
-                type="text"
-                name=""
-                id="inpPortfolio"
-                placeholder="GitHub, LinkedIn, dll."
-                onChange={portoOnChanged}
-              />
             </div>
           </div>
-        </div>
-
-        <div id="captcha-box">
-          <ReCAPTCHA
-            sitekey={SITE_KEY}
-            onChange={onSuccessCaptcha}
-            onExpired={() => setButtonDisable(true)}
-            onErrored={() => setButtonDisable(true)}
-            theme="light"
-          />
-        </div>
-
-        <div className="Submit">
-          <button
-            disabled={buttonDisable}
-            type="button"
-            id={buttonDisable ? 'submitBtnDisable' : 'submitBtn'}
-            ref={submitBtnRef}
-            onClick={submitOnClicked}
-          >
-            I&lsquo;M READY
-          </button>
-          <div className="loading" ref={loadingRef}>
-            <div className="lds-roller">
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
-              <div />
+  
+          <div id="captcha-box">
+            <ReCAPTCHA
+              sitekey={SITE_KEY}
+              onChange={onSuccessCaptcha}
+              onExpired={() => setButtonDisable(true)}
+              onErrored={() => setButtonDisable(true)}
+              theme="light"
+            />
+          </div>
+  
+          <div className="Submit">
+            <button
+              disabled={buttonDisable}
+              type="button"
+              id={buttonDisable ? 'submitBtnDisable' : 'submitBtn'}
+              ref={submitBtnRef}
+              onClick={submitOnClicked}
+            >
+              I&lsquo;M READY
+            </button>
+            <div className="loading" ref={loadingRef}>
+              <div className="lds-roller">
+                <div />
+                <div />
+                <div />
+                <div />
+                <div />
+                <div />
+                <div />
+                <div />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div className="Main">
+        <div className="Header">
+          <div className="image">
+            <img src={headerLogo} alt="" id="headerLogo" />
+          </div>
+          <div id="line" />
+          <div className="Title">
+            <h3 id="desc">Hai👋, Sampai bertemu di Batch 4 (2023 - 2024)</h3>
+          </div>
+        </div>
+
+        <div className="SocialMedia">
+          <p id="desc">Follow Instagram kami untuk info lebih lanjut:</p>
+          <a
+              href="https://www.instagram.com/kompetegram/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="ig-btn"
+            >
+              <img src={igIconColored} alt="" id="ig-icon" />
+            </a>
+        </div>
+      </div>
+    )
+  }
+  
 }
 
 export default Main;
