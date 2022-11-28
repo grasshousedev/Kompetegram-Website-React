@@ -30,12 +30,12 @@ function Main({waLink}) {
   
             <h3 id="title">EMAIL VERIFIED</h3>
   
-            <p id="desc">Silahkan gabung ke grup WhatsApp untuk info lebih lanjut</p>
+            {/* <p id="desc">Silahkan gabung ke grup WhatsApp untuk info lebih lanjut</p>
   
             <a href={waLink} target={'_blank'} rel="noreferrer"  id="whatsappBtn">
               <img src={waLogo} alt="" id="image"/>
               <p id="text">WhatsApp</p>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
