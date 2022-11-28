@@ -19,12 +19,13 @@ function OnAlreadyVerfied({waLink}) {
     
       <h3 id="title">ALREADY VERIFIED</h3>
 
-      <p id="desc">Kamu sudah terverifikasi, silahkan gabung ke grup WhatsApp untuk info lebih lanjut</p>
+      <p id="desc">Kamu sudah terverifikasi</p>
+      {/* <p id="desc">Kamu sudah terverifikasi, silahkan gabung ke grup WhatsApp untuk info lebih lanjut</p>
 
       <a href={waLink} target={'_blank'} rel="noreferrer" id="whatsappBtn">
         <img src={waLogo} alt="" id="image"/>
         <p id="text">WhatsApp</p>
-      </a>
+      </a> */}
     </div>
   );
 }
