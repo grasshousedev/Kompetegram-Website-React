@@ -28,12 +28,12 @@ class Section1 extends Component {
             </p>
           </div>
 
-          <div className="Register-Button">
+          {/* <div className="Register-Button">
             <Link to="/registration" id="regis-btn">
               <img src={arrowRedirect} alt="" id="arrow-logo" />
               Daftar
             </Link>
-          </div>
+          </div> */}
         </article>
 
         <div className="Illustration">

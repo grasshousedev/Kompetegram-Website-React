@@ -22,7 +22,7 @@ import {
 
 function Main() {
   // Static Data
-  const isOpen = false;
+  const isOpen = true;
   const interestData = [
     { value: '0', label: 'Android Developer' },
     { value: '1', label: 'Artificial Intelligence' },
@@ -40,6 +40,7 @@ function Main() {
     { value: '13', label: 'Web Developer' },
     { value: '14', label: 'Database Designer' },
   ];
+  const path = window.location.pathname.split("/");
 
   // Hook State Data
   const [alerts, setAlerts] = useState({
@@ -216,10 +217,17 @@ function Main() {
         phone: waNum,
         interests: interest.map((val) => val.label),
         portfolio,
+        batch: null,
       };
+      
+      if(path[2] === '50269615-2cbf-4335-9e68-5f33a2572574') {
+        data.batch = 1;
+      } else if(path[2] === '30a7a616-94f9-4cdd-8bc0-5b46b81a1e2a') {
+        data.batch = 2;
+      }
 
       axios.post(
-        'https://pemrograman.me/api/v1/members',
+        'https://pemrograman.me/api/v1/members/create',
         data,
         {
           timeout: 10000,
@@ -310,8 +318,7 @@ function Main() {
           </div>
           <div id="line" />
           <div className="Title">
-            <h1 id="header">OPEN REGISTRATION</h1>
-            <h3 id="desc">BATCH 3</h3>
+            <h1 id="header">RE-REGISTRATION</h1>
           </div>
         </div>
   
